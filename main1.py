@@ -55,7 +55,7 @@ def start_docker_container(apollo_path, state_output_dir, SHOW_OUTPUT):
 def main():
     EXP_ID = "2024.10.2.1"
     BRANCH_PAIRS_FILE = "branch_pairs.txt"
-    APOLLO_REPO_PATH = "/path/to/local/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
+    APOLLO_REPO_PATH = "/home/mrb2/experiments/postgraduate_project/apollo/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
     SHOW_OUTPUT = True
 
     # 获取当前脚本的绝对路径
