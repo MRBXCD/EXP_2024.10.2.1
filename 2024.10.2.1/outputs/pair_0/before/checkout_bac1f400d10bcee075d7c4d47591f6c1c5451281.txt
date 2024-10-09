@@ -1,0 +1,11 @@
+warning: refname 'bac1f400d10bcee075d7c4d47591f6c1c5451281' is ambiguous.
+Git normally never creates a ref that ends with 40 hex characters
+because it will be ignored when you just specify 40-hex. These refs
+may be created by mistake. For example,
+
+  git switch -c $br $(git rev-parse ...)
+
+where "$br" is somehow empty and a 40-hex ref is created. Please
+examine these refs and maybe delete them. Turn this message off by
+running "git config advice.objectNameWarning false"
+Switched to branch 'bac1f400d10bcee075d7c4d47591f6c1c5451281'

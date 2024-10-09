@@ -118,7 +118,7 @@ def main():
         os.chdir(apollo_path)
 
         # 获取当前用户
-        DOCKER_USER = getpass.getuser()
+        DOCKER_USER = 'mrb2'
         DEV_CONTAINER_PREFIX = 'apollo_dev_'
         DEV_CONTAINER = f"{DEV_CONTAINER_PREFIX}{DOCKER_USER}"
 

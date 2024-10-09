@@ -1,0 +1,1 @@
+[0;31mMust run ./apollo.sh in dev docker or release docker[0m
