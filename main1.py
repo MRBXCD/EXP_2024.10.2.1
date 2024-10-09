@@ -168,6 +168,16 @@ def main():
                 break
             print(f"已切换到分支 {branch}")
 
+            # 检查是否切换到了正确的分支
+            cmd = "git rev-parse --abbrev-ref HEAD"
+            ret, current_branch = subprocess.getstatusoutput(cmd)
+            current_branch = current_branch.strip()
+            if current_branch != branch:
+                print(f"错误：当前分支为 {current_branch}，期望分支为 {branch}")
+                break
+            else:
+                print(f"已确认切换到了正确的分支：{current_branch}")
+
             # 获取当前的提交 ID
             cmd = "git rev-parse HEAD"
             ret, commit_id = subprocess.getstatusoutput(cmd)
@@ -189,8 +199,9 @@ def main():
             # 在容器内执行命令
             commands = [
                 ("./apollo.sh test", 'test_output.txt'),
-                ("./apollo.sh coverage", 'coverage_output.txt'),
-                ("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt')
+                #("./apollo.sh coverage", 'coverage_output.txt'),
+                #("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt'),
+                ("./apollo.sh clean", 'apollo_clean_output.txt')
             ]
             for idx_cmd, (cmd, output_filename) in enumerate(commands):
                 output_file = os.path.join(state_output_dir, output_filename)
@@ -213,17 +224,6 @@ def main():
                         print("最后一个命令执行失败，退出")
                 else:
                     print(f"命令执行成功：{cmd}")
-
-            # 执行 ./apollo.sh clean
-            cmd = "./apollo.sh clean"
-            output_file = os.path.join(state_output_dir, 'apollo_clean_output.txt')
-            ret = run_command_realtime(cmd, cwd=apollo_path,
-                                       output_file=output_file,
-                                       show_output=SHOW_OUTPUT)
-            if ret != 0:
-                print("清理编译文件失败")
-            else:
-                print("已清理编译生成的文件")
 
             print(f"状态 {state} 处理完成\n")
 
