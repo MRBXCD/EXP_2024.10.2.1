@@ -37,18 +37,33 @@ def run_command_realtime(command, cwd=None, output_file=None, show_output=True):
         print(f"执行命令时发生异常：{e}")
         return -1
 
+def container_exists(container_name):
+    cmd = f"docker ps -a --format '{{{{.Names}}}}'"
+    output = subprocess.getoutput(cmd)
+    containers = output.strip().split('\n')
+    return container_name in containers
+
+def start_docker_container(apollo_path, state_output_dir, SHOW_OUTPUT):
+    # 构建 Docker 容器
+    cmd = "bash docker/scripts/dev_start.sh"
+    output_file = os.path.join(state_output_dir, 'dev_start_output.txt')
+    ret = run_command_realtime(cmd, cwd=apollo_path,
+                               output_file=output_file,
+                               show_output=SHOW_OUTPUT)
+    return ret
+
 def main():
     EXP_ID = "2024.10.2.1"
-    PR_ID_FILE = "pr_ids.txt"
-    APOLLO_REPO_PATH = "/home/mrb2/experiments/postgraduate_project/apollo/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
+    BRANCH_PAIRS_FILE = "branch_pairs.txt"
+    APOLLO_REPO_PATH = "/path/to/local/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
     SHOW_OUTPUT = True
 
     # 获取当前脚本的绝对路径
     script_dir = os.getcwd()
 
-    # 检查 PR ID 文件是否存在
-    if not os.path.isfile(PR_ID_FILE):
-        print(f"错误：未找到 PR ID 文件：{PR_ID_FILE}")
+    # 检查分支对文件是否存在
+    if not os.path.isfile(BRANCH_PAIRS_FILE):
+        print(f"错误：未找到分支对文件：{BRANCH_PAIRS_FILE}")
         sys.exit(1)
 
     # 创建实验文件夹
@@ -63,47 +78,49 @@ def main():
     OUTPUTS_DIR = os.path.join(EXP_DIR, 'outputs')
     os.makedirs(OUTPUTS_DIR, exist_ok=True)
 
-    # 读取 PR ID 列表和基准 PR ID
-    pr_list = []
-    with open(os.path.join(script_dir, PR_ID_FILE), 'r') as f:
+    # 读取分支对列表
+    branch_pairs = []
+    with open(os.path.join(script_dir, BRANCH_PAIRS_FILE), 'r') as f:
         for line in f:
             parts = line.strip().split()
             if len(parts) == 2:
-                pr_id, base_pr = parts
-            elif len(parts) == 1:
-                pr_id = parts[0]
-                base_pr = "master"
+                base_branch, fix_branch = parts
+                branch_pairs.append((base_branch, fix_branch))
             else:
                 continue
-            pr_list.append((pr_id, base_pr))
 
-    for pr_id, base_pr in pr_list:
-        print(f"\n处理 PR ID：{pr_id}，基准 PR：{base_pr}")
+    for idx, (base_branch, fix_branch) in enumerate(branch_pairs):
+        print(f"\n处理分支对：基准分支 {base_branch}，修复分支 {fix_branch}")
 
-        # Apollo 仓库副本路径（每个 PR 一个副本）
-        pr_apollo_dir = os.path.join(EXP_DIR, f'apollo_{pr_id}')
-        if os.path.exists(pr_apollo_dir):
-            print(f"Apollo 仓库已存在，跳过复制：{pr_apollo_dir}")
+        # Apollo 仓库副本路径（每个分支对一个副本）
+        repo_dir = os.path.join(EXP_DIR, f'apollo_pair_{idx}')
+        if os.path.exists(repo_dir):
+            print(f"Apollo 仓库已存在，跳过复制：{repo_dir}")
         else:
-            cmd = f"cp -r {APOLLO_REPO_PATH} {pr_apollo_dir}"
+            cmd = f"cp -r {APOLLO_REPO_PATH} {repo_dir}"
             ret, output = subprocess.getstatusoutput(cmd)
             if ret != 0:
                 print(f"复制 Apollo 仓库失败：{output}")
                 continue
-            print(f"已复制 Apollo 仓库到：{pr_apollo_dir}")
+            print(f"已复制 Apollo 仓库到：{repo_dir}")
 
         # 输出文件夹
-        output_dir = os.path.join(OUTPUTS_DIR, pr_id)
+        output_dir = os.path.join(OUTPUTS_DIR, f'pair_{idx}')
         os.makedirs(output_dir, exist_ok=True)
 
         # 设置 Apollo 路径
-        apollo_path = pr_apollo_dir
+        apollo_path = repo_dir
         if not os.path.exists(apollo_path):
             print(f"Apollo 目录未找到：{apollo_path}")
             continue
 
         # 切换到 Apollo 目录
         os.chdir(apollo_path)
+
+        # 获取当前用户
+        DOCKER_USER = getpass.getuser()
+        DEV_CONTAINER_PREFIX = 'apollo_dev_'
+        DEV_CONTAINER = f"{DEV_CONTAINER_PREFIX}{DOCKER_USER}"
 
         # 定义两种状态的输出目录：before 和 after
         output_states = {
@@ -123,60 +140,33 @@ def main():
                 # 即使清理失败，也尝试继续
 
             if state == "before":
-                # 切换到基准 PR
-                if base_pr == "master":
-                    cmd = f"git checkout master"
-                else:
-                    # 获取并检出基准 PR
-                    cmd = f"git fetch origin pull/{base_pr}/head:pr-{base_pr}"
-                    output_file = os.path.join(state_output_dir, 'fetch_base_pr.txt')
-                    ret = run_command_realtime(cmd, cwd=apollo_path,
-                                               output_file=output_file,
-                                               show_output=SHOW_OUTPUT)
-                    if ret != 0:
-                        print(f"获取基准 PR {base_pr} 失败，跳过")
-                        break
-
-                    cmd = f"git checkout pr-{base_pr}"
-                output_file = os.path.join(state_output_dir, 'checkout_base_pr.txt')
-                ret = run_command_realtime(cmd, cwd=apollo_path,
-                                           output_file=output_file,
-                                           show_output=SHOW_OUTPUT)
-                if ret != 0:
-                    print(f"切换到基准 PR {base_pr} 失败，跳过")
-                    break
-                print(f"已切换到基准 PR {base_pr}")
+                branch = base_branch
             else:
-                # 应用当前 PR 到基准 PR 上
-                cmd = f"git fetch origin pull/{pr_id}/head:pr-{pr_id}"
-                output_file = os.path.join(state_output_dir, 'fetch_current_pr.txt')
+                branch = fix_branch
+
+            # 检查本地是否已有该分支，如果没有则尝试获取
+            local_branches = subprocess.getoutput("git branch").split()
+            if branch not in local_branches:
+                # 尝试从远程获取分支
+                cmd = f"git fetch origin {branch}:{branch}"
+                output_file = os.path.join(state_output_dir, f'fetch_{branch}.txt')
                 ret = run_command_realtime(cmd, cwd=apollo_path,
                                            output_file=output_file,
                                            show_output=SHOW_OUTPUT)
                 if ret != 0:
-                    print(f"获取 PR {pr_id} 失败，跳过")
+                    print(f"获取分支 {branch} 失败，跳过")
                     break
 
-                # 创建一个新的分支，基于基准 PR
-                cmd = f"git checkout -b test-pr-{pr_id} pr-{base_pr}" if base_pr != "master" else f"git checkout -b test-pr-{pr_id} master"
-                output_file = os.path.join(state_output_dir, 'checkout_new_branch.txt')
-                ret = run_command_realtime(cmd, cwd=apollo_path,
-                                           output_file=output_file,
-                                           show_output=SHOW_OUTPUT)
-                if ret != 0:
-                    print(f"创建新分支失败，跳过")
-                    break
-
-                # 合并当前 PR
-                cmd = f"git merge pr-{pr_id} --no-commit --no-ff"
-                output_file = os.path.join(state_output_dir, 'merge_pr.txt')
-                ret = run_command_realtime(cmd, cwd=apollo_path,
-                                           output_file=output_file,
-                                           show_output=SHOW_OUTPUT)
-                if ret != 0:
-                    print(f"合并 PR {pr_id} 失败，跳过")
-                    break
-                print(f"已合并 PR {pr_id}")
+            # 切换到指定分支
+            cmd = f"git checkout {branch}"
+            output_file = os.path.join(state_output_dir, f'checkout_{branch}.txt')
+            ret = run_command_realtime(cmd, cwd=apollo_path,
+                                       output_file=output_file,
+                                       show_output=SHOW_OUTPUT)
+            if ret != 0:
+                print(f"切换到分支 {branch} 失败，跳过")
+                break
+            print(f"已切换到分支 {branch}")
 
             # 获取当前的提交 ID
             cmd = "git rev-parse HEAD"
@@ -184,60 +174,45 @@ def main():
             commit_id = commit_id.strip()
             print(f"当前提交 ID：{commit_id}")
 
-            # 构建 Docker 容器
-            cmd = "bash docker/scripts/dev_start.sh"
-            output_file = os.path.join(state_output_dir, 'dev_start_output.txt')
-            ret = run_command_realtime(cmd, cwd=apollo_path,
-                                       output_file=output_file,
-                                       show_output=SHOW_OUTPUT)
-            if ret != 0:
-                print("Docker 容器构建失败，跳过该状态")
+            # 检查 Docker 容器是否存在
+            if not container_exists(DEV_CONTAINER):
+                print(f"Docker 容器 {DEV_CONTAINER} 不存在，尝试构建容器")
+                ret = start_docker_container(apollo_path, state_output_dir, SHOW_OUTPUT)
+                if ret != 0:
+                    print("Docker 容器构建失败，跳过该状态")
+                    continue
+                else:
+                    print("Docker 容器构建成功")
             else:
-                print("Docker 容器构建成功")
+                print(f"使用已有的 Docker 容器 {DEV_CONTAINER}")
 
-                # 获取当前用户
-                DOCKER_USER = 'mrb2'
-                DEV_CONTAINER_PREFIX = 'apollo_dev_'
-                DEV_CONTAINER = f"{DEV_CONTAINER_PREFIX}{DOCKER_USER}"
-
-                # 在容器内执行命令
-                commands = [
-                    ("./apollo.sh test", 'test_output.txt'),
-                    ("./apollo.sh coverage", 'coverage_output.txt'),
-                    ("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt')
-                ]
-                for idx, (cmd, output_filename) in enumerate(commands):
-                    output_file = os.path.join(state_output_dir, output_filename)
-                    # 修改 docker exec 命令，单独执行每个命令
-                    docker_cmd = (
-                        f"docker exec "
-                        f"-u {DOCKER_USER} "
-                        f"-e HISTFILE=/apollo/.dev_bash_hist "
-                        f"-i {DEV_CONTAINER} "
-                        f"/bin/bash -c 'cd /apollo && {cmd}'"
-                    )
-                    ret = run_command_realtime(docker_cmd, output_file=output_file, show_output=SHOW_OUTPUT)
-                    if ret != 0:
-                        print(f"命令执行失败：{cmd}，已保存输出")
-                        # 如果不是最后一个命令，继续执行后续命令
-                        if idx < len(commands) -1:
-                            print("继续执行后续命令")
-                            continue
-                        else:
-                            print("最后一个命令执行失败，退出")
+            # 在容器内执行命令
+            commands = [
+                ("./apollo.sh test", 'test_output.txt'),
+                ("./apollo.sh coverage", 'coverage_output.txt'),
+                ("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt')
+            ]
+            for idx_cmd, (cmd, output_filename) in enumerate(commands):
+                output_file = os.path.join(state_output_dir, output_filename)
+                # 修改 docker exec 命令，单独执行每个命令
+                docker_cmd = (
+                    f"docker exec "
+                    f"-u {DOCKER_USER} "
+                    f"-e HISTFILE=/apollo/.dev_bash_hist "
+                    f"-i {DEV_CONTAINER} "
+                    f"/bin/bash -c 'cd /apollo && {cmd}'"
+                )
+                ret = run_command_realtime(docker_cmd, output_file=output_file, show_output=SHOW_OUTPUT)
+                if ret != 0:
+                    print(f"命令执行失败：{cmd}，已保存输出")
+                    # 如果不是最后一个命令，继续执行后续命令
+                    if idx_cmd < len(commands) -1:
+                        print("继续执行后续命令")
+                        continue
                     else:
-                        print(f"命令执行成功：{cmd}")
-
-                # # 停止并删除 Docker 容器，避免影响下一次构建
-                # cmd = f"bash docker/scripts/dev_stop.sh"
-                # output_file = os.path.join(state_output_dir, 'dev_stop_output.txt')
-                # ret = run_command_realtime(cmd, cwd=apollo_path,
-                #                            output_file=output_file,
-                #                            show_output=SHOW_OUTPUT)
-                # if ret != 0:
-                #     print("Docker 容器停止失败")
-                # else:
-                #     print("Docker 容器已停止")
+                        print("最后一个命令执行失败，退出")
+                else:
+                    print(f"命令执行成功：{cmd}")
 
             # 执行 ./apollo.sh clean
             cmd = "./apollo.sh clean"
@@ -250,18 +225,20 @@ def main():
             else:
                 print("已清理编译生成的文件")
 
-            if state == "after":
-                # 删除测试分支，返回到基准 PR
-                cmd = "git checkout " + (f"pr-{base_pr}" if base_pr != "master" else "master")
-                subprocess.getstatusoutput(cmd)
-                cmd = "git branch -D test-pr-" + pr_id
-                subprocess.getstatusoutput(cmd)
-
             print(f"状态 {state} 处理完成\n")
 
-        print(f"PR ID {pr_id} 处理完成\n")
+        # 在完成一个分支对的测试之后，删除 Docker 容器
+        print(f"删除 Docker 容器 {DEV_CONTAINER}")
+        cmd = f"docker rm -f {DEV_CONTAINER}"
+        ret, output = subprocess.getstatusoutput(cmd)
+        if ret != 0:
+            print(f"删除 Docker 容器失败：{output}")
+        else:
+            print(f"Docker 容器 {DEV_CONTAINER} 已删除")
 
-    print("\n所有 PR ID 处理完成")
+        print(f"分支对 {base_branch} 和 {fix_branch} 处理完成\n")
+
+    print("\n所有分支对处理完成")
 
 if __name__ == "__main__":
     main()
