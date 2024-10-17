@@ -3,6 +3,7 @@ import os
 import subprocess
 import sys
 import getpass
+import shutil  # 导入 shutil 模块
 
 def run_command_realtime(command, cwd=None, output_file=None, show_output=True):
     MAX_OUTPUT_LINES = 100
@@ -55,8 +56,17 @@ def start_docker_container(apollo_path, state_output_dir, SHOW_OUTPUT):
 def main():
     EXP_ID = "2024.10.2.1"
     BRANCH_PAIRS_FILE = "branch_pairs.txt"
-    APOLLO_REPO_PATH = "/home/mrb2/experiments/postgraduate_project/apollo/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
+    APOLLO_REPO_PATH = "/home/user/experiments/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
     SHOW_OUTPUT = True
+
+    # 新增配置：是否在测试完成后删除 Apollo 仓库
+    DELETE_REPO_AFTER_TEST = True  # 设置为 True 或 False
+
+    # 新增配置：压缩间隔
+    COMPRESSION_INTERVAL = 1  # 每处理多少个分支对后进行一次压缩
+
+    # 用于保存待压缩的仓库目录
+    repos_to_compress = []
 
     # 获取当前脚本的绝对路径
     script_dir = os.getcwd()
@@ -104,8 +114,13 @@ def main():
                 continue
             print(f"已复制 Apollo 仓库到：{repo_dir}")
 
+        # 输出文件夹名称修改，仅展示前七位
+        base_branch_short = base_branch[:7]
+        fix_branch_short = fix_branch[:7]
+        output_folder_name = f"{base_branch_short}_{fix_branch_short}"
+
         # 输出文件夹
-        output_dir = os.path.join(OUTPUTS_DIR, f'pair_{idx}')
+        output_dir = os.path.join(OUTPUTS_DIR, output_folder_name)
         os.makedirs(output_dir, exist_ok=True)
 
         # 设置 Apollo 路径
@@ -145,38 +160,73 @@ def main():
                 branch = fix_branch
 
             # 检查本地是否已有该分支，如果没有则尝试获取
-            local_branches = subprocess.getoutput("git branch").split()
-            if branch not in local_branches:
-                # 尝试从远程获取分支
-                cmd = f"git fetch origin {branch}:{branch}"
-                output_file = os.path.join(state_output_dir, f'fetch_{branch}.txt')
+            local_refs = subprocess.getoutput("git for-each-ref --format='%(refname:short)'").split()
+            if branch not in local_refs:
+                # 判断 branch 是否为一个提交哈希值
+                if len(branch) == 40 and all(c in '0123456789abcdefABCDEF' for c in branch):
+                    # branch 是一个提交哈希值，直接检出
+                    cmd = f"git checkout {branch}"
+                    output_file = os.path.join(state_output_dir, f'checkout_{branch}.txt')
+                    ret = run_command_realtime(cmd, cwd=apollo_path,
+                                               output_file=output_file,
+                                               show_output=SHOW_OUTPUT)
+                    if ret != 0:
+                        print(f"检出提交 {branch} 失败，跳过")
+                        break
+                    print(f"已检出到提交 {branch}")
+                else:
+                    # 尝试从远程获取分支
+                    cmd = f"git fetch origin {branch}:{branch}"
+                    output_file = os.path.join(state_output_dir, f'fetch_{branch}.txt')
+                    ret = run_command_realtime(cmd, cwd=apollo_path,
+                                               output_file=output_file,
+                                               show_output=SHOW_OUTPUT)
+                    if ret != 0:
+                        print(f"获取分支 {branch} 失败，跳过")
+                        break
+                    # 切换到该分支
+                    cmd = f"git checkout {branch}"
+                    output_file = os.path.join(state_output_dir, f'checkout_{branch}.txt')
+                    ret = run_command_realtime(cmd, cwd=apollo_path,
+                                               output_file=output_file,
+                                               show_output=SHOW_OUTPUT)
+                    if ret != 0:
+                        print(f"切换到分支 {branch} 失败，跳过")
+                        break
+                    print(f"已切换到分支 {branch}")
+            else:
+                # 本地已有该分支或标签，直接检出
+                cmd = f"git checkout {branch}"
+                output_file = os.path.join(state_output_dir, f'checkout_{branch}.txt')
                 ret = run_command_realtime(cmd, cwd=apollo_path,
                                            output_file=output_file,
                                            show_output=SHOW_OUTPUT)
                 if ret != 0:
-                    print(f"获取分支 {branch} 失败，跳过")
+                    print(f"切换到分支 {branch} 失败，跳过")
                     break
+                print(f"已切换到分支 {branch}")
 
-            # 切换到指定分支
-            cmd = f"git checkout {branch}"
-            output_file = os.path.join(state_output_dir, f'checkout_{branch}.txt')
-            ret = run_command_realtime(cmd, cwd=apollo_path,
-                                       output_file=output_file,
-                                       show_output=SHOW_OUTPUT)
-            if ret != 0:
-                print(f"切换到分支 {branch} 失败，跳过")
-                break
-            print(f"已切换到分支 {branch}")
-
-            # 检查是否切换到了正确的分支
+            # 检查当前分支或提交
             cmd = "git rev-parse --abbrev-ref HEAD"
-            ret, current_branch = subprocess.getstatusoutput(cmd)
-            current_branch = current_branch.strip()
-            if current_branch != branch:
-                print(f"错误：当前分支为 {current_branch}，期望分支为 {branch}")
-                break
+            ret, current_ref = subprocess.getstatusoutput(cmd)
+            current_ref = current_ref.strip()
+
+            if current_ref == 'HEAD':
+                # 分离 HEAD 状态，获取当前提交哈希值
+                cmd = "git rev-parse HEAD"
+                ret, current_commit = subprocess.getstatusoutput(cmd)
+                current_commit = current_commit.strip()
+                if current_commit != branch:
+                    print(f"错误：当前提交为 {current_commit}，期望提交为 {branch}")
+                    break
+                else:
+                    print(f"已确认检出到了期望的提交：{current_commit}")
             else:
-                print(f"已确认切换到了正确的分支：{current_branch}")
+                if current_ref != branch:
+                    print(f"错误：当前分支为 {current_ref}，期望分支为 {branch}")
+                    break
+                else:
+                    print(f"已确认切换到了正确的分支：{current_ref}")
 
             # 获取当前的提交 ID
             cmd = "git rev-parse HEAD"
@@ -198,10 +248,10 @@ def main():
 
             # 在容器内执行命令
             commands = [
-                ("./apollo.sh test", 'test_output.txt'),
+                #("./apollo.sh test", 'test_output.txt'),
                 #("./apollo.sh coverage", 'coverage_output.txt'),
                 #("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt'),
-                ("./apollo.sh clean", 'apollo_clean_output.txt')
+                #("./apollo.sh clean", 'apollo_clean_output.txt')
             ]
             for idx_cmd, (cmd, output_filename) in enumerate(commands):
                 output_file = os.path.join(state_output_dir, output_filename)
@@ -235,6 +285,36 @@ def main():
             print(f"删除 Docker 容器失败：{output}")
         else:
             print(f"Docker 容器 {DEV_CONTAINER} 已删除")
+
+        # 新增功能：删除 Apollo 仓库目录或压缩
+        if DELETE_REPO_AFTER_TEST:
+            print(f"删除 Apollo 仓库目录 {repo_dir}")
+            try:
+                shutil.rmtree(repo_dir)
+                print(f"Apollo 仓库目录 {repo_dir} 已删除")
+            except Exception as e:
+                print(f"删除 Apollo 仓库目录失败：{e}")
+        else:
+            # 将仓库目录添加到待压缩列表
+            repos_to_compress.append(repo_dir)
+
+            # 每处理 COMPRESSION_INTERVAL 个分支对，执行一次压缩
+            if (idx + 1) % COMPRESSION_INTERVAL == 0 or (idx + 1) == len(branch_pairs):
+                print(f"开始压缩已完成的 Apollo 仓库，共计 {len(repos_to_compress)} 个")
+                for repo_to_compress in repos_to_compress:
+                    # 压缩仓库目录
+                    archive_name = f"{repo_to_compress}.tar.gz"
+                    print(f"压缩 {repo_to_compress} 到 {archive_name}")
+                    try:
+                        shutil.make_archive(repo_to_compress, 'gztar', root_dir=repo_to_compress)
+                        print(f"压缩完成：{archive_name}")
+                        # 删除原始目录
+                        shutil.rmtree(repo_to_compress)
+                        print(f"已删除原始目录：{repo_to_compress}")
+                    except Exception as e:
+                        print(f"压缩或删除目录时发生错误：{e}")
+                # 清空待压缩列表
+                repos_to_compress = []
 
         print(f"分支对 {base_branch} 和 {fix_branch} 处理完成\n")
 
