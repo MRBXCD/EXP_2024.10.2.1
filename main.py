@@ -5,6 +5,7 @@ import sys
 import getpass
 import shutil  # 导入 shutil 模块
 import csv     # 导入 csv 模块
+from datetime import datetime
 
 def run_command_realtime(command, cwd=None, output_file=None, show_output=True):
     MAX_OUTPUT_LINES = 100
@@ -54,11 +55,31 @@ def start_docker_container(apollo_path, state_output_dir, SHOW_OUTPUT):
                                show_output=SHOW_OUTPUT)
     return ret
 
+def workspace_check(repo_path):
+    file_path = os.path.join(repo_path, 'WORKSPACE')
+
+    if os.path.isfile(file_path):
+        print(f"WORKSPACE file is under {repo_path}")
+        return True
+    else:
+        print(f"Can not fine WORKSPACE file under {repo_path}, run configurator next")
+        return False
+
+
+def experiment_log(log_file, base_branch, fix_branch, start_time, end_time):
+    duration = end_time - start_time
+    current_time = datetime.now()
+    with open(log_file, 'w') as f:
+        f.write(f"Date: {current_time.strftime('%Y-%m-%d')}, Time: {current_time.strftime('%H:%M:%S')},\n ")
+        f.write(f"Base Branch: {base_branch}, Fix Branch: {fix_branch},\n ")
+        f.write(f"Duration: {duration}\n")
+
 def main():
     EXP_ID = "2024.10.2.1"
     INPUT_CSV_FILE = "/home/user/experiments/EXP_2024.10.2.1/branch_pairs.csv"  # 修改为 CSV 文件名
     APOLLO_REPO_PATH = "/home/user/experiments/apollo"  # 请将此路径修改为您的实际 Apollo 仓库路径
     SHOW_OUTPUT = True
+    LOG_FILE_NAME = 'experiment_log.txt'
 
     # 新增配置：是否在测试完成后删除 Apollo 仓库
     DELETE_REPO_AFTER_TEST = True  # 设置为 True 或 False
@@ -112,7 +133,20 @@ def main():
     }
 
     for idx, (base_branch, fix_branch, component) in enumerate(branch_pairs):
+        start_time = datetime.now()
         print(f"\n处理分支对：基准提交 {base_branch}，修复提交 {fix_branch}，组件 {component}")
+        # 输出文件夹名称修改，仅展示前七位
+        base_branch_short = base_branch[:7]
+        fix_branch_short = fix_branch[:7]
+        output_folder_name = f"{idx+1}_{base_branch_short}_{fix_branch_short}"
+
+        # 输出文件夹
+        output_dir = os.path.join(OUTPUTS_DIR, output_folder_name)
+        log_path = os.path.join(output_dir, LOG_FILE_NAME)
+        if os.path.isfile(log_path):
+            print("Experiment on this pair was conducted already, skip.")
+            continue
+
         component_to_test = error_component[component]
         print(f'\nComponent to test is \033[32m{component_to_test}\033[0m')
         # Apollo 仓库副本路径（每个分支对一个副本）
@@ -127,13 +161,6 @@ def main():
                 continue
             print(f"已复制 Apollo 仓库到：{repo_dir}")
 
-        # 输出文件夹名称修改，仅展示前七位
-        base_branch_short = base_branch[:7]
-        fix_branch_short = fix_branch[:7]
-        output_folder_name = f"{base_branch_short}_{fix_branch_short}"
-
-        # 输出文件夹
-        output_dir = os.path.join(OUTPUTS_DIR, output_folder_name)
         os.makedirs(output_dir, exist_ok=True)
 
         # 设置 Apollo 路径
@@ -223,14 +250,24 @@ def main():
             else:
                 print(f"使用已有的 Docker 容器 {DEV_CONTAINER}")
 
-            # 在容器内执行命令
-            commands = [
-                (f'bazel test //modules/{component_to_test}/...', 'test_output.txt'),
-                #("./apollo.sh test", 'test_output.txt'),
-                #("./apollo.sh coverage", 'coverage_output.txt'),
-                #("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt'),
-                ("./apollo.sh clean", 'apollo_clean_output.txt')
-            ]
+            if workspace_check(repo_dir):
+                # 在容器内执行命令
+                commands = [
+                    (f'bazel test //modules/{component_to_test}/...', 'test_output.txt'),
+                    #("./apollo.sh test", 'test_output.txt'),
+                    #("./apollo.sh coverage", 'coverage_output.txt'),
+                    #("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt'),
+                    ("./apollo.sh clean", 'apollo_clean_output.txt')
+                ]
+            else:
+                commands = [
+                    ('./apollo.sh config', 'config_output.txt'),
+                    (f'bazel test //modules/{component_to_test}/...', 'test_output.txt'),
+                    #("./apollo.sh test", 'test_output.txt'),
+                    #("./apollo.sh coverage", 'coverage_output.txt'),
+                    #("genhtml -o coverage_report $(bazel info output_path)/_coverage/_coverage_report.dat", 'genhtml_output.txt'),
+                    ("./apollo.sh clean", 'apollo_clean_output.txt')
+                ]
             for idx_cmd, (cmd, output_filename) in enumerate(commands):
                 output_file = os.path.join(state_output_dir, output_filename)
                 # 修改 docker exec 命令，单独执行每个命令
@@ -299,7 +336,10 @@ def main():
                         print(f"压缩或删除目录时发生错误：{e}")
                 # 清空待压缩列表
                 repos_to_compress = []
-
+        
+        end_time = datetime.now()
+        # # 调用 experiment_log 函数，记录日志
+        experiment_log(log_path, base_branch, fix_branch, start_time, end_time)
         print(f"分支对 {base_branch} 和 {fix_branch} 处理完成\n")
 
     print("\n所有分支对处理完成")

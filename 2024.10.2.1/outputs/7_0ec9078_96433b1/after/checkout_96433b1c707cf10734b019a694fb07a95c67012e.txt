@@ -1,0 +1,2 @@
+Previous HEAD position was 0ec90787bb Planning: moved the common variable frame_ to the base class and removed the duplicated variable planner_dispatcher_ from the NaviPlanning class.
+HEAD is now at 96433b1c70 Control: address the backward driving stuck issue due to rough calib table

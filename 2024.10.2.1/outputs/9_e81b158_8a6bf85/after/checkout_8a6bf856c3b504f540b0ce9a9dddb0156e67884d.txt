@@ -1,0 +1,2 @@
+Previous HEAD position was e81b158e25 Tool: update data extract: (1) encapsulate sensor message parser as salable classes. (2) generate timestamps file for each sensor message (3) re-factor the whole tool
+HEAD is now at 8a6bf856c3 planning: fix open space fallback shaking issue

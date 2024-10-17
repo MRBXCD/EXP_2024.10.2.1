@@ -1,0 +1,2 @@
+Previous HEAD position was 60339d3119 docker: use fixed version of ffmpeg library
+HEAD is now at acf790c72e fix the missing update of lane_change_type

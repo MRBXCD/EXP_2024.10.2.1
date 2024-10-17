@@ -1,0 +1,58 @@
+Updated Git hooks.
+Git LFS initialized.
+fetch: Fetching reference HEAD
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20190307_1502 ...
+dev-x86_64-20190307_1502: Pulling from apolloauto/apollo
+Digest: sha256:63b9d8e212a1bd0fc7b28a51adb34c08fdf21331d4d9348a598a661ac2ab7500
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20190307_1502
+docker.io/apolloauto/apollo:dev-x86_64-20190307_1502
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+0f3eac9e8e6d863c3e5f14e8059775586d1ee29433c4127a55b2ed63736038f2
+map_volume-sunnyvale_hdl128-latest: Pulling from apolloauto/apollo
+Digest: sha256:7281c978a2818e90398ee70602298e8d00b5898cc2acc1b4ef3b9f3a90bd821b
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_hdl128-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_hdl128-latest
+19448fabb4ba6ac612d3acc7ec039901894d63279a746d1f4778cd62b84f7971
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+3fdc831a2bea41dc8297c63bafb949028c184e77df3b56c447fd4d79d9e5dd52
+map_volume-sunnyvale_with_two_offices-latest: Pulling from apolloauto/apollo
+Digest: sha256:5893abb847f7cffb5dd310f9bac307d5c2537797c247eb1c609f36de1943bdf5
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+e44e37c7f9c5494435eeeddf95c91349e7221c28a4791f7a3b5d8ff2030f793b
+map_volume-san_mateo-latest: Pulling from apolloauto/apollo
+Digest: sha256:12b04dbfa947f7f06dc5c3b7604be08988c560e850c037a2571998478f0ccf80
+Status: Image is up to date for apolloauto/apollo:map_volume-san_mateo-latest
+docker.io/apolloauto/apollo:map_volume-san_mateo-latest
+eb47812539ef15f1c39cfe15c8df0003c9924728bc06af583721f421987e14f6
+map_volume-san_mateo_hdl64-latest: Pulling from apolloauto/apollo
+Digest: sha256:615db8160508a36212008d0506768ccf256d565ddaf4a47809e618087cfe6ba0
+Status: Image is up to date for apolloauto/apollo:map_volume-san_mateo_hdl64-latest
+docker.io/apolloauto/apollo:map_volume-san_mateo_hdl64-latest
+66489736e73c7fd058c8043a12fb5474f0694159ebdcb7b1428a224fc840959d
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+da1b70ed240c3860968520631fa4a6820dea9f05928b3fabf0d7787d0b200e01
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+02c218e4793f5915a089e02b2b77a2664ce10bd03322450dc56d8c667fb2e3e5
+[[34m[1mINFO[0m] Starting docker container "apollo_dev_user" ...
+aaa1103d1ebee30bd771af7970d915a620cb8185a094227414495538fca232e2
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

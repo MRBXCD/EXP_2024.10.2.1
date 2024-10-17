@@ -1,0 +1,390 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling --host_jvm_args=-XX:-UseParallelGC
+.
+____(10-17 16:22:57.269) Loading package: modules/prediction/predictor/junction
+____(10-17 16:22:57.930) Loading package: @bazel_tools//tools/cpp
+____(10-17 16:22:57.977) Loading package: @bazel_tools//tools/jdk
+____(10-17 16:22:58.098) Loading package: @local_config_xcode//
+____(10-17 16:22:58.176) Loading package: @local_jdk//
+____(10-17 16:22:59.130) Loading package: @local_config_cc//
+____(10-17 16:22:59.720) Loading complete.  Analyzing...
+____(10-17 16:23:00.070) Loading package: @bazel_tools//tools/python
+____(10-17 16:23:00.102) Loading package: cyber
+____(10-17 16:23:00.132) Loading package: tools/defaults
+____(10-17 16:23:00.173) Loading package: @glog//
+____(10-17 16:23:00.204) Loading package: cyber/task
+____(10-17 16:23:00.234) Loading package: cyber/record
+____(10-17 16:23:00.268) Loading package: cyber/blocker
+____(10-17 16:23:00.353) Loading package: @fastrtps//
+____(10-17 16:23:00.512) Loading package: modules/common/math/qp_solver
+____(10-17 16:23:00.546) Loading package: third_party/json
+____(10-17 16:23:00.807) Loading package: @bazel_tools//tools/genrule
+____(10-17 16:23:01.006) Loading package: @gtest//
+____(10-17 16:23:01.454) Loading package: @eigen//
+____(10-17 16:23:01.629) Loading package: modules/common/vehicle_state/proto
+____(10-17 16:23:01.969) Loading package: @qpOASES//
+____(10-17 16:23:02.087) Loading package: @tinyxml2//
+____(10-17 16:23:02.660) Cloning https://github.com/google/styleguide.git: remote: Enumerating objects (0 / 0)
+____(10-17 16:23:02.709) Cloning https://github.com/google/styleguide.git: remote: Counting objects (631 / 760)
+____(10-17 16:23:02.747) Cloning https://github.com/google/styleguide.git: Receiving objects (0 / 1650)
+____(10-17 16:23:02.803) Cloning https://github.com/google/styleguide.git: Receiving objects (22 / 1650)
+____(10-17 16:23:02.849) Cloning https://github.com/google/styleguide.git: Receiving objects (29 / 1650)
+____(10-17 16:23:02.890) Loading package: modules/dreamview/proto
+____(10-17 16:23:02.921) Cloning https://github.com/google/styleguide.git: Receiving objects (65 / 1650)
+____(10-17 16:23:02.951) Cloning https://github.com/google/styleguide.git: Receiving objects (117 / 1650)
+____(10-17 16:23:02.981) Cloning https://github.com/google/styleguide.git: Receiving objects (215 / 1650)
+____(10-17 16:23:03.011) Cloning https://github.com/google/styleguide.git: Receiving objects (331 / 1650)
+____(10-17 16:23:03.041) Cloning https://github.com/google/styleguide.git: Receiving objects (473 / 1650)
+____(10-17 16:23:03.100) Cloning https://github.com/google/styleguide.git: Receiving objects (591 / 1650)
+____(10-17 16:23:03.130) Cloning https://github.com/google/styleguide.git: Receiving objects (605 / 1650)
+____(10-17 16:23:03.162) Cloning https://github.com/google/styleguide.git: Receiving objects (714 / 1650)
+____(10-17 16:23:03.192) Cloning https://github.com/google/styleguide.git: Receiving objects (1089 / 1650)
+____(10-17 16:23:03.226) Cloning https://github.com/google/styleguide.git: Receiving objects (1404 / 1650)
+____(10-17 16:23:03.257) Cloning https://github.com/google/styleguide.git: Receiving objects (1439 / 1650)
+____(10-17 16:23:03.287) Cloning https://github.com/google/styleguide.git: Receiving objects (1520 / 1650)
+____(10-17 16:23:03.317) Cloning https://github.com/google/styleguide.git: Resolving deltas (1 / 984)
+____(10-17 16:23:03.347) Cloning https://github.com/google/styleguide.git: Resolving deltas (43 / 984)
+____(10-17 16:23:03.377) Cloning https://github.com/google/styleguide.git: Resolving deltas (129 / 984)
+____(10-17 16:23:03.407) Cloning https://github.com/google/styleguide.git: Resolving deltas (165 / 984)
+____(10-17 16:23:03.437) Cloning https://github.com/google/styleguide.git: Resolving deltas (210 / 984)
+____(10-17 16:23:03.467) Cloning https://github.com/google/styleguide.git: Resolving deltas (245 / 984)
+____(10-17 16:23:03.497) Cloning https://github.com/google/styleguide.git: Resolving deltas (449 / 984)
+____(10-17 16:23:03.527) Cloning https://github.com/google/styleguide.git: Resolving deltas (772 / 984)
+____(10-17 16:23:03.557) Cloning https://github.com/google/styleguide.git: Resolving deltas (797 / 984)
+____(10-17 16:23:03.587) Cloning https://github.com/google/styleguide.git: Resolving deltas (816 / 984)
+____(10-17 16:23:03.617) Cloning https://github.com/google/styleguide.git: Resolving deltas (834 / 984)
+____(10-17 16:23:03.647) Cloning https://github.com/google/styleguide.git: Resolving deltas (855 / 984)
+____(10-17 16:23:03.677) Cloning https://github.com/google/styleguide.git: Resolving deltas (880 / 984)
+____(10-17 16:23:03.708) Cloning https://github.com/google/styleguide.git: Resolving deltas (893 / 984)
+____(10-17 16:23:03.738) Cloning https://github.com/google/styleguide.git: Resolving deltas (937 / 984)
+____(10-17 16:23:03.768) Cloning https://github.com/google/styleguide.git: Resolving deltas (972 / 984)
+____(10-17 16:23:03.859) Cloning https://github.com/google/styleguide.git: Updating references (0 / 8)
+____(10-17 16:23:04.018) Loading package: @google_styleguide//
+____(10-17 16:23:04.352) Found 70 targets and 118 test targets...
+____(10-17 16:23:04.432) Building...
+____(10-17 16:23:05.076) [0 / 96] Expanding template modules/prediction/container/obstacles/obstacle_clusters_cpplint
+____(10-17 16:23:05.248) [20 / 210] Writing file external/com_google_protobuf/libprotoc_lib.a-2.params [for host]
+____(10-17 16:23:05.342) [40 / 413] Compiling external/gtest/googletest/src/gtest-typed-test.cc
+____(10-17 16:23:05.377) [41 / 458] Compiling modules/prediction/common/prediction_system_gflags.cc
+____(10-17 16:23:05.410) [43 / 504] Writing file modules/common/proto/libdrive_state_proto_lib.so-2.params
+____(10-17 16:23:05.980) [67 / 526] Compiling external/proj4/src/pj_gridlist.c
+____(10-17 16:23:06.120) [78 / 526] Compiling external/proj4/src/PJ_wink1.c
+____(10-17 16:23:07.046) [171 / 526] Compiling external/proj4/src/nad_init.c
+____(10-17 16:23:07.209) [253 / 710] Compiling external/proj4/src/aasincos.c
+____(10-17 16:23:07.270) [283 / 786] Writing file cyber/timer/libtimer_task.so-2.params
+____(10-17 16:23:07.300) [297 / 837] Writing file modules/routing/proto/librouting_proto_lib.so-2.params
+____(10-17 16:23:07.378) [344 / 968] Writing file cyber/time/libduration.so-2.params
+____(10-17 16:23:07.428) [348 / 968] Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]
+____(10-17 16:23:07.482) [348 / 971] Writing file cyber/node/libnode.so-2.params
+____(10-17 16:23:07.514) [354 / 982] Compiling external/com_google_protobuf/src/google/protobuf/stubs/statusor.cc [for host]
+____(10-17 16:23:09.819) [383 / 982] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/type_info.cc [for host]
+____(10-17 16:23:13.685) [423 / 982] Compiling external/com_google_protobuf/src/google/protobuf/compiler/ruby/ruby_generator.cc [for host]
+____(10-17 16:23:21.241) [483 / 982] Compiling external/com_google_protobuf/src/google/protobuf/compiler/javanano/javanano_field.cc [for host]
+____(10-17 16:23:24.632) [544 / 1,089] Compiling external/com_google_protobuf/src/google/protobuf/generated_message_util.cc
+____(10-17 16:23:24.928) [551 / 1,113] Compiling external/com_google_protobuf/src/google/protobuf/extension_set.cc
+____(10-17 16:23:25.120) [556 / 1,124] Compiling cyber/service_discovery/communication/participant_listener.cc
+____(10-17 16:23:25.706) [573 / 1,178] Compiling cyber/transport/shm/segment.cc
+____(10-17 16:23:27.683) [620 / 1,219] Linking cyber/service_discovery/libparticipant_listener.so
+____(10-17 16:23:27.780) [636 / 1,246] Symlinking virtual headers for @qpOASES//:qpOASES
+____(10-17 16:23:27.810) [647 / 1,257] Symlinking virtual headers for @qpOASES//:qpOASES
+____(10-17 16:23:27.992) [686 / 1,276] Compiling external/qpOASES/src/Indexlist.cpp
+____(10-17 16:23:28.054) [695 / 1,276] Compiling external/qpOASES/src/LAPACKReplacement.cpp
+____(10-17 16:23:28.118) [699 / 1,276] Compiling external/qpOASES/src/Utils.cpp
+____(10-17 16:23:28.248) [708 / 1,276] Linking external/com_google_protobuf/libprotobuf.a [for host]
+____(10-17 16:23:28.470) [720 / 1,276] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/json_stream_parser.cc
+____(10-17 16:23:29.394) [736 / 1,276] Generating C++ proto_library //modules/common/proto:error_code_proto_lib
+____(10-17 16:23:29.786) [745 / 1,276] Generating C++ proto_library //cyber/proto:component_conf_proto
+____(10-17 16:23:30.661) [773 / 1,276] Compiling cyber/logger/logger_util.cc
+____(10-17 16:23:32.086) [823 / 1,276] Generating C++ proto_library //cyber/proto:role_attributes_proto
+____(10-17 16:23:32.897) [852 / 1,276] Compiling cyber/scheduler/processor_context.cc
+____(10-17 16:23:33.054) [858 / 1,276] Compiling cyber/scheduler/policy/choreography_context.cc
+____(10-17 16:23:33.186) [862 / 1,276] Compiling cyber/scheduler/policy/classic_context.cc
+____(10-17 16:23:34.507) [910 / 1,276] Compiling cyber/service_discovery/specific_manager/service_manager.cc
+____(10-17 16:23:34.711) [916 / 1,276] Compiling cyber/service_discovery/specific_manager/node_manager.cc
+____(10-17 16:23:34.984) [925 / 1,276] Compiling cyber/parameter/parameter_server.cc
+____(10-17 16:23:36.442) [947 / 1,276] Compiling cyber/component/timer_component.cc
+____(10-17 16:23:37.426) [969 / 1,276] Compiling modules/common/filters/digital_filter.cc
+____(10-17 16:23:41.429) [1,051 / 1,276] Compiling modules/map/proto/map_yield_sign.pb.cc
+____(10-17 16:23:41.595) [1,055 / 1,276] Linking modules/localization/proto/liblocalization_proto_lib.so
+____(10-17 16:23:42.928) [1,080 / 1,276] Compiling modules/prediction/proto/feature.pb.cc
+____(10-17 16:23:49.510) [1,162 / 1,276] Compiling modules/prediction/container/obstacles/obstacle_clusters.cc
+____(10-17 16:23:54.538) [1,218 / 1,304] Generating C++ proto_library //modules/planning/proto:qp_spline_path_config_proto_lib
+____(10-17 16:23:54.853) [1,240 / 1,328] Compiling modules/prediction/evaluator/vehicle/cruise_mlp_evaluator.cc
+____(10-17 16:23:55.661) [1,267 / 1,356] Compiling modules/prediction/predictor/sequence/sequence_predictor.cc
+____(10-17 16:23:59.208) [1,313 / 1,407] Compiling modules/prediction/container/adc_trajectory/adc_trajectory_container.cc
+____(10-17 16:24:01.602) [1,341 / 1,435] Linking modules/prediction/predictor/free_move/libfree_move_predictor.so
+____(10-17 16:24:04.032) [1,384 / 1,476] Writing file modules/planning/proto/libwaypoint_sampler_config_proto_lib.so-2.params
+____(10-17 16:24:04.250) [1,392 / 1,488] Compiling modules/prediction/evaluator/vehicle/cost_evaluator.cc
+____(10-17 16:24:04.545) [1,404 / 1,501] Compiling modules/prediction/predictor/predictor_manager.cc
+____(10-17 16:24:05.337) [1,410 / 1,501] Compiling modules/prediction/prediction_component_test.cc
+____(10-17 16:24:05.443) [1,418 / 1,512] Compiling modules/prediction/common/validation_checker.cc
+____(10-17 16:24:06.333) [1,427 / 1,520] Compiling modules/planning/proto/planning_internal.pb.cc
+____(10-17 16:24:07.389) [1,461 / 1,554] Writing file modules/prediction/libprediction_component.so-2.params
+____(10-17 16:24:07.471) [1,468 / 1,562] Compiling modules/prediction/scenario/scenario_manager_test.cc
+____(10-17 16:24:07.762) [1,472 / 1,562] Linking modules/prediction/scenario/analyzer/libscenario_analyzer.so
+____(10-17 16:24:07.947) [1,484 / 1,569] Writing file modules/prediction/scenario/libscenario_manager.a-2.params
+____(10-17 16:24:08.679) [1,567 / 1,655] Compiling modules/prediction/network/rnn_model/rnn_model_test.cc
+____(10-17 16:24:09.142) [1,571 / 1,657] Creating source manifest for //modules/prediction/network/rnn_model:rnn_model_test
+____(10-17 16:24:09.255) [1,587 / 1,672] Creating source manifest for //modules/prediction/predictor:predictor_manager_test
+____(10-17 16:24:09.380) [1,610 / 1,696] Expanding template modules/prediction/predictor/single_lane/single_lane_predictor_cpplint
+____(10-17 16:24:09.442) [1,617 / 1,705] Compiling modules/prediction/predictor/regional/regional_predictor_test.cc
+____(10-17 16:24:10.805) [1,661 / 1,750] Writing file modules/prediction/predictor/lane_sequence/liblane_sequence_predictor.a-2.params
+____(10-17 16:24:11.478) [1,679 / 1,768] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/prediction/predictor/empty/empty_predictor_test.runfiles
+____(10-17 16:24:11.510) [1,680 / 1,770] Writing file modules/prediction/predictor/empty/empty_predictor_test-2.params
+____(10-17 16:24:11.882) [1,698 / 1,784] Linking modules/prediction/predictor/libpredictor_manager.so
+____(10-17 16:24:12.031) [1,705 / 1,792] Creating source manifest for //modules/prediction/common:validation_checker_test_cpplint
+____(10-17 16:24:13.054) [1,736 / 1,818] Expanding template modules/prediction/common/prediction_util_test_cpplint
+____(10-17 16:24:13.114) [1,751 / 1,834] Writing file modules/prediction/common/prediction_map_test-2.params
+____(10-17 16:24:14.281) [1,811 / 1,893] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/prediction/evaluator/evaluator_manager_test.runfiles
+____(10-17 16:24:14.318) [1,812 / 1,895] Compiling modules/prediction/evaluator/evaluator_manager_test.cc
+____(10-17 16:24:15.035) [1,817 / 1,901] Writing file modules/prediction/evaluator/libevaluator_manager.a-2.params
+____(10-17 16:24:15.535) [1,851 / 1,937] Compiling modules/prediction/evaluator/vehicle/junction_mlp_evaluator_test.cc
+____(10-17 16:24:16.123) [1,868 / 1,956] Writing file modules/prediction/evaluator/vehicle/libcruise_mlp_evaluator.a-2.params
+____(10-17 16:24:16.208) [1,874 / 1,962] Compiling modules/prediction/evaluator/vehicle/cost_evaluator_test.cc
+____(10-17 16:24:17.553) [1,950 / 2,042] Creating source manifest for //modules/prediction/container/pose:pose_container_test
+____(10-17 16:24:19.147) [1,979 / 2,069] Compiling cyber/transport/transport.cc
+____(10-17 16:24:20.870) [2,000 / 2,082] Testing //modules/prediction/container/obstacles:obstacles_container_test_cpplint
+PASS: (10-17 16:24:21.180) //modules/prediction/container/obstacles:obstacles_container_test_cpplint
+PASS: (10-17 16:24:21.299) //modules/prediction/container/obstacles:obstacles_container_cpplint
+PASS: (10-17 16:24:21.381) //modules/prediction/container/pose:pose_container_test_cpplint
+PASS: (10-17 16:24:21.384) //modules/prediction/container/pose:pose_container_cpplint
+PASS: (10-17 16:24:21.452) //modules/prediction/container/adc_trajectory:adc_trajectory_container_test_cpplint
+PASS: (10-17 16:24:21.558) //modules/prediction/container:container_cpplint
+PASS: (10-17 16:24:21.633) //modules/prediction/evaluator/vehicle:cost_evaluator_test_cpplint
+PASS: (10-17 16:24:21.642) //modules/prediction/container:container_manager_test_cpplint
+PASS: (10-17 16:24:21.685) //modules/prediction/container/adc_trajectory:adc_trajectory_container_cpplint
+PASS: (10-17 16:24:21.695) //modules/prediction/container:container_manager_cpplint
+PASS: (10-17 16:24:21.731) //modules/prediction/evaluator/vehicle:cost_evaluator_cpplint
+PASS: (10-17 16:24:21.748) //modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_test_cpplint
+PASS: (10-17 16:24:21.945) //modules/prediction/evaluator/vehicle:junction_mlp_evaluator_test_cpplint
+PASS: (10-17 16:24:21.955) //modules/prediction/evaluator/vehicle:rnn_evaluator_test_cpplint
+PASS: (10-17 16:24:21.998) //modules/prediction/evaluator/vehicle:mlp_evaluator_test_cpplint
+PASS: (10-17 16:24:22.037) //modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_cpplint
+PASS: (10-17 16:24:22.049) //modules/prediction/evaluator:evaluator_cpplint
+PASS: (10-17 16:24:22.156) //modules/prediction/evaluator/vehicle:rnn_evaluator_cpplint
+PASS: (10-17 16:24:22.185) //modules/prediction/evaluator/vehicle:junction_mlp_evaluator_cpplint
+____(10-17 16:24:22.188) [2,034 / 2,108] Testing //modules/prediction/common:junction_analyzer_test_cpplint
+PASS: (10-17 16:24:22.224) //modules/prediction/evaluator:evaluator_manager_test_cpplint
+PASS: (10-17 16:24:22.259) //modules/prediction/evaluator:evaluator_manager_cpplint
+PASS: (10-17 16:24:22.302) //modules/prediction/common:feature_output_test_cpplint
+PASS: (10-17 16:24:22.303) //modules/prediction/common:environment_features_test_cpplint
+PASS: (10-17 16:24:22.332) //modules/prediction/evaluator/vehicle:mlp_evaluator_cpplint
+____(10-17 16:24:22.335) [2,040 / 2,114] Testing //modules/prediction/common:prediction_util_test_cpplint
+PASS: (10-17 16:24:22.378) //modules/prediction/common:environment_features_cpplint
+PASS: (10-17 16:24:22.432) //modules/prediction/common:junction_analyzer_test_cpplint
+PASS: (10-17 16:24:22.435) //modules/prediction/common:feature_output_cpplint
+PASS: (10-17 16:24:22.468) //modules/prediction/common:kml_map_based_test_cpplint
+PASS: (10-17 16:24:22.589) //modules/prediction/common:prediction_util_test_cpplint
+PASS: (10-17 16:24:22.626) //modules/prediction/common:junction_analyzer_cpplint
+PASS: (10-17 16:24:22.700) //modules/prediction/common:prediction_map_test_cpplint
+PASS: (10-17 16:24:22.709) //modules/prediction/common:validation_checker_test_cpplint
+PASS: (10-17 16:24:22.793) //modules/prediction/common:validation_checker_cpplint
+PASS: (10-17 16:24:22.808) //modules/prediction/common:road_graph_test_cpplint
+PASS: (10-17 16:24:22.824) //modules/prediction/predictor/junction:junction_predictor_test_cpplint
+PASS: (10-17 16:24:22.841) //modules/prediction/common:prediction_gflags_cpplint
+PASS: (10-17 16:24:22.842) //modules/prediction/common:road_graph_cpplint
+PASS: (10-17 16:24:22.902) //modules/prediction/common:prediction_util_cpplint
+PASS: (10-17 16:24:22.934) //modules/prediction/predictor/empty:empty_predictor_cpplint
+PASS: (10-17 16:24:22.965) //modules/prediction/predictor/empty:empty_predictor_test_cpplint
+PASS: (10-17 16:24:23.010) //modules/prediction/predictor/free_move:free_move_predictor_test_cpplint
+PASS: (10-17 16:24:23.042) //modules/prediction/predictor/junction:junction_predictor_cpplint
+PASS: (10-17 16:24:23.140) //modules/prediction/predictor/lane_sequence:lane_sequence_predictor_test_cpplint
+PASS: (10-17 16:24:23.170) //modules/prediction/predictor/free_move:free_move_predictor_cpplint
+PASS: (10-17 16:24:23.198) //modules/prediction/predictor/move_sequence:move_sequence_predictor_test_cpplint
+PASS: (10-17 16:24:23.256) //modules/prediction/predictor/lane_sequence:lane_sequence_predictor_cpplint
+PASS: (10-17 16:24:23.275) //modules/prediction/predictor/single_lane:single_lane_predictor_test_cpplint
+PASS: (10-17 16:24:23.334) //modules/prediction/predictor/regional:regional_predictor_test_cpplint
+PASS: (10-17 16:24:23.359) //modules/prediction/predictor/sequence:sequence_predictor_test_cpplint
+PASS: (10-17 16:24:23.409) //modules/prediction/predictor/single_lane:single_lane_predictor_cpplint
+PASS: (10-17 16:24:23.426) //modules/prediction/predictor/sequence:sequence_predictor_cpplint
+PASS: (10-17 16:24:23.500) //modules/prediction/predictor:predictor_manager_test_cpplint
+PASS: (10-17 16:24:23.572) //modules/prediction/network/rnn_model:rnn_model_test_cpplint
+PASS: (10-17 16:24:23.599) //modules/prediction/predictor:predictor_cpplint
+____(10-17 16:24:23.603) [2,076 / 2,148] Testing //modules/prediction/scenario/scenario_features:cruise_scenario_features_cpplint
+PASS: (10-17 16:24:23.604) //modules/prediction/predictor/move_sequence:move_sequence_predictor_cpplint
+PASS: (10-17 16:24:23.639) //modules/prediction/common:prediction_map_cpplint
+PASS: (10-17 16:24:23.641) //modules/prediction/predictor:predictor_manager_cpplint
+PASS: (10-17 16:24:23.650) //modules/prediction/predictor/regional:regional_predictor_cpplint
+PASS: (10-17 16:24:23.655) //modules/prediction/network:net_layer_test_cpplint
+PASS: (10-17 16:24:23.662) //modules/prediction/network/rnn_model:rnn_model_cpplint
+PASS: (10-17 16:24:23.725) //modules/prediction/network/cruise_model:cruise_model_cpplint
+PASS: (10-17 16:24:23.735) //modules/prediction/network:net_util_test_cpplint
+PASS: (10-17 16:24:23.786) //modules/prediction/scenario/analyzer:scenario_analyzer_cpplint
+PASS: (10-17 16:24:23.798) //modules/prediction/scenario/analyzer:scenario_analyzer_test_cpplint
+PASS: (10-17 16:24:23.807) //modules/prediction/scenario/scenario_features:cruise_scenario_features_test_cpplint
+PASS: (10-17 16:24:23.843) //modules/prediction/network:net_model_cpplint
+PASS: (10-17 16:24:23.869) //modules/prediction/network:net_util_cpplint
+PASS: (10-17 16:24:23.923) //modules/prediction/scenario/feature_extractor:feature_extractor_test_cpplint
+PASS: (10-17 16:24:23.932) //modules/prediction/scenario/scenario_features:cruise_scenario_features_cpplint
+PASS: (10-17 16:24:23.942) //modules/prediction/scenario/scenario_features:scenario_features_cpplint
+PASS: (10-17 16:24:23.944) //modules/prediction/scenario/scenario_features:junction_scenario_features_cpplint
+PASS: (10-17 16:24:23.969) //modules/prediction/scenario:scenario_manager_test_cpplint
+PASS: (10-17 16:24:23.985) //modules/prediction:prediction_component_test_cpplint
+PASS: (10-17 16:24:24.055) //modules/prediction/scenario/feature_extractor:feature_extractor_cpplint
+PASS: (10-17 16:24:24.058) //modules/prediction/util:data_extraction_cpplint
+PASS: (10-17 16:24:24.157) //modules/prediction/scenario:scenario_manager_cpplint
+PASS: (10-17 16:24:24.196) //modules/prediction/container/obstacles:obstacle_clusters_test_cpplint
+PASS: (10-17 16:24:24.215) //modules/prediction:prediction_component_lib_cpplint
+PASS: (10-17 16:24:24.252) //modules/prediction/container/obstacles:obstacle_test_cpplint
+PASS: (10-17 16:24:24.331) //modules/prediction/network:net_layer_cpplint
+PASS: (10-17 16:24:24.410) //modules/prediction/container/obstacles:obstacle_clusters_cpplint
+PASS: (10-17 16:24:24.850) //modules/prediction/container/obstacles:obstacle_cpplint
+____(10-17 16:24:44.825) [2,134 / 2,171] Linking modules/prediction/container/obstacles/obstacles_container_test
+PASS: (10-17 16:24:45.524) //modules/prediction/common:environment_features_test
+PASS: (10-17 16:24:45.671) //modules/prediction/container/pose:pose_container_test
+PASS: (10-17 16:24:45.799) //modules/prediction/common:feature_output_test
+PASS: (10-17 16:24:46.217) //modules/prediction/container/obstacles:obstacles_container_test
+PASS: (10-17 16:24:46.335) //modules/prediction/evaluator/vehicle:rnn_evaluator_test
+PASS: (10-17 16:24:46.503) //modules/prediction/common:road_graph_test
+PASS: (10-17 16:24:46.779) //modules/prediction/evaluator/vehicle:junction_mlp_evaluator_test
+PASS: (10-17 16:24:46.974) //modules/prediction/container/adc_trajectory:adc_trajectory_container_test
+PASS: (10-17 16:24:47.004) //modules/prediction/common:junction_analyzer_test
+PASS: (10-17 16:24:47.098) //modules/prediction/container:container_manager_test
+PASS: (10-17 16:24:47.175) //modules/prediction/common:validation_checker_test
+PASS: (10-17 16:24:47.191) //modules/prediction/common:prediction_util_test
+PASS: (10-17 16:24:47.578) //modules/prediction/common:prediction_map_test
+PASS: (10-17 16:24:47.987) //modules/prediction/evaluator/vehicle:mlp_evaluator_test
+PASS: (10-17 16:24:48.369) //modules/prediction/evaluator:evaluator_manager_test
+PASS: (10-17 16:24:48.381) //modules/prediction/evaluator/vehicle:cost_evaluator_test
+PASS: (10-17 16:24:48.435) //modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_test
+PASS: (10-17 16:24:48.635) //modules/prediction/predictor/junction:junction_predictor_test
+____(10-17 16:24:48.672) [2,173 / 2,192] Testing //modules/prediction/predictor/lane_sequence:lane_sequence_predictor_test
+PASS: (10-17 16:24:48.992) //modules/prediction/predictor/free_move:free_move_predictor_test
+PASS: (10-17 16:24:48.996) //modules/prediction/predictor/empty:empty_predictor_test
+PASS: (10-17 16:24:49.396) //modules/prediction/predictor/lane_sequence:lane_sequence_predictor_test
+PASS: (10-17 16:24:49.471) //modules/prediction/predictor/sequence:sequence_predictor_test
+PASS: (10-17 16:24:49.502) //modules/prediction/predictor/move_sequence:move_sequence_predictor_test
+PASS: (10-17 16:24:49.594) //modules/prediction/network:net_layer_test
+PASS: (10-17 16:24:49.831) //modules/prediction/network/rnn_model:rnn_model_test
+PASS: (10-17 16:24:49.882) //modules/prediction/predictor/regional:regional_predictor_test
+PASS: (10-17 16:24:49.965) //modules/prediction/predictor/single_lane:single_lane_predictor_test
+PASS: (10-17 16:24:50.027) //modules/prediction/network:net_util_test
+PASS: (10-17 16:24:50.518) //modules/prediction/scenario/scenario_features:cruise_scenario_features_test
+PASS: (10-17 16:24:50.536) //modules/prediction/predictor:predictor_manager_test
+PASS: (10-17 16:24:50.636) //modules/prediction/scenario/analyzer:scenario_analyzer_test
+PASS: (10-17 16:24:50.678) //modules/prediction/scenario/feature_extractor:feature_extractor_test
+PASS: (10-17 16:24:50.986) //modules/prediction/scenario:scenario_manager_test
+PASS: (10-17 16:24:51.528) //modules/prediction/container/obstacles:obstacle_clusters_test
+____(10-17 16:24:51.621) [2,205 / 2,207] Testing //modules/prediction:prediction_component_test
+PASS: (10-17 16:24:51.622) //modules/prediction/container/obstacles:obstacle_test
+PASS: (10-17 16:24:52.120) //modules/prediction:prediction_component_test
+____(10-17 16:24:52.166) Elapsed time: 116.434s, Critical Path: 57.98s
+//modules/prediction/common:environment_features_cpplint                 PASSED in 0.4s
+//modules/prediction/common:environment_features_test                    PASSED in 0.2s
+//modules/prediction/common:environment_features_test_cpplint            PASSED in 0.3s
+//modules/prediction/common:feature_output_cpplint                       PASSED in 0.4s
+//modules/prediction/common:feature_output_test                          PASSED in 0.3s
+//modules/prediction/common:feature_output_test_cpplint                  PASSED in 0.2s
+//modules/prediction/common:junction_analyzer_cpplint                    PASSED in 0.5s
+//modules/prediction/common:junction_analyzer_test                       PASSED in 0.4s
+//modules/prediction/common:junction_analyzer_test_cpplint               PASSED in 0.2s
+//modules/prediction/common:kml_map_based_test_cpplint                   PASSED in 0.2s
+//modules/prediction/common:prediction_gflags_cpplint                    PASSED in 0.6s
+//modules/prediction/common:prediction_map_cpplint                       PASSED in 1.3s
+//modules/prediction/common:prediction_map_test                          PASSED in 0.5s
+//modules/prediction/common:prediction_map_test_cpplint                  PASSED in 0.4s
+//modules/prediction/common:prediction_util_cpplint                      PASSED in 0.6s
+//modules/prediction/common:prediction_util_test                         PASSED in 0.4s
+//modules/prediction/common:prediction_util_test_cpplint                 PASSED in 0.3s
+//modules/prediction/common:road_graph_cpplint                           PASSED in 0.5s
+//modules/prediction/common:road_graph_test                              PASSED in 0.5s
+//modules/prediction/common:road_graph_test_cpplint                      PASSED in 0.4s
+//modules/prediction/common:validation_checker_cpplint                   PASSED in 0.4s
+//modules/prediction/common:validation_checker_test                      PASSED in 0.3s
+//modules/prediction/common:validation_checker_test_cpplint              PASSED in 0.2s
+//modules/prediction/container/adc_trajectory:adc_trajectory_container_cpplint PASSED in 0.5s
+//modules/prediction/container/adc_trajectory:adc_trajectory_container_test PASSED in 0.6s
+//modules/prediction/container/adc_trajectory:adc_trajectory_container_test_cpplint PASSED in 0.3s
+//modules/prediction/container:container_cpplint                         PASSED in 0.4s
+//modules/prediction/container:container_manager_cpplint                 PASSED in 0.4s
+//modules/prediction/container:container_manager_test                    PASSED in 0.6s
+//modules/prediction/container:container_manager_test_cpplint            PASSED in 0.3s
+//modules/prediction/container/obstacles:obstacle_clusters_cpplint       PASSED in 0.6s
+//modules/prediction/container/obstacles:obstacle_clusters_test          PASSED in 0.4s
+//modules/prediction/container/obstacles:obstacle_clusters_test_cpplint  PASSED in 0.2s
+//modules/prediction/container/obstacles:obstacle_cpplint                PASSED in 1.0s
+//modules/prediction/container/obstacles:obstacle_test                   PASSED in 0.6s
+//modules/prediction/container/obstacles:obstacle_test_cpplint           PASSED in 0.3s
+//modules/prediction/container/obstacles:obstacles_container_cpplint     PASSED in 0.4s
+//modules/prediction/container/obstacles:obstacles_container_test        PASSED in 0.5s
+//modules/prediction/container/obstacles:obstacles_container_test_cpplint PASSED in 0.3s
+//modules/prediction/container/pose:pose_container_cpplint               PASSED in 0.3s
+//modules/prediction/container/pose:pose_container_test                  PASSED in 0.3s
+//modules/prediction/container/pose:pose_container_test_cpplint          PASSED in 0.3s
+//modules/prediction/evaluator:evaluator_cpplint                         PASSED in 0.3s
+//modules/prediction/evaluator:evaluator_manager_cpplint                 PASSED in 0.4s
+//modules/prediction/evaluator:evaluator_manager_test                    PASSED in 0.9s
+//modules/prediction/evaluator:evaluator_manager_test_cpplint            PASSED in 0.3s
+//modules/prediction/evaluator/vehicle:cost_evaluator_cpplint            PASSED in 0.3s
+//modules/prediction/evaluator/vehicle:cost_evaluator_test               PASSED in 0.7s
+//modules/prediction/evaluator/vehicle:cost_evaluator_test_cpplint       PASSED in 0.2s
+//modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_cpplint      PASSED in 0.6s
+//modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_test         PASSED in 0.7s
+//modules/prediction/evaluator/vehicle:cruise_mlp_evaluator_test_cpplint PASSED in 0.3s
+//modules/prediction/evaluator/vehicle:junction_mlp_evaluator_cpplint    PASSED in 0.6s
+//modules/prediction/evaluator/vehicle:junction_mlp_evaluator_test       PASSED in 0.6s
+//modules/prediction/evaluator/vehicle:junction_mlp_evaluator_test_cpplint PASSED in 0.3s
+//modules/prediction/evaluator/vehicle:mlp_evaluator_cpplint             PASSED in 0.7s
+//modules/prediction/evaluator/vehicle:mlp_evaluator_test                PASSED in 0.6s
+//modules/prediction/evaluator/vehicle:mlp_evaluator_test_cpplint        PASSED in 0.3s
+//modules/prediction/evaluator/vehicle:rnn_evaluator_cpplint             PASSED in 0.5s
+//modules/prediction/evaluator/vehicle:rnn_evaluator_test                PASSED in 0.6s
+//modules/prediction/evaluator/vehicle:rnn_evaluator_test_cpplint        PASSED in 0.2s
+//modules/prediction/network/cruise_model:cruise_model_cpplint           PASSED in 0.5s
+//modules/prediction/network:net_layer_cpplint                           PASSED in 1.0s
+//modules/prediction/network:net_layer_test                              PASSED in 0.2s
+//modules/prediction/network:net_layer_test_cpplint                      PASSED in 0.3s
+//modules/prediction/network:net_model_cpplint                           PASSED in 0.5s
+//modules/prediction/network:net_util_cpplint                            PASSED in 0.5s
+//modules/prediction/network:net_util_test                               PASSED in 0.2s
+//modules/prediction/network:net_util_test_cpplint                       PASSED in 0.3s
+//modules/prediction/network/rnn_model:rnn_model_cpplint                 PASSED in 0.4s
+//modules/prediction/network/rnn_model:rnn_model_test                    PASSED in 0.5s
+//modules/prediction/network/rnn_model:rnn_model_test_cpplint            PASSED in 0.3s
+//modules/prediction:prediction_component_lib_cpplint                    PASSED in 0.5s
+//modules/prediction:prediction_component_test                           PASSED in 0.5s
+//modules/prediction:prediction_component_test_cpplint                   PASSED in 0.2s
+//modules/prediction/predictor/empty:empty_predictor_cpplint             PASSED in 0.3s
+//modules/prediction/predictor/empty:empty_predictor_test                PASSED in 0.6s
+//modules/prediction/predictor/empty:empty_predictor_test_cpplint        PASSED in 0.3s
+//modules/prediction/predictor/free_move:free_move_predictor_cpplint     PASSED in 0.5s
+//modules/prediction/predictor/free_move:free_move_predictor_test        PASSED in 0.7s
+//modules/prediction/predictor/free_move:free_move_predictor_test_cpplint PASSED in 0.3s
+//modules/prediction/predictor/junction:junction_predictor_cpplint       PASSED in 0.5s
+//modules/prediction/predictor/junction:junction_predictor_test          PASSED in 0.6s
+//modules/prediction/predictor/junction:junction_predictor_test_cpplint  PASSED in 0.2s
+//modules/prediction/predictor/lane_sequence:lane_sequence_predictor_cpplint PASSED in 0.5s
+//modules/prediction/predictor/lane_sequence:lane_sequence_predictor_test PASSED in 0.7s
+//modules/prediction/predictor/lane_sequence:lane_sequence_predictor_test_cpplint PASSED in 0.3s
+//modules/prediction/predictor/move_sequence:move_sequence_predictor_cpplint PASSED in 0.8s
+//modules/prediction/predictor/move_sequence:move_sequence_predictor_test PASSED in 0.7s
+//modules/prediction/predictor/move_sequence:move_sequence_predictor_test_cpplint PASSED in 0.4s
+//modules/prediction/predictor:predictor_cpplint                         PASSED in 0.6s
+//modules/prediction/predictor:predictor_manager_cpplint                 PASSED in 0.5s
+//modules/prediction/predictor:predictor_manager_test                    PASSED in 0.9s
+//modules/prediction/predictor:predictor_manager_test_cpplint            PASSED in 0.3s
+//modules/prediction/predictor/regional:regional_predictor_cpplint       PASSED in 0.7s
+//modules/prediction/predictor/regional:regional_predictor_test          PASSED in 0.7s
+//modules/prediction/predictor/regional:regional_predictor_test_cpplint  PASSED in 0.4s
+//modules/prediction/predictor/sequence:sequence_predictor_cpplint       PASSED in 0.6s
+//modules/prediction/predictor/sequence:sequence_predictor_test          PASSED in 0.6s
+//modules/prediction/predictor/sequence:sequence_predictor_test_cpplint  PASSED in 0.5s
+//modules/prediction/predictor/single_lane:single_lane_predictor_cpplint PASSED in 0.4s
+//modules/prediction/predictor/single_lane:single_lane_predictor_test    PASSED in 0.7s
+//modules/prediction/predictor/single_lane:single_lane_predictor_test_cpplint PASSED in 0.3s
+//modules/prediction/scenario/analyzer:scenario_analyzer_cpplint         PASSED in 0.3s
+//modules/prediction/scenario/analyzer:scenario_analyzer_test            PASSED in 0.4s
+//modules/prediction/scenario/analyzer:scenario_analyzer_test_cpplint    PASSED in 0.2s
+//modules/prediction/scenario/feature_extractor:feature_extractor_cpplint PASSED in 0.4s
+//modules/prediction/scenario/feature_extractor:feature_extractor_test   PASSED in 0.5s
+//modules/prediction/scenario/feature_extractor:feature_extractor_test_cpplint PASSED in 0.3s
+//modules/prediction/scenario/scenario_features:cruise_scenario_features_cpplint PASSED in 0.3s
+//modules/prediction/scenario/scenario_features:cruise_scenario_features_test PASSED in 0.4s
+//modules/prediction/scenario/scenario_features:cruise_scenario_features_test_cpplint PASSED in 0.2s
+//modules/prediction/scenario/scenario_features:junction_scenario_features_cpplint PASSED in 0.3s
+//modules/prediction/scenario/scenario_features:scenario_features_cpplint PASSED in 0.3s
+//modules/prediction/scenario:scenario_manager_cpplint                   PASSED in 0.5s
+//modules/prediction/scenario:scenario_manager_test                      PASSED in 0.5s
+//modules/prediction/scenario:scenario_manager_test_cpplint              PASSED in 0.2s
+//modules/prediction/util:data_extraction_cpplint                        PASSED in 0.3s
+
+Executed 118 out of 118 tests: 118 tests pass.

@@ -1,0 +1,4 @@
+fetch: Fetching reference HEAD
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20190128_1800 ...
+Error response from daemon: manifest for apolloauto/apollo:dev-x86_64-20190128_1800 not found: manifest unknown: manifest unknown
+[[0;31mERROR[0m] Failed to pull docker image.

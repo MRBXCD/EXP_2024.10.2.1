@@ -1,0 +1,2 @@
+Previous HEAD position was 8f29d72df0 Planning : change speed upper limit for san mateo
+HEAD is now at a48263265d planning: fix unprotected right-turn by (1) fix the clear check condition in CREEP task; (2) add a clear counter for perception fault tolerance

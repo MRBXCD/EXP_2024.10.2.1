@@ -1,0 +1,2 @@
+Previous HEAD position was dc2c8fadee Planning: rename interface for piecewise_jerk_problem
+HEAD is now at d81ccc4dea Planning: fix a bug with side-pass path trimming issue; fix a bug with optimizer failure code.

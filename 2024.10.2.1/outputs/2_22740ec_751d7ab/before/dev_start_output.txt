@@ -1,0 +1,127 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20190604_1720 ...
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+dev-x86_64-20190604_1720: Pulling from apolloauto/apollo
+Digest: sha256:048dae8a1b38d30aabfe719dfd15cfa76d3238730d40e9215708259d6096fb08
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20190604_1720
+docker.io/apolloauto/apollo:dev-x86_64-20190604_1720
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+e834d2b20689af3650354d1b4e15e5e4f7e7943a290bc19f010591ad50efae2f
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+8c96df13e3f1711a9b7df4598e09639194d9defc5213eb3154bbb3d29525d2cb
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+map_volume-sunnyvale_with_two_offices-latest: Pulling from apolloauto/apollo
+Digest: sha256:5893abb847f7cffb5dd310f9bac307d5c2537797c247eb1c609f36de1943bdf5
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+78abbab69feb07d61f22d2dc76d2812d15d53477de6e878c902270238d432956
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+map_volume-san_mateo-latest: Pulling from apolloauto/apollo
+Digest: sha256:12b04dbfa947f7f06dc5c3b7604be08988c560e850c037a2571998478f0ccf80
+Status: Image is up to date for apolloauto/apollo:map_volume-san_mateo-latest
+docker.io/apolloauto/apollo:map_volume-san_mateo-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+b2acc32e5c59120ff9d003adcdb507e0694f00c68a0eb042ec1e796492bc4342
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+7b9ec268819254b7bd66aca4c0cb55d1347f73bfe0938c5c595b94835b5d342e
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+d4fd8651af477547483e5e6cb1b772a543c92d8bfd70c7fc896fc86fec2c2779
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+paddlepaddle_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:901f110a4f13501e074f599b2c7d636a7584d290f59ef50237a7d77e66d025fb
+Status: Image is up to date for apolloauto/apollo:paddlepaddle_volume-x86_64-latest
+docker.io/apolloauto/apollo:paddlepaddle_volume-x86_64-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+d63acbe17fe99a76e8c0dd5d19cdd4ea58b8eed5de16cb344165fb2d32497bb4
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+local_third_party_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:b844c40ab0af0733ce69c38b220a8b14f752bd834f63343392ce8508b98b546b
+Status: Image is up to date for apolloauto/apollo:local_third_party_volume-x86_64-latest
+docker.io/apolloauto/apollo:local_third_party_volume-x86_64-latest
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+58cb1f9ccba9ec8877b861df362ea6883a45eb3b796b121ac828044c3b57a280
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+[[34m[1mINFO[0m] Starting docker container "apollo_dev_user" ...
+++ local_volumes
+++ volumes='-v /home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_1:/apollo              -v /home/user/.cache:/home/user/.cache'
+++ case "$(uname -s)" in
++++ uname -s
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+++ volumes='-v /home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_1:/apollo              -v /home/user/.cache:/home/user/.cache -v /dev:/dev                                 -v /media:/media                                 -v /tmp/.X11-unix:/tmp/.X11-unix:rw                                 -v /etc/localtime:/etc/localtime:ro                                 -v /usr/src:/usr/src                                 -v /lib/modules:/lib/modules'
+++ echo '-v /home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_1:/apollo              -v /home/user/.cache:/home/user/.cache -v /dev:/dev                                 -v /media:/media                                 -v /tmp/.X11-unix:/tmp/.X11-unix:rw                                 -v /etc/localtime:/etc/localtime:ro                                 -v /usr/src:/usr/src                                 -v /lib/modules:/lib/modules'
++ nvidia-docker run -it -d --privileged --name apollo_dev_user --volumes-from apollo_map_volume-sunnyvale_big_loop_user --volumes-from apollo_map_volume-sunnyvale_loop_user --volumes-from apollo_map_volume-sunnyvale_with_two_offices_user --volumes-from apollo_map_volume-san_mateo_user --volumes-from apollo_yolo3d_volume_user --volumes-from apollo_localization_volume_user --volumes-from apollo_paddlepaddle_volume_user --volumes-from apollo_local_third_party_volume_user -e DISPLAY=:0 -e DOCKER_USER=user -e USER=user -e DOCKER_USER_ID=1000 -e DOCKER_GRP=user -e DOCKER_GRP_ID=1000 -e DOCKER_IMG=apolloauto/apollo:dev-x86_64-20190604_1720 -e USE_GPU=1 -v /home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_1:/apollo -v /home/user/.cache:/home/user/.cache -v /dev:/dev -v /media:/media -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /etc/localtime:/etc/localtime:ro -v /usr/src:/usr/src -v /lib/modules:/lib/modules --net host -w /apollo --add-host in_dev_docker:127.0.0.1 --add-host e55ff43a-5863-4e19-a42b-8e5ce682ba43:127.0.0.1 --hostname in_dev_docker --shm-size 2G --pid=host -v /dev/null:/dev/raw1394 apolloauto/apollo:dev-x86_64-20190604_1720 /bin/bash
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+7b09426c32b9d9312cc1c60e7af75999495e69c8fb21659873a3cac3806bcd15
++ set +x
+ERROR: ld.so: object 'libcaffe2_gpu.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+ERROR: ld.so: object 'libopencv_core.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

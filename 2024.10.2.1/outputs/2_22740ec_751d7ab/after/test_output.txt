@@ -1,0 +1,192 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling --host_jvm_args=-XX:-UseParallelGC
+____(10-17 14:25:23.150) Loading package: modules/control
+____(10-17 14:25:23.347) Loading package: @bazel_tools//tools/cpp
+____(10-17 14:25:23.384) Loading package: @bazel_tools//tools/jdk
+____(10-17 14:25:23.526) Loading package: @local_jdk//
+____(10-17 14:25:23.979) Loading complete.  Analyzing...
+____(10-17 14:25:24.153) Loading package: tools/defaults
+____(10-17 14:25:24.185) Loading package: @bazel_tools//tools/test
+____(10-17 14:25:24.218) Loading package: @google_styleguide//
+____(10-17 14:25:24.248) Loading package: @gtest//
+____(10-17 14:25:24.279) Loading package: modules/common/data
+____(10-17 14:25:24.317) Loading package: cyber/timer
+____(10-17 14:25:24.347) Loading package: cyber/croutine
+____(10-17 14:25:24.478) Loading package: modules/common/configs/proto
+____(10-17 14:25:24.508) Loading package: @bazel_tools//tools/genrule
+____(10-17 14:25:24.750) Loading package: third_party/json
+____(10-17 14:25:24.880) Loading package: @qpOASES//
+____(10-17 14:25:24.972) Loading package: modules/common/monitor_log/proto
+____(10-17 14:25:25.132) Found 26 targets and 48 test targets...
+____(10-17 14:25:25.166) Building...
+____(10-17 14:25:25.197) [0 / 1] BazelWorkspaceStatusAction stable-status.txt
+____(10-17 14:25:25.230) [12 / 46] Writing file external/com_google_protobuf/protoc-2.params [for host]
+____(10-17 14:25:25.275) [22 / 208] Compiling external/com_google_protobuf/src/google/protobuf/stubs/atomicops_internals_x86_gcc.cc [for host]
+____(10-17 14:25:29.186) [65 / 208] Compiling external/com_google_protobuf/src/google/protobuf/compiler/ruby/ruby_generator.cc [for host]
+____(10-17 14:25:30.988) [81 / 208] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_enum.cc [for host]
+____(10-17 14:25:40.484) [182 / 289] Creating source manifest for //modules/control:libcontrol_component.so
+____(10-17 14:25:40.544) [192 / 320] Compiling external/gtest/googletest/src/gtest-filepath.cc
+____(10-17 14:25:41.928) [216 / 346] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/control/integration_tests/simple_control_test_cpplint.runfiles
+____(10-17 14:25:42.027) [238 / 402] Writing file modules/control/proto/libcontrol_proto_lib.so-2.params
+____(10-17 14:25:42.122) [267 / 441] Creating source manifest for //modules/control/common:pid_BC_controller_test_cpplint
+____(10-17 14:25:42.152) [276 / 454] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/control/common/pid_BC_controller_cpplint.runfiles
+____(10-17 14:25:42.182) [286 / 467] Expanding template modules/control/common/leadlag_controller_cpplint
+____(10-17 14:25:42.214) [294 / 478] Writing file modules/control/common/interpolation_2d_test-2.params
+____(10-17 14:25:42.388) [341 / 549] Writing file cyber/task/libtask_manager.a-2.params
+____(10-17 14:25:42.448) [449 / 835] Writing file modules/map/proto/libmap_proto_lib.a-2.params
+____(10-17 14:25:42.479) [516 / 994] Writing file modules/control/controller/mpc_controller_test-2.params
+PASS: (10-17 14:25:42.776) //modules/control/controller:mpc_controller_test_cpplint
+PASS: (10-17 14:25:42.833) //modules/control/tools:pad_terminal_cpplint
+PASS: (10-17 14:25:42.892) //modules/control/tools:control_tester_cpplint
+PASS: (10-17 14:25:42.958) //modules/control/common:hysteresis_filter_cpplint
+PASS: (10-17 14:25:42.959) //modules/control/common:hysteresis_filter_test_cpplint
+PASS: (10-17 14:25:42.982) //modules/control/common:control_gflags_cpplint
+PASS: (10-17 14:25:43.068) //modules/control/common:interpolation_1d_test_cpplint
+PASS: (10-17 14:25:43.091) //modules/control/common:interpolation_1d_cpplint
+PASS: (10-17 14:25:43.152) //modules/control/common:leadlag_controller_test_cpplint
+PASS: (10-17 14:25:43.170) //modules/control/common:interpolation_2d_test_cpplint
+PASS: (10-17 14:25:43.214) //modules/control/common:pid_IC_controller_test_cpplint
+PASS: (10-17 14:25:43.217) //modules/control/common:interpolation_2d_cpplint
+PASS: (10-17 14:25:43.252) //modules/control/common:pid_BC_controller_test_cpplint
+PASS: (10-17 14:25:43.338) //modules/control/common:pid_BC_controller_cpplint
+PASS: (10-17 14:25:43.357) //modules/control/common:pid_IC_controller_cpplint
+PASS: (10-17 14:25:43.371) //modules/control/integration_tests:mpc_controller_test_cpplint
+____(10-17 14:25:43.403) [583 / 1,120] Writing file cyber/service_discovery/libgraph.so-2.params
+PASS: (10-17 14:25:43.411) //modules/control/integration_tests:relative_position_test_cpplint
+PASS: (10-17 14:25:43.416) //modules/control/common:trajectory_analyzer_test_cpplint
+PASS: (10-17 14:25:43.424) //modules/control/integration_tests:simple_control_test_cpplint
+PASS: (10-17 14:25:43.461) //modules/control/integration_tests:control_test_base_cpplint
+PASS: (10-17 14:25:43.500) //modules/control/controller:mpc_controller_cpplint
+PASS: (10-17 14:25:43.550) //modules/control/common:pid_controller_test_cpplint
+PASS: (10-17 14:25:43.552) //modules/control:control_component_test_cpplint
+PASS: (10-17 14:25:43.587) //modules/control/common:trajectory_analyzer_cpplint
+____(10-17 14:25:43.670) [800 / 1,634] Linking external/com_google_protobuf/libprotoc_lib.a [for host]
+PASS: (10-17 14:25:43.724) //modules/control/controller:controller_interface_cpplint
+PASS: (10-17 14:25:43.799) //modules/control:control_component_lib_cpplint
+PASS: (10-17 14:25:43.904) //modules/control/controller:lon_controller_test_cpplint
+PASS: (10-17 14:25:43.934) //modules/control/common:pid_controller_cpplint
+____(10-17 14:25:43.939) [815 / 1,652] Compiling external/com_google_protobuf/src/google/protobuf/io/tokenizer.cc
+PASS: (10-17 14:25:44.013) //modules/control/common:leadlag_controller_cpplint
+PASS: (10-17 14:25:44.044) //modules/control/controller:controller_agent_cpplint
+PASS: (10-17 14:25:44.233) //modules/control/controller:lon_controller_cpplint
+PASS: (10-17 14:25:44.452) //modules/control/controller:lat_controller_cpplint
+____(10-17 14:25:44.583) [832 / 1,673] Compiling external/com_google_protobuf/src/google/protobuf/io/printer.cc
+____(10-17 14:25:44.921) [849 / 1,686] Linking cyber/transport/libsegment.a
+____(10-17 14:25:45.091) [855 / 1,691] Linking cyber/service_discovery/libparticipant_listener.so
+PASS: (10-17 14:25:45.098) //modules/control/common:hysteresis_filter_test
+____(10-17 14:25:47.937) [932 / 1,764] Compiling external/com_google_protobuf/src/google/protobuf/stubs/stringpiece.cc
+____(10-17 14:25:51.789) [1,030 / 1,838] Compiling cyber/transport/rtps/attributes_filler.cc
+____(10-17 14:25:51.866) [1,034 / 1,838] Compiling cyber/proto/component_conf.pb.cc
+____(10-17 14:25:52.739) [1,061 / 1,838] Generating C++ proto_library //modules/planning/proto:sl_boundary_proto_lib
+____(10-17 14:25:53.728) [1,100 / 1,838] Linking cyber/proto/librole_attributes_proto.a
+____(10-17 14:25:53.759) [1,102 / 1,838] Linking cyber/proto/libcomponent_conf_proto.so
+____(10-17 14:25:53.791) [1,103 / 1,838] Linking cyber/transport/libattributes_filler.so
+____(10-17 14:25:54.290) [1,139 / 1,838] Linking modules/planning/proto/libopen_space_pre_stop_decider_config_proto_lib.so
+____(10-17 14:25:54.658) [1,160 / 1,838] Generating C++ proto_library //modules/planning/proto:fem_pos_deviation_smoother_config_proto_lib
+____(10-17 14:25:55.551) [1,184 / 1,838] Linking modules/planning/proto/libopen_space_roi_decider_config_proto_lib.a
+____(10-17 14:25:55.620) [1,191 / 1,838] Linking modules/planning/proto/libpath_assessment_decider_config_proto_lib.a
+____(10-17 14:25:56.240) [1,240 / 1,838] Compiling modules/map/proto/map_stop_sign.pb.cc
+____(10-17 14:25:56.494) [1,248 / 1,838] Linking modules/planning/proto/libcos_theta_smoother_config_proto_lib.a
+____(10-17 14:25:57.294) [1,264 / 1,838] Linking modules/prediction/proto/libprediction_point_proto_lib.a
+____(10-17 14:25:58.690) [1,292 / 1,838] Compiling cyber/transport/dispatcher/rtps_dispatcher.cc
+____(10-17 14:25:58.931) [1,300 / 1,838] Compiling cyber/croutine/detail/routine_context.cc
+____(10-17 14:25:59.189) [1,308 / 1,838] Linking cyber/proto/libscheduler_conf_proto.so
+____(10-17 14:25:59.675) [1,362 / 1,838] Compiling cyber/scheduler/processor.cc
+____(10-17 14:26:01.267) [1,400 / 1,838] Compiling cyber/transport/transport.cc
+____(10-17 14:26:01.578) [1,410 / 1,838] Linking cyber/scheduler/libchoreography_context.a
+____(10-17 14:26:01.652) [1,420 / 1,838] Compiling cyber/init.cc
+____(10-17 14:26:02.296) [1,431 / 1,838] Compiling cyber/class_loader/utility/class_loader_utility.cc
+____(10-17 14:26:03.499) [1,468 / 1,838] Compiling modules/common/math/line_segment2d.cc
+____(10-17 14:26:03.530) [1,471 / 1,838] Compiling modules/control/common/interpolation_2d.cc
+____(10-17 14:26:03.571) [1,474 / 1,838] Compiling modules/common/math/qp_solver/active_set_qp_solver.cc
+____(10-17 14:26:03.703) [1,478 / 1,838] Compiling modules/common/filters/digital_filter.cc
+____(10-17 14:26:06.178) [1,513 / 1,838] Compiling modules/common/util/util.cc
+____(10-17 14:26:06.536) [1,520 / 1,838] Linking cyber/event/libperf_event_cache.so
+____(10-17 14:26:06.940) [1,536 / 1,838] Linking modules/common/math/liblinear_interpolation.a
+____(10-17 14:26:08.950) [1,583 / 1,838] Compiling modules/common/configs/proto/vehicle_config.pb.cc
+____(10-17 14:26:10.867) [1,608 / 1,838] Linking modules/perception/proto/libperception_proto_lib.a
+____(10-17 14:26:11.100) [1,613 / 1,838] Compiling modules/control/proto/lon_controller_conf.pb.cc
+____(10-17 14:26:11.520) [1,623 / 1,838] Compiling modules/control/common/pid_controller_test.cc
+____(10-17 14:26:12.172) [1,636 / 1,838] Linking modules/prediction/proto/libfeature_proto_lib.a
+____(10-17 14:26:13.227) [1,659 / 1,838] Compiling modules/planning/proto/planning_internal.pb.cc
+____(10-17 14:26:15.052) [1,682 / 1,838] Compiling modules/control/controller/lon_controller.cc
+____(10-17 14:26:18.720) [1,702 / 1,838] Compiling modules/control/integration_tests/simple_control_test.cc
+____(10-17 14:26:18.851) [1,704 / 1,838] Compiling modules/control/control_component_test.cc
+____(10-17 14:26:21.466) [1,728 / 1,844] Linking modules/control/controller/liblon_controller.so
+____(10-17 14:26:22.879) [1,749 / 1,854] Compiling modules/common/math/box2d.cc
+____(10-17 14:26:23.556) [1,753 / 1,854] Linking modules/common/math/libcartesian_frenet_conversion.so
+____(10-17 14:26:23.990) [1,759 / 1,856] Compiling modules/common/math/mpc_solver.cc
+____(10-17 14:26:24.369) [1,764 / 1,857] Linking cyber/transport/libparticipant.a
+PASS: (10-17 14:26:26.392) //modules/control/controller:lat_controller_test_cpplint
+____(10-17 14:26:33.346) [1,845 / 1,869] Linking modules/control/controller/mpc_controller_test
+____(10-17 14:26:34.280) [1,850 / 1,873] Testing //modules/control/common:pid_IC_controller_test
+PASS: (10-17 14:26:34.647) //modules/control/common:interpolation_2d_test
+PASS: (10-17 14:26:34.806) //modules/control/common:leadlag_controller_test
+PASS: (10-17 14:26:34.884) //modules/control/common:pid_IC_controller_test
+PASS: (10-17 14:26:34.966) //modules/control/controller:mpc_controller_test
+PASS: (10-17 14:26:35.201) //modules/control/controller:lat_controller_test
+PASS: (10-17 14:26:35.467) //modules/control/common:pid_BC_controller_test
+PASS: (10-17 14:26:35.542) //modules/control/common:pid_controller_test
+PASS: (10-17 14:26:35.612) //modules/control/common:interpolation_1d_test
+PASS: (10-17 14:26:35.730) //modules/control/controller:lon_controller_test
+PASS: (10-17 14:26:35.842) //modules/control/common:trajectory_analyzer_test
+____(10-17 14:26:48.040) [1,869 / 1,879] Still waiting for 2 jobs to complete:
+      Running (local):
+        Compiling modules/control/control_component_test.cc, 29 s
+        Compiling modules/control/control_component.cc, 28 s
+____(10-17 14:26:54.363) [1,874 / 1,879] Linking modules/control/integration_tests/relative_position_test
+____(10-17 14:26:55.563) [1,878 / 1,882] Testing //modules/control/integration_tests:mpc_controller_test
+PASS: (10-17 14:26:56.275) //modules/control/integration_tests:mpc_controller_test
+PASS: (10-17 14:26:56.347) //modules/control/integration_tests:relative_position_test
+PASS: (10-17 14:26:56.351) //modules/control/integration_tests:simple_control_test
+PASS: (10-17 14:26:58.318) //modules/control:control_component_test
+____(10-17 14:26:58.337) Elapsed time: 95.501s, Critical Path: 53.08s
+//modules/control/common:control_gflags_cpplint                          PASSED in 0.3s
+//modules/control/common:hysteresis_filter_cpplint                       PASSED in 0.3s
+//modules/control/common:hysteresis_filter_test                          PASSED in 0.0s
+//modules/control/common:hysteresis_filter_test_cpplint                  PASSED in 0.2s
+//modules/control/common:interpolation_1d_cpplint                        PASSED in 0.3s
+//modules/control/common:interpolation_1d_test                           PASSED in 0.5s
+//modules/control/common:interpolation_1d_test_cpplint                   PASSED in 0.3s
+//modules/control/common:interpolation_2d_cpplint                        PASSED in 0.4s
+//modules/control/common:interpolation_2d_test                           PASSED in 0.5s
+//modules/control/common:interpolation_2d_test_cpplint                   PASSED in 0.3s
+//modules/control/common:leadlag_controller_cpplint                      PASSED in 0.4s
+//modules/control/common:leadlag_controller_test                         PASSED in 0.4s
+//modules/control/common:leadlag_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/common:pid_BC_controller_cpplint                       PASSED in 0.4s
+//modules/control/common:pid_BC_controller_test                          PASSED in 0.5s
+//modules/control/common:pid_BC_controller_test_cpplint                  PASSED in 0.3s
+//modules/control/common:pid_IC_controller_cpplint                       PASSED in 0.4s
+//modules/control/common:pid_IC_controller_test                          PASSED in 0.6s
+//modules/control/common:pid_IC_controller_test_cpplint                  PASSED in 0.2s
+//modules/control/common:pid_controller_cpplint                          PASSED in 0.4s
+//modules/control/common:pid_controller_test                             PASSED in 0.4s
+//modules/control/common:pid_controller_test_cpplint                     PASSED in 0.3s
+//modules/control/common:trajectory_analyzer_cpplint                     PASSED in 0.5s
+//modules/control/common:trajectory_analyzer_test                        PASSED in 0.6s
+//modules/control/common:trajectory_analyzer_test_cpplint                PASSED in 0.3s
+//modules/control:control_component_lib_cpplint                          PASSED in 0.6s
+//modules/control:control_component_test                                 PASSED in 2.1s
+//modules/control:control_component_test_cpplint                         PASSED in 0.3s
+//modules/control/controller:controller_agent_cpplint                    PASSED in 0.4s
+//modules/control/controller:controller_interface_cpplint                PASSED in 0.3s
+//modules/control/controller:lat_controller_cpplint                      PASSED in 1.0s
+//modules/control/controller:lat_controller_test                         PASSED in 0.9s
+//modules/control/controller:lat_controller_test_cpplint                 PASSED in 0.4s
+//modules/control/controller:lon_controller_cpplint                      PASSED in 0.6s
+//modules/control/controller:lon_controller_test                         PASSED in 0.6s
+//modules/control/controller:lon_controller_test_cpplint                 PASSED in 0.3s
+//modules/control/controller:mpc_controller_cpplint                      PASSED in 1.0s
+//modules/control/controller:mpc_controller_test                         PASSED in 0.7s
+//modules/control/controller:mpc_controller_test_cpplint                 PASSED in 0.3s
+//modules/control/integration_tests:control_test_base_cpplint            PASSED in 0.4s
+//modules/control/integration_tests:mpc_controller_test                  PASSED in 0.7s
+//modules/control/integration_tests:mpc_controller_test_cpplint          PASSED in 0.3s
+//modules/control/integration_tests:relative_position_test               PASSED in 0.9s
+//modules/control/integration_tests:relative_position_test_cpplint       PASSED in 0.3s
+//modules/control/integration_tests:simple_control_test                  PASSED in 0.8s
+//modules/control/integration_tests:simple_control_test_cpplint          PASSED in 0.2s
+//modules/control/tools:control_tester_cpplint                           PASSED in 0.4s
+//modules/control/tools:pad_terminal_cpplint                             PASSED in 0.3s
+
+Executed 48 out of 48 tests: 48 tests pass.

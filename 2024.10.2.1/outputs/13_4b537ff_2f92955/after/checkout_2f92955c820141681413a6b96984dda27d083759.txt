@@ -1,0 +1,2 @@
+Previous HEAD position was 4b537ffb4a planning: temp. fixed lane width mismatch problem
+HEAD is now at 2f92955c82 planning: fixed path bound label comparison in PiecewiseJerkPathOptimizer

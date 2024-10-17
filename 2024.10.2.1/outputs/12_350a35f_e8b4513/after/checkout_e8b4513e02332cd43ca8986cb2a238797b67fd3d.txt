@@ -1,0 +1,2 @@
+Previous HEAD position was 350a35fa24 Planning: minor changes.
+HEAD is now at e8b4513e02 Planning: add fix distance speed fallback and fix a few dependence redundance

@@ -1,0 +1,248 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling --host_jvm_args=-XX:-UseParallelGC
+.
+____(10-17 12:16:34.610) Loading package: modules/localization/conf
+____(10-17 12:16:35.164) Loading package: @bazel_tools//tools/cpp
+____(10-17 12:16:35.205) Loading package: @bazel_tools//tools/jdk
+____(10-17 12:16:35.302) Loading package: @local_config_xcode//
+____(10-17 12:16:35.404) Loading package: @local_jdk//
+____(10-17 12:16:36.163) Loading package: @local_config_cc//
+____(10-17 12:16:36.736) Loading complete.  Analyzing...
+____(10-17 12:16:37.007) Loading package: tools/defaults
+____(10-17 12:16:37.037) Loading package: modules/common/math
+____(10-17 12:16:37.068) Loading package: modules/common/util
+____(10-17 12:16:37.099) Loading package: cyber
+____(10-17 12:16:37.135) Loading package: modules/common/adapters
+____(10-17 12:16:37.169) Loading package: modules/drivers/gnss/proto
+____(10-17 12:16:37.202) Loading package: @google_styleguide//
+____(10-17 12:16:37.241) Loading package: modules/common/configs
+____(10-17 12:16:37.273) Loading package: @pcl//
+____(10-17 12:16:37.304) Loading package: @bazel_tools//tools/coverage
+____(10-17 12:16:37.541) Loading package: cyber/blocker
+____(10-17 12:16:37.571) Loading package: cyber/base
+____(10-17 12:16:37.603) Loading package: cyber/message
+____(10-17 12:16:37.642) Loading package: cyber/node
+____(10-17 12:16:37.693) Loading package: cyber/io
+____(10-17 12:16:37.924) Loading package: @gtest//
+____(10-17 12:16:37.994) Loading package: @yaml_cpp//
+____(10-17 12:16:38.133) Loading package: modules/drivers/canbus/proto
+____(10-17 12:16:38.290) Loading package: modules/common/configs/proto
+____(10-17 12:16:38.326) Loading package: modules/common/math/qp_solver
+____(10-17 12:16:38.400) Loading package: @osqp//
+____(10-17 12:16:38.578) Loading package: @curlpp//
+____(10-17 12:16:38.674) Loading package: @proj4//
+____(10-17 12:16:38.776) Loading package: modules/common/monitor_log/proto
+____(10-17 12:16:38.991) Loading package: @qpOASES//
+____(10-17 12:16:39.308) Found 58 targets and 63 test targets...
+____(10-17 12:16:39.544) Building...
+____(10-17 12:16:40.098) [0 / 72] Symlinking virtual headers for @qpOASES//:qpOASES
+____(10-17 12:16:40.162) [28 / 83] Symlinking virtual headers for @qpOASES//:qpOASES
+____(10-17 12:16:40.193) [36 / 89] Symlinking virtual headers for @qpOASES//:qpOASES
+____(10-17 12:16:40.278) [42 / 90] Compiling external/qpOASES/src/SQProblemSchur.cpp
+____(10-17 12:16:40.342) [42 / 104] Compiling cyber/blocker/blocker_manager.cc
+____(10-17 12:16:40.476) [43 / 118] Compiling modules/common/math/qp_solver/qp_solver_gflags.cc
+____(10-17 12:16:41.709) [78 / 190] Compiling external/com_google_protobuf/src/google/protobuf/reflection_ops.cc
+____(10-17 12:16:42.684) [130 / 351] Writing file cyber/service_discovery/libparticipant_listener.so-2.params
+____(10-17 12:16:43.774) [157 / 397] Compiling external/com_google_protobuf/src/google/protobuf/util/field_mask_util.cc
+____(10-17 12:16:44.106) [163 / 404] Compiling external/gtest/googletest/src/gtest-printers.cc
+____(10-17 12:16:44.359) [181 / 444] Writing file cyber/service_discovery/libmanager.so-2.params
+____(10-17 12:16:44.421) [220 / 567] Writing file modules/localization/proto/libpose_proto_lib.so-2.params
+____(10-17 12:16:44.451) [239 / 625] Writing file cyber/record/librecord_file_reader.so-2.params
+____(10-17 12:16:46.423) [305 / 713] Writing file cyber/proto/libqos_profile_proto.so-2.params
+____(10-17 12:16:46.518) [318 / 727] Compiling external/gtest/googletest/src/gtest.cc
+____(10-17 12:16:47.472) [350 / 776] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc
+____(10-17 12:16:47.602) [354 / 783] Compiling external/qpOASES/src/QProblem.cpp
+____(10-17 12:16:47.634) [355 / 786] Compiling external/com_google_protobuf/src/google/protobuf/stubs/atomicops_internals_x86_gcc.cc
+____(10-17 12:16:47.666) [356 / 787] Compiling external/curlpp/src/curlpp/Form.cpp
+____(10-17 12:16:50.567) [398 / 826] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_enum_field.cc [for host]
+____(10-17 12:16:53.327) [428 / 852] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_message_field_lite.cc [for host]
+____(10-17 12:16:58.114) [487 / 909] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_field.cc [for host]
+____(10-17 12:16:59.906) [510 / 933] Compiling external/com_google_protobuf/src/google/protobuf/generated_message_util.cc [for host]
+____(10-17 12:17:00.690) [528 / 952] Compiling external/com_google_protobuf/src/google/protobuf/duration.pb.cc [for host]
+____(10-17 12:17:03.208) [553 / 976] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/json_stream_parser.cc [for host]
+____(10-17 12:17:05.140) [583 / 1,015] Writing file modules/localization/ndt/ndt_locator/libndt_lidar_locator.so-2.params
+____(10-17 12:17:05.170) [587 / 1,046] Compiling external/yaml_cpp/src/nodeevents.cpp
+____(10-17 12:17:07.501) [650 / 1,160] Expanding template modules/localization/ndt/ndt_locator/ndt_solver_test_cpplint
+____(10-17 12:17:07.531) [655 / 1,167] Writing file modules/localization/ndt/ndt_locator/ndt_solver_test-2.params
+____(10-17 12:17:07.561) [665 / 1,178] Expanding template modules/localization/ndt/ndt_locator/ndt_lidar_locator_cpplint
+____(10-17 12:17:07.594) [674 / 1,207] Writing file modules/localization/msf/libmsf_localization_component_lib.so-2.params
+____(10-17 12:17:07.632) [679 / 1,217] Compiling external/proj4/src/PJ_wag2.c
+____(10-17 12:17:07.820) [701 / 1,236] Compiling external/proj4/src/pj_ell_set.c
+____(10-17 12:17:08.021) [729 / 1,264] Compiling external/proj4/src/pj_utils.c
+____(10-17 12:17:08.051) [736 / 1,271] Compiling external/proj4/src/PJ_cc.c
+____(10-17 12:17:08.302) [776 / 1,311] Compiling external/proj4/src/proj_mdist.c
+____(10-17 12:17:08.400) [796 / 1,331] Compiling external/proj4/src/PJ_mbt_fps.c
+____(10-17 12:17:08.470) [805 / 1,340] Compiling external/proj4/src/pj_gridlist.c
+____(10-17 12:17:08.790) [924 / 1,508] Creating source manifest for //modules/localization/msf/local_map/base_map:localization_msf_local_map_node_index_test
+____(10-17 12:17:08.880) [946 / 1,532] Writing file modules/localization/msf/local_map/lossy_map/localization_msf_lossy_map_config_2d_test-2.params
+____(10-17 12:17:09.082) [1,009 / 1,628] Creating source manifest for //modules/localization/msf/local_tool/map_creation:poses_interpolator_cpplint
+____(10-17 12:17:09.143) [1,018 / 1,641] Expanding template modules/localization/msf/local_tool/map_creation/lossless_map_to_lossy_map_cpplint
+____(10-17 12:17:09.205) [1,035 / 1,664] Writing file modules/localization/msf/local_integ/liblocalization_msf_local_integ.a-2.params
+____(10-17 12:17:09.235) [1,047 / 1,696] Testing //modules/localization/msf/local_tool/local_visualization/offline_visual:offline_local_visualizer_lib_cpplint
+PASS: (10-17 12:17:09.571) //modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_config_test_cpplint
+PASS: (10-17 12:17:09.572) //modules/localization/msf/local_tool/data_extraction:cyber_record_parser_cpplint
+PASS: (10-17 12:17:09.580) //modules/localization/msf/local_tool/local_visualization/offline_visual:offline_local_visualizer_cpplint
+PASS: (10-17 12:17:09.618) //modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_config_2d_test_cpplint
+PASS: (10-17 12:17:09.634) //modules/localization/msf/local_tool/map_creation:poses_interpolator_cpplint
+PASS: (10-17 12:17:09.661) //modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_test_cpplint
+PASS: (10-17 12:17:09.706) //modules/localization/msf/local_tool/data_extraction:compare_poses_cpplint
+PASS: (10-17 12:17:09.726) //modules/localization/msf/local_tool/map_creation:lossless_map_to_lossy_map_cpplint
+PASS: (10-17 12:17:09.824) //modules/localization/msf/local_map/base_map:localization_msf_local_map_node_index_test_cpplint
+PASS: (10-17 12:17:09.842) //modules/localization/msf/local_map/lossless_map:localization_msf_local_map_pool_test_cpplint
+PASS: (10-17 12:17:09.843) //modules/localization/msf/local_map/base_map:localization_msf_local_map_cache_test_cpplint
+PASS: (10-17 12:17:09.868) //modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_config_test_cpplint
+PASS: (10-17 12:17:09.888) //modules/localization/msf/local_tool/map_creation:lossless_map_creator_cpplint
+PASS: (10-17 12:17:09.908) //modules/localization/msf/local_tool/local_visualization/online_visual:online_visualizer_compenont_lib_cpplint
+PASS: (10-17 12:17:09.914) //modules/localization/msf/local_tool/local_visualization/offline_visual:offline_local_visualizer_lib_cpplint
+PASS: (10-17 12:17:09.970) //modules/localization/msf/common/io:localization_msf_velodyne_utility_test_cpplint
+PASS: (10-17 12:17:09.980) //modules/localization/msf/common/util:localization_msf_common_frame_transform_test_cpplint
+PASS: (10-17 12:17:09.987) //modules/localization/msf/local_tool/map_creation/poses_interpolation:poses_interpolation_lib_cpplint
+PASS: (10-17 12:17:10.080) //modules/localization/msf/common/util:localization_msf_common_util_compression_test_cpplint
+PASS: (10-17 12:17:10.082) //modules/localization/msf/local_tool/data_extraction:data_extraction_cpplint
+PASS: (10-17 12:17:10.097) //modules/localization/msf/common/util:localization_msf_common_system_utility_test_cpplint
+PASS: (10-17 12:17:10.125) //modules/localization/msf/common/util:localization_msf_common_util_rect2d_test_cpplint
+PASS: (10-17 12:17:10.200) //modules/localization/msf:msf_localization_test_cpplint
+PASS: (10-17 12:17:10.215) //modules/localization/msf/common/util:localization_msf_common_util_frame_transform_cpplint
+PASS: (10-17 12:17:10.240) //modules/localization/msf/common/util:localization_msf_common_util_system_utility_cpplint
+PASS: (10-17 12:17:10.251) //modules/localization/msf/common/util:localization_msf_common_util_compression_cpplint
+PASS: (10-17 12:17:10.343) //modules/localization/msf/common/io:localization_msf_common_io_cpplint
+PASS: (10-17 12:17:10.373) //modules/localization/ndt/ndt_locator:ndt_lidar_locator_test_cpplint
+PASS: (10-17 12:17:10.403) //modules/localization/ndt/ndt_locator:ndt_solver_test_cpplint
+PASS: (10-17 12:17:10.412) //modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_cpplint
+PASS: (10-17 12:17:10.419) //modules/localization/ndt:ndt_localization_test_cpplint
+PASS: (10-17 12:17:10.456) //modules/localization/ndt:ndt_localization_pose_buffer_test_cpplint
+PASS: (10-17 12:17:10.489) //modules/localization/ndt/map_creation:ndt_map_creator_cpplint
+PASS: (10-17 12:17:10.547) //modules/localization/rtk:rtk_localization_test_cpplint
+PASS: (10-17 12:17:10.684) //modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_cpplint
+PASS: (10-17 12:17:10.712) //modules/localization/common:localization_common_cpplint
+PASS: (10-17 12:17:10.721) //modules/localization/msf:msf_localization_component_lib_cpplint
+PASS: (10-17 12:17:10.874) //modules/localization/msf/local_tool/local_visualization/engine:engine_cpplint
+PASS: (10-17 12:17:11.028) //modules/localization/rtk:rtk_localization_component_lib_cpplint
+PASS: (10-17 12:17:11.086) //modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_cpplint
+PASS: (10-17 12:17:11.247) //modules/localization/ndt:ndt_localization_component_lib_cpplint
+PASS: (10-17 12:17:11.334) //modules/localization/msf/local_map/base_map:localization_msf_base_map_cpplint
+PASS: (10-17 12:17:11.511) //modules/localization/msf/common/util:localization_msf_common_util_cpplint
+PASS: (10-17 12:17:11.804) //modules/localization/ndt/ndt_locator:ndt_lidar_locator_cpplint
+PASS: (10-17 12:17:12.476) //modules/localization/msf/local_integ:localization_msf_local_integ_cpplint
+____(10-17 12:17:15.742) [1,113 / 1,736] Generating C++ proto_library //modules/drivers/gnss/proto:ins_proto_lib
+____(10-17 12:17:15.772) [1,121 / 1,736] Generating C++ proto_library //modules/localization/proto:localization_status_proto_lib
+____(10-17 12:17:17.254) [1,166 / 1,736] Compiling modules/drivers/proto/delphi_esr.pb.cc
+____(10-17 12:17:17.288) [1,170 / 1,736] Compiling modules/drivers/proto/mobileye.pb.cc
+____(10-17 12:17:17.666) [1,183 / 1,736] Linking modules/common/proto/libgeometry_proto_lib.so
+____(10-17 12:17:17.906) [1,203 / 1,736] Compiling modules/drivers/gnss/proto/gnss_status.pb.cc
+____(10-17 12:17:18.326) [1,206 / 1,736] Linking modules/drivers/gnss/proto/libconfig_lib.so
+____(10-17 12:17:18.998) [1,219 / 1,736] Compiling modules/localization/proto/localization_status.pb.cc
+____(10-17 12:17:20.249) [1,250 / 1,736] Compiling modules/common/util/http_client.cc
+____(10-17 12:17:22.479) [1,337 / 1,736] Compiling cyber/scheduler/policy/scheduler_classic.cc
+____(10-17 12:17:22.708) [1,341 / 1,736] Compiling cyber/scheduler/policy/scheduler_choreography.cc
+____(10-17 12:17:23.350) [1,376 / 1,736] Compiling cyber/proto/topology_change.pb.cc
+____(10-17 12:17:23.392) [1,378 / 1,736] Compiling cyber/service_discovery/specific_manager/manager.cc
+____(10-17 12:17:23.733) [1,382 / 1,736] Compiling cyber/service_discovery/role/role.cc
+____(10-17 12:17:24.803) [1,408 / 1,736] Compiling cyber/transport/dispatcher/rtps_dispatcher.cc
+____(10-17 12:17:25.030) [1,413 / 1,736] Linking cyber/proto/libtopology_change_proto.so
+____(10-17 12:17:25.906) [1,441 / 1,736] Linking cyber/io/libpoller.so
+____(10-17 12:17:25.975) [1,445 / 1,736] Compiling cyber/parameter/parameter_server.cc
+____(10-17 12:17:26.490) [1,452 / 1,736] Compiling modules/localization/msf/common/io/velodyne_utility.cc
+____(10-17 12:17:27.690) [1,474 / 1,736] Linking modules/localization/msf/common/util/liblocalization_msf_common_util_frame_transform.so
+____(10-17 12:17:32.027) [1,525 / 1,736] Compiling modules/localization/msf/local_tool/local_visualization/engine/visualization_manager.cc
+____(10-17 12:17:32.539) [1,533 / 1,736] Compiling modules/localization/msf/local_map/base_map/map_cache_test.cc
+____(10-17 12:17:37.621) [1,549 / 1,736] Compiling modules/localization/msf/local_tool/map_creation/lossless_map_to_lossy_map.cc
+____(10-17 12:17:40.103) [1,567 / 1,736] Compiling modules/localization/msf/local_map/base_map/base_map_node.cc
+____(10-17 12:17:40.343) [1,568 / 1,736] Linking modules/localization/msf/common/io/liblocalization_msf_common_io.a
+____(10-17 12:17:46.299) [1,601 / 1,736] Compiling modules/localization/ndt/ndt_localization_test.cc
+____(10-17 12:17:54.163) [1,654 / 1,736] Compiling modules/localization/msf/local_integ/measure_republish_process.cc
+____(10-17 12:17:57.242) [1,660 / 1,736] Compiling modules/localization/msf/local_integ/localization_integ_process.cc
+____(10-17 12:17:57.549) [1,662 / 1,736] Linking modules/localization/msf/local_tool/map_creation/lossless_map_to_lossy_map
+PASS: (10-17 12:18:01.520) //modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_config_test
+PASS: (10-17 12:18:01.908) //modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_config_2d_test
+PASS: (10-17 12:18:02.018) //modules/localization/msf/local_map/base_map:localization_msf_local_map_cache_test
+PASS: (10-17 12:18:03.157) //modules/localization/msf/local_map/base_map:localization_msf_local_map_node_index_test
+PASS: (10-17 12:18:03.400) //modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_config_test
+PASS: (10-17 12:18:03.431) //modules/localization/msf/common/util:localization_msf_common_frame_transform_test
+PASS: (10-17 12:18:03.713) //modules/localization/msf/local_map/lossless_map:localization_msf_local_map_pool_test
+PASS: (10-17 12:18:04.006) //modules/localization/msf/common/util:localization_msf_common_system_utility_test
+PASS: (10-17 12:18:04.405) //modules/localization/msf/common/util:localization_msf_common_util_rect2d_test
+PASS: (10-17 12:18:04.468) //modules/localization/msf/common/util:localization_msf_common_util_compression_test
+PASS: (10-17 12:18:05.945) //modules/localization/msf/common/io:localization_msf_velodyne_utility_test
+PASS: (10-17 12:18:17.624) //modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_test
+____(10-17 12:18:26.860) [1,727 / 1,748] Linking modules/localization/rtk/rtk_localization_test
+____(10-17 12:18:27.524) [1,731 / 1,748] Linking modules/localization/ndt/ndt_locator/ndt_lidar_locator_test
+PASS: (10-17 12:18:27.943) //modules/localization/rtk:rtk_localization_test
+____(10-17 12:18:36.346) [1,740 / 1,751] Linking modules/localization/ndt/libndt_localization_component.so
+____(10-17 12:18:38.423) [1,743 / 1,753] Testing //modules/localization/ndt:ndt_localization_pose_buffer_test
+PASS: (10-17 12:18:39.258) //modules/localization/ndt:ndt_localization_pose_buffer_test
+PASS: (10-17 12:18:39.584) //modules/localization/ndt:ndt_localization_test
+____(10-17 12:18:47.627) [1,749 / 1,753] Linking modules/localization/msf/libmsf_localization_component.so
+PASS: (10-17 12:18:48.988) //modules/localization/msf:msf_localization_test
+____(10-17 12:18:59.373) [1,752 / 1,754] Still waiting for 2 jobs to complete:
+      Running (local):
+        Testing //modules/localization/ndt/ndt_locator:ndt_lidar_locator_test, 29 s
+        Testing //modules/localization/ndt/ndt_locator:ndt_solver_test, 29 s
+PASS: (10-17 12:19:00.763) //modules/localization/ndt/ndt_locator:ndt_lidar_locator_test
+PASS: (10-17 12:19:11.573) //modules/localization/ndt/ndt_locator:ndt_solver_test
+____(10-17 12:19:11.622) Elapsed time: 158.612s, Critical Path: 96.08s
+//modules/localization/common:localization_common_cpplint                PASSED in 0.5s
+//modules/localization/msf/common/io:localization_msf_common_io_cpplint  PASSED in 0.7s
+//modules/localization/msf/common/io:localization_msf_velodyne_utility_test PASSED in 0.8s
+//modules/localization/msf/common/io:localization_msf_velodyne_utility_test_cpplint PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_frame_transform_test PASSED in 0.2s
+//modules/localization/msf/common/util:localization_msf_common_frame_transform_test_cpplint PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_system_utility_test PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_system_utility_test_cpplint PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_util_compression_cpplint PASSED in 0.4s
+//modules/localization/msf/common/util:localization_msf_common_util_compression_test PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_util_compression_test_cpplint PASSED in 0.2s
+//modules/localization/msf/common/util:localization_msf_common_util_cpplint PASSED in 1.7s
+//modules/localization/msf/common/util:localization_msf_common_util_frame_transform_cpplint PASSED in 0.3s
+//modules/localization/msf/common/util:localization_msf_common_util_rect2d_test PASSED in 0.2s
+//modules/localization/msf/common/util:localization_msf_common_util_rect2d_test_cpplint PASSED in 0.2s
+//modules/localization/msf/common/util:localization_msf_common_util_system_utility_cpplint PASSED in 0.3s
+//modules/localization/msf/local_integ:localization_msf_local_integ_cpplint PASSED in 3.0s
+//modules/localization/msf/local_map/base_map:localization_msf_base_map_cpplint PASSED in 1.9s
+//modules/localization/msf/local_map/base_map:localization_msf_local_map_cache_test PASSED in 0.4s
+//modules/localization/msf/local_map/base_map:localization_msf_local_map_cache_test_cpplint PASSED in 0.3s
+//modules/localization/msf/local_map/base_map:localization_msf_local_map_node_index_test PASSED in 0.3s
+//modules/localization/msf/local_map/base_map:localization_msf_local_map_node_index_test_cpplint PASSED in 0.2s
+//modules/localization/msf/local_map/lossless_map:localization_msf_local_map_pool_test PASSED in 0.7s
+//modules/localization/msf/local_map/lossless_map:localization_msf_local_map_pool_test_cpplint PASSED in 0.3s
+//modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_config_test PASSED in 0.5s
+//modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_config_test_cpplint PASSED in 0.2s
+//modules/localization/msf/local_map/lossless_map:localization_msf_lossless_map_cpplint PASSED in 1.4s
+//modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_config_2d_test PASSED in 0.7s
+//modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_config_2d_test_cpplint PASSED in 0.2s
+//modules/localization/msf/local_map/lossy_map:localization_msf_lossy_map_cpplint PASSED in 1.0s
+//modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_config_test PASSED in 0.5s
+//modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_config_test_cpplint PASSED in 0.3s
+//modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_cpplint PASSED in 1.4s
+//modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_test PASSED in 15.6s
+//modules/localization/msf/local_map/ndt_map:localization_msf_ndt_map_test_cpplint PASSED in 0.3s
+//modules/localization/msf/local_tool/data_extraction:compare_poses_cpplint PASSED in 0.4s
+//modules/localization/msf/local_tool/data_extraction:cyber_record_parser_cpplint PASSED in 0.3s
+//modules/localization/msf/local_tool/data_extraction:data_extraction_cpplint PASSED in 0.8s
+//modules/localization/msf/local_tool/local_visualization/engine:engine_cpplint PASSED in 1.6s
+//modules/localization/msf/local_tool/local_visualization/offline_visual:offline_local_visualizer_cpplint PASSED in 0.3s
+//modules/localization/msf/local_tool/local_visualization/offline_visual:offline_local_visualizer_lib_cpplint PASSED in 0.7s
+//modules/localization/msf/local_tool/local_visualization/online_visual:online_visualizer_compenont_lib_cpplint PASSED in 0.6s
+//modules/localization/msf/local_tool/map_creation:lossless_map_creator_cpplint PASSED in 0.5s
+//modules/localization/msf/local_tool/map_creation:lossless_map_to_lossy_map_cpplint PASSED in 0.3s
+//modules/localization/msf/local_tool/map_creation/poses_interpolation:poses_interpolation_lib_cpplint PASSED in 0.5s
+//modules/localization/msf/local_tool/map_creation:poses_interpolator_cpplint PASSED in 0.3s
+//modules/localization/msf:msf_localization_component_lib_cpplint        PASSED in 0.7s
+//modules/localization/msf:msf_localization_test                         PASSED in 0.5s
+//modules/localization/msf:msf_localization_test_cpplint                 PASSED in 0.2s
+//modules/localization/ndt/map_creation:ndt_map_creator_cpplint          PASSED in 0.4s
+//modules/localization/ndt:ndt_localization_component_lib_cpplint        PASSED in 1.1s
+//modules/localization/ndt:ndt_localization_pose_buffer_test             PASSED in 0.8s
+//modules/localization/ndt:ndt_localization_pose_buffer_test_cpplint     PASSED in 0.2s
+//modules/localization/ndt:ndt_localization_test                         PASSED in 1.2s
+//modules/localization/ndt:ndt_localization_test_cpplint                 PASSED in 0.2s
+//modules/localization/ndt/ndt_locator:ndt_lidar_locator_cpplint         PASSED in 1.8s
+//modules/localization/ndt/ndt_locator:ndt_lidar_locator_test            PASSED in 31.3s
+//modules/localization/ndt/ndt_locator:ndt_lidar_locator_test_cpplint    PASSED in 0.3s
+//modules/localization/ndt/ndt_locator:ndt_solver_test                   PASSED in 41.7s
+//modules/localization/ndt/ndt_locator:ndt_solver_test_cpplint           PASSED in 0.3s
+//modules/localization/rtk:rtk_localization_component_lib_cpplint        PASSED in 0.7s
+//modules/localization/rtk:rtk_localization_test                         PASSED in 0.3s
+//modules/localization/rtk:rtk_localization_test_cpplint                 PASSED in 0.3s
+
+Executed 63 out of 63 tests: 63 tests pass.
+There were tests whose specified size is too big. Use the --test_verbose_timeout_warnings command line option to see which ones these are.

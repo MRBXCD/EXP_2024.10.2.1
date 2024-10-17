@@ -1,0 +1,2 @@
+Previous HEAD position was 6271d4bacc data: fix var name style.
+HEAD is now at 35b39c7624 Planning: disable s_curve_speed_smooth to fix errors in control-in-the-loop

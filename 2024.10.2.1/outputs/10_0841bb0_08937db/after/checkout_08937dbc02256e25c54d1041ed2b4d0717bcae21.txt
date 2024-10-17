@@ -1,0 +1,2 @@
+Previous HEAD position was 0841bb06f0 prediction: remove unused bool return.
+HEAD is now at 08937dbc02 planning: open space fallback modification, fallback trajectory's start point issue fixed

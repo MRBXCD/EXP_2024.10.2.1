@@ -1,0 +1,2 @@
+Previous HEAD position was 2573c17f51 Tools: modified calibration script to be useable when vehicle does not start at a brake percentage of 40
+HEAD is now at 2e80a329f4 planning: fix unprotected right-turn by (1) fix the clear check condition in CREEP task; (2) add a clear counter for perception fault tolerence

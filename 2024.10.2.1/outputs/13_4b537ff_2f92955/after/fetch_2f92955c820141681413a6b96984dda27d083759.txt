@@ -1,0 +1,2 @@
+From https://github.com/ApolloAuto/apollo
+ * branch                  2f92955c820141681413a6b96984dda27d083759 -> FETCH_HEAD

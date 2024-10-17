@@ -1,0 +1,2 @@
+Previous HEAD position was a0ba79090d Localization: Bugfix Moved AdapterInit function before MsgCallBack
+HEAD is now at fa9ecc60cf NaviGenerator: Fixed a NaviGenJsonConverter bug and used FileOperator to export file in TrajectorySmoother.

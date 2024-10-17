@@ -1,0 +1,1021 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling --host_jvm_args=-XX:-UseParallelGC
+____(10-17 15:25:58.009) Loading package: modules/planning/math/smoothing_spline
+____(10-17 15:25:58.294) Loading package: @bazel_tools//tools/cpp
+____(10-17 15:25:58.333) Loading package: @bazel_tools//tools/jdk
+____(10-17 15:25:58.363) Loading package: @local_config_xcode//
+____(10-17 15:25:58.477) Loading package: @local_jdk//
+____(10-17 15:25:58.876) Loading complete.  Analyzing...
+____(10-17 15:25:59.273) Loading package: modules/perception/proto
+____(10-17 15:25:59.304) Loading package: @bazel_tools//tools/zip
+____(10-17 15:25:59.335) Loading package: modules/routing/proto
+____(10-17 15:25:59.368) Loading package: @osqp//
+____(10-17 15:25:59.398) Loading package: cyber/time
+____(10-17 15:25:59.430) Loading package: third_party/rss
+____(10-17 15:25:59.465) Loading package: @curlpp//
+____(10-17 15:25:59.496) Loading package: cyber/service
+____(10-17 15:25:59.535) Loading package: cyber/service_discovery
+____(10-17 15:25:59.572) Loading package: @glog//
+____(10-17 15:25:59.643) Loading package: @bazel_tools//tools/genrule
+____(10-17 15:25:59.821) Loading package: modules/drivers/canbus/proto
+____(10-17 15:25:59.958) Loading package: @tinyxml2//
+____(10-17 15:26:00.049) Loading package: modules/dreamview/backend/hmi
+____(10-17 15:26:00.094) Loading package: modules/common/monitor_log/proto
+____(10-17 15:26:00.781) Found 246 targets and 335 test targets...
+____(10-17 15:26:00.847) Building...
+____(10-17 15:26:00.888) [0 / 1] BazelWorkspaceStatusAction stable-status.txt
+____(10-17 15:26:00.918) [11 / 62] Writing file modules/planning/planner/navi/libnavi_planner.so-2.params
+____(10-17 15:26:01.015) [60 / 389] Writing file modules/planning/planner/lattice/liblattice_planner.so-2.params
+____(10-17 15:26:01.050) [64 / 479] Compiling modules/planning/math/finite_element_qp/fem_1d_qp_problem.cc
+____(10-17 15:26:01.084) [66 / 512] Writing file modules/planning/common/path/frenet_frame_path_test-2.params
+____(10-17 15:26:03.669) [163 / 1,033] Writing file cyber/io/libsession.so-2.params
+____(10-17 15:26:03.729) [241 / 1,300] Writing file modules/common/math/libcartesian_frenet_conversion.so-2.params
+____(10-17 15:26:03.789) [322 / 1,550] Writing file modules/dreamview/proto/libhmi_config_proto_lib.so-2.params
+____(10-17 15:26:03.879) [520 / 2,139] Expanding template modules/planning/tuning/speed_model/autotuning_speed_mlp_model_test_cpplint
+____(10-17 15:26:03.942) [547 / 2,184] Creating source manifest for //modules/planning/open_space/constraints_formulation:open_space_ROI_cpplint
+____(10-17 15:26:04.038) [584 / 2,231] Writing file modules/planning/open_space/coarse_trajectory_generator/libhybrid_a_star.a-2.params
+____(10-17 15:26:04.260) [650 / 2,315] Writing file modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_cuda_interface_test-2.params
+____(10-17 15:26:04.376) [683 / 2,355] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/math/curve1d/quintic_polynomial_curve1d_test_cpplint.runfiles
+____(10-17 15:26:04.567) [758 / 2,454] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/math/smoothing_spline/spline_2d_cpplint.runfiles
+____(10-17 15:26:04.597) [769 / 2,469] Writing file modules/planning/math/smoothing_spline/libspline_2d.a-2.params
+____(10-17 15:26:04.692) [805 / 2,513] Expanding template modules/planning/math/smoothing_spline/piecewise_linear_kernel_test_cpplint
+____(10-17 15:26:04.723) [820 / 2,533] Writing file modules/planning/math/smoothing_spline/piecewise_linear_constraint_test-2.params
+____(10-17 15:26:04.974) [1,082 / 2,996] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/reference_line/spiral_reference_line_smoother_test.runfiles
+____(10-17 15:26:05.036) [1,114 / 3,040] Expanding template modules/planning/common/trajectory_stitcher_cpplint
+____(10-17 15:26:05.099) [1,133 / 3,064] Writing file modules/planning/common/speed_profile_generator_test-2.params
+____(10-17 15:26:05.371) [1,175 / 3,120] Writing file modules/planning/common/libopen_space_info.a-2.params
+____(10-17 15:26:05.444) [1,198 / 3,148] Writing file modules/planning/common/indexed_queue_test-2.params
+____(10-17 15:26:05.509) [1,217 / 3,171] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/common/frame_test.runfiles
+____(10-17 15:26:05.570) [1,230 / 3,217] Compiling external/curlpp/src/curlpp/internal/CurlHandle.cpp
+____(10-17 15:26:05.600) [1,232 / 3,221] Compiling external/gtest/googletest/src/gtest-printers.cc
+____(10-17 15:26:05.640) [1,235 / 3,228] Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]
+____(10-17 15:26:05.676) [1,238 / 3,229] Writing file modules/planning/common/trajectory1d/libstanding_still_trajectory1d.a-2.params
+____(10-17 15:26:06.801) [1,260 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/json_stream_parser.cc [for host]
+____(10-17 15:26:11.080) [1,298 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/service.cc [for host]
+____(10-17 15:26:15.157) [1,340 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_string_field.cc [for host]
+____(10-17 15:26:22.425) [1,406 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/stubs/common.cc [for host]
+____(10-17 15:26:25.545) [1,450 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/util/field_mask_util.cc
+____(10-17 15:26:26.027) [1,455 / 3,229] Compiling external/com_google_protobuf/src/google/protobuf/util/time_util.cc
+____(10-17 15:26:28.857) [1,535 / 3,229] Linking modules/planning/math/smoothing_spline/libspline_1d_kernel.so
+____(10-17 15:26:29.199) [1,568 / 3,229] Linking modules/common/math/qp_solver/libqp_solver.so
+____(10-17 15:26:29.316) [1,579 / 3,229] Linking modules/common/math/libangle.so
+____(10-17 15:26:29.571) [1,616 / 3,248] Writing file modules/planning/common/libchange_lane_decider.a-2.params
+____(10-17 15:26:29.843) [1,673 / 3,306] Writing file modules/planning/common/trajectory1d/libpiecewise_acceleration_trajectory1d.a-2.params
+____(10-17 15:26:30.497) [1,760 / 3,344] Compiling external/proj4/src/pj_generic_selftest.c
+____(10-17 15:26:30.660) [1,781 / 3,344] Compiling external/proj4/src/PJ_patterson.c
+____(10-17 15:26:31.240) [1,883 / 3,344] Compiling external/proj4/src/pj_param.c
+____(10-17 15:26:31.330) [1,952 / 3,430] Creating source manifest for //modules/planning/tasks/optimizers/qp_spline_st_speed:qp_spline_st_speed_optimizer_cpplint
+____(10-17 15:26:31.400) [1,982 / 3,458] Writing file modules/planning/tasks/optimizers/dp_st_speed/libdp_st_speed_optimizer.a-2.params
+____(10-17 15:26:31.472) [2,007 / 3,489] Writing file modules/planning/tasks/optimizers/proceed_with_caution_speed/libproceed_with_caution_speed_generator.a-2.params
+____(10-17 15:26:31.532) [2,014 / 3,497] Testing //modules/planning/math:curve_math_test
+____(10-17 15:26:31.562) [2,018 / 3,502] Writing file modules/planning/tasks/optimizers/path_decider/libpath_decider.a-2.params
+PASS: (10-17 15:26:31.576) //modules/planning/math:curve_math_test
+____(10-17 15:26:31.592) [2,032 / 3,519] Creating source manifest for //modules/planning/tasks/optimizers/road_graph:road_graph_cpplint
+PASS: (10-17 15:26:31.601) //modules/planning/math/smoothing_spline:spline_1d_kernel_test
+PASS: (10-17 15:26:31.612) //modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_test
+PASS: (10-17 15:26:31.660) //modules/planning/math/finite_element_qp:fem_1d_qp_problem_test
+____(10-17 15:26:31.684) [2,072 / 3,572] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/tasks/deciders/side_pass_decider_test.runfiles
+____(10-17 15:26:32.234) [2,134 / 3,640] Expanding template modules/planning/tasks/deciders/speed_bounds_decider/st_boundary_mapper_cpplint
+____(10-17 15:26:32.329) [2,152 / 3,677] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/integration_tests/sunnyvale_loop_test.runfiles
+____(10-17 15:26:32.360) [2,172 / 3,702] Writing file modules/planning/integration_tests/libplanning_test_base.a-2.params
+____(10-17 15:26:32.530) [2,195 / 3,730] Expanding template modules/planning/scenarios/lane_follow/lane_follow_stage_cpplint
+____(10-17 15:26:34.234) [2,256 / 3,744] Compiling modules/planning/proto/dp_poly_path_config.pb.cc
+____(10-17 15:26:35.102) [2,263 / 3,744] Compiling modules/planning/proto/navi_speed_decider_config.pb.cc
+____(10-17 15:26:35.315) [2,276 / 3,744] Generating C++ proto_library //modules/planning/proto:open_space_fallback_decider_config_proto_lib
+____(10-17 15:26:35.712) [2,296 / 3,744] Compiling cyber/record/file/record_file_base.cc
+____(10-17 15:26:35.797) [2,308 / 3,744] Compiling cyber/proto/run_mode_conf.pb.cc
+____(10-17 15:26:35.862) [2,316 / 3,744] Compiling cyber/transport/rtps/attributes_filler.cc
+____(10-17 15:26:37.128) [2,356 / 3,744] Generating C++ proto_library //cyber/proto:cyber_conf_proto
+____(10-17 15:26:37.505) [2,384 / 3,744] Compiling modules/common/util/json_util.cc
+____(10-17 15:26:37.866) [2,392 / 3,744] Linking cyber/proto/librecord_proto.so
+____(10-17 15:26:37.969) [2,402 / 3,744] Linking cyber/proto/libcomponent_conf_proto.so
+____(10-17 15:26:39.025) [2,452 / 3,744] Linking cyber/croutine/libroutine_context.a
+____(10-17 15:26:39.173) [2,462 / 3,744] Linking cyber/proto/libtransport_conf_proto.a
+____(10-17 15:26:39.322) [2,468 / 3,744] Compiling cyber/scheduler/policy/choreography_context.cc
+PASS: (10-17 15:26:40.102) //modules/planning/math/smoothing_spline:piecewise_linear_kernel_test
+PASS: (10-17 15:26:40.361) //modules/planning/math/smoothing_spline:spline_1d_constraint_test
+PASS: (10-17 15:26:40.390) //modules/planning/math/smoothing_spline:piecewise_linear_constraint_test
+PASS: (10-17 15:26:41.710) //modules/planning/math/curve1d:cubic_polynomial_curve1d_test
+____(10-17 15:26:41.740) [2,548 / 3,749] Linking cyber/transport/libcondition_notifier.a
+PASS: (10-17 15:26:41.770) //modules/planning/math/curve1d:quartic_polynomial_curve1d_test
+PASS: (10-17 15:26:41.904) //modules/planning/math/curve1d:quintic_polynomial_curve1d_test
+____(10-17 15:26:42.110) [2,565 / 3,750] Compiling cyber/parameter/parameter.cc
+____(10-17 15:26:42.614) [2,588 / 3,750] Linking cyber/logger/liblogger_util.a
+____(10-17 15:26:43.218) [2,611 / 3,750] Compiling cyber/service_discovery/specific_manager/channel_manager.cc
+____(10-17 15:26:43.406) [2,622 / 3,750] Linking cyber/io/libpoller.a
+____(10-17 15:26:43.902) [2,639 / 3,750] Compiling cyber/class_loader/class_loader.cc
+____(10-17 15:26:44.137) [2,647 / 3,750] Compiling cyber/parameter/parameter_client.cc
+____(10-17 15:26:44.656) [2,656 / 3,750] Compiling modules/prediction/network/net_util.cc
+____(10-17 15:26:47.042) [2,699 / 3,750] Compiling modules/common/math/path_matcher.cc
+____(10-17 15:26:48.702) [2,734 / 3,750] Compiling modules/planning/math/smoothing_spline/spline_2d_solver_test.cc
+____(10-17 15:26:49.323) [2,750 / 3,750] Linking modules/common/math/qp_solver/libactive_set_qp_solver.a
+____(10-17 15:26:50.704) [2,787 / 3,750] Linking modules/planning/proto/libpath_bound_decider_config_proto_lib.so
+____(10-17 15:26:52.423) [2,822 / 3,750] Linking modules/common/math/libmpc.a
+____(10-17 15:26:52.969) [2,838 / 3,750] Compiling modules/planning/common/indexed_list_test.cc
+____(10-17 15:26:53.071) [2,842 / 3,750] Compiling modules/planning/tuning/speed_model/autotuning_speed_mlp_model_test.cc
+____(10-17 15:26:53.220) [2,848 / 3,750] Compiling modules/planning/tuning/autotuning_mlp_net_model.cc
+____(10-17 15:26:53.434) [2,854 / 3,750] Compiling modules/planning/common/trajectory1d/piecewise_acceleration_trajectory1d.cc
+____(10-17 15:26:54.076) [2,862 / 3,750] Compiling modules/planning/common/trajectory1d/piecewise_jerk_trajectory1d.cc
+____(10-17 15:26:54.542) [2,877 / 3,750] Compiling modules/map/hdmap/adapter/xml_parser/signals_xml_parser.cc
+PASS: (10-17 15:26:54.717) //modules/planning/tuning/speed_model:autotuning_speed_feature_builder_test
+____(10-17 15:26:55.940) [2,923 / 3,751] Compiling modules/planning/open_space/coarse_trajectory_generator/grid_search.cc
+____(10-17 15:26:56.678) [2,934 / 3,751] Generating C++ proto_library //modules/planning/proto:open_space_trajectory_partition_config_proto_lib
+____(10-17 15:26:56.976) [2,943 / 3,751] Compiling modules/planning/proto/lattice_structure.pb.cc
+____(10-17 15:26:57.462) [2,958 / 3,751] Compiling modules/drivers/canbus/proto/can_card_parameter.pb.cc
+____(10-17 15:26:58.620) [3,001 / 3,751] Compiling modules/common/configs/proto/vehicle_config.pb.cc
+____(10-17 15:27:00.538) [3,037 / 3,751] Linking modules/common/configs/proto/libvehicle_config_proto_lib.so
+____(10-17 15:27:01.509) [3,052 / 3,751] Compiling modules/routing/graph/topo_graph.cc
+____(10-17 15:27:04.150) [3,095 / 3,751] Compiling modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_qp_interface.cc
+____(10-17 15:27:04.422) [3,098 / 3,751] Compiling modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_interface_test.cc
+____(10-17 15:27:07.501) [3,134 / 3,751] Linking modules/planning/open_space/trajectory_smoother/libdual_variable_warm_start_ipopt_interface.so
+____(10-17 15:27:10.699) [3,161 / 3,751] Linking modules/planning/open_space/trajectory_smoother/libdistance_approach_problem.so
+____(10-17 15:27:10.844) [3,164 / 3,751] Compiling modules/planning/common/speed/speed_data.cc
+____(10-17 15:27:11.539) [3,175 / 3,751] Compiling modules/planning/common/trajectory/discretized_trajectory.cc
+____(10-17 15:27:12.176) [3,183 / 3,751] Compiling modules/planning/common/trajectory/publishable_trajectory.cc
+____(10-17 15:27:15.438) [3,223 / 3,751] Linking cyber/parameter/libparameter_client.so
+____(10-17 15:27:17.856) [3,242 / 3,751] Linking modules/planning/common/speed/st_boundary_test
+PASS: (10-17 15:27:19.120) //modules/planning/common:indexed_list_test
+PASS: (10-17 15:27:19.222) //modules/planning/common/speed:st_boundary_test
+____(10-17 15:27:19.588) [3,257 / 3,754] Testing //modules/planning/common:indexed_queue_test
+PASS: (10-17 15:27:19.974) //modules/planning/common:indexed_queue_test
+PASS: (10-17 15:27:20.664) //modules/planning/common:speed_limit_test
+PASS: (10-17 15:27:20.674) //modules/planning/math/smoothing_spline:active_set_spline_1d_solver_test
+PASS: (10-17 15:27:20.835) //modules/planning/math/smoothing_spline:osqp_spline_1d_solver_test
+PASS: (10-17 15:27:20.843) //modules/planning/math/smoothing_spline:active_set_spline_2d_solver_test
+PASS: (10-17 15:27:21.070) //modules/planning/math/smoothing_spline:osqp_spline_2d_solver_test
+PASS: (10-17 15:27:21.073) //modules/planning/common:st_graph_data_test
+PASS: (10-17 15:27:21.516) //modules/planning/math/smoothing_spline:spline_2d_constraint_test
+PASS: (10-17 15:27:21.772) //modules/planning/math/smoothing_spline:spline_2d_kernel_test
+PASS: (10-17 15:27:21.802) //modules/planning/math/curve1d:piecewise_quintic_spiral_path_test
+____(10-17 15:27:21.806) [3,277 / 3,763] Linking modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_problem_test
+FAIL: (10-17 15:27:22.079) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_cuda_interface_test/test.log)
+____(10-17 15:27:22.080) From Testing //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test:
+==================== Test output for //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_cuda_interface_test.runfiles/apollo/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_cuda_interface_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:27:22.228) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_interface_test/test.log)
+____(10-17 15:27:22.228) From Testing //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test:
+==================== Test output for //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_interface_test.runfiles/apollo/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_interface_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:27:22.730) //modules/planning/open_space/trajectory_smoother:distance_approach_problem_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_problem_test/test.log)==================== Test output for //modules/planning/open_space/trajectory_smoother:distance_approach_problem_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/trajectory_smoother/distance_approach_problem_test.runfiles/apollo/modules/planning/open_space/trajectory_smoother/distance_approach_problem_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+
+____(10-17 15:27:22.731) From Testing //modules/planning/open_space/trajectory_smoother:distance_approach_problem_test:
+FAIL: (10-17 15:27:22.809) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_interface_test/test.log)
+____(10-17 15:27:22.810) From Testing //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test:
+==================== Test output for //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_interface_test.runfiles/apollo/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_interface_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:27:23.538) //modules/planning/tuning/speed_model:autotuning_speed_mlp_model_test
+PASS: (10-17 15:27:23.558) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_test
+FAIL: (10-17 15:27:23.617) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_problem_test/test.log)
+____(10-17 15:27:23.617) From Testing //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test:
+==================== Test output for //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_problem_test.runfiles/apollo/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_problem_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:27:23.975) //modules/planning/tuning:autotuning_mlp_net_model_test
+____(10-17 15:27:24.908) [3,321 / 3,771] Linking modules/planning/common/trajectory/discretized_trajectory_test
+____(10-17 15:27:25.636) [3,329 / 3,771] Linking modules/planning/common/libpath_decision.a
+____(10-17 15:27:26.226) [3,335 / 3,774] Linking modules/planning/common/path/frenet_frame_path_test
+PASS: (10-17 15:27:26.552) //modules/planning/common/trajectory:publishable_trajectory_test
+PASS: (10-17 15:27:26.658) //modules/planning/common/trajectory:discretized_trajectory_test
+PASS: (10-17 15:27:27.030) //modules/planning/common/path:discretized_path_test
+PASS: (10-17 15:27:27.738) //modules/planning/common/path:frenet_frame_path_test
+PASS: (10-17 15:27:27.867) //modules/planning/reference_line:qp_spline_reference_line_smoother_test
+PASS: (10-17 15:27:28.731) //modules/planning/common:obstacle_test
+PASS: (10-17 15:27:29.683) //modules/planning/common:open_space_info_test
+PASS: (10-17 15:27:29.745) //modules/planning/reference_line:cos_theta_reference_line_smoother_test
+PASS: (10-17 15:27:39.766) //modules/planning/common:reference_line_info_test
+____(10-17 15:27:42.460) [3,395 / 3,781] Compiling modules/planning/tasks/optimizers/road_graph/trajectory_cost_test.cc
+____(10-17 15:27:48.308) [3,408 / 3,781] Compiling modules/planning/tasks/deciders/speed_bounds_decider/st_boundary_mapper.cc
+____(10-17 15:27:48.726) [3,411 / 3,781] Compiling modules/planning/tasks/optimizers/qp_spline_st_speed/qp_piecewise_st_graph.cc
+____(10-17 15:27:48.761) [3,412 / 3,781] Compiling modules/planning/tasks/optimizers/qp_spline_st_speed/qp_spline_st_graph.cc
+____(10-17 15:27:49.179) [3,415 / 3,781] Compiling modules/planning/tasks/optimizers/dp_st_speed/dp_st_cost.cc
+____(10-17 15:27:53.013) [3,419 / 3,781] Compiling modules/planning/tasks/optimizers/dp_st_speed/dp_st_graph.cc
+____(10-17 15:27:53.488) [3,420 / 3,781] Compiling modules/planning/common/speed_profile_generator_test.cc
+____(10-17 15:27:58.745) [3,427 / 3,781] Compiling modules/planning/tasks/rss/decider_rss_test.cc
+____(10-17 15:28:01.504) [3,439 / 3,781] Compiling modules/planning/tasks/deciders/open_space_roi_decider.cc
+____(10-17 15:28:02.663) [3,441 / 3,781] Compiling modules/planning/tasks/deciders/speed_bounds_decider/speed_bounds_decider.cc
+____(10-17 15:28:03.499) [3,445 / 3,781] Compiling modules/planning/tasks/deciders/open_space_fallback_decider.cc
+____(10-17 15:28:09.321) [3,463 / 3,781] Compiling modules/planning/tasks/optimizers/path_optimizer.cc
+____(10-17 15:28:13.867) [3,464 / 3,781] Compiling modules/planning/tasks/optimizers/dp_poly_path/dp_poly_path_optimizer.cc
+____(10-17 15:28:22.151) [3,486 / 3,781] Compiling modules/planning/tasks/optimizers/proceed_with_caution_speed/proceed_with_caution_speed_generator_test.cc
+____(10-17 15:28:26.396) [3,505 / 3,781] Compiling modules/planning/navi/decider/navi_speed_decider.cc
+____(10-17 15:28:30.890) [3,512 / 3,781] Compiling modules/planning/constraint_checker/collision_checker.cc
+____(10-17 15:28:32.152) [3,518 / 3,781] Compiling modules/planning/open_space/coarse_trajectory_generator/reeds_shepp_path.cc
+PASS: (10-17 15:28:32.343) //modules/planning/reference_line:spiral_reference_line_smoother_test
+____(10-17 15:28:40.480) [3,541 / 3,781] Compiling modules/planning/lattice/trajectory_generation/trajectory_evaluator.cc
+____(10-17 15:28:40.870) [3,546 / 3,781] Linking modules/planning/tasks/optimizers/proceed_with_caution_speed/libproceed_with_caution_speed_generator.a
+____(10-17 15:28:46.105) [3,574 / 3,781] Compiling modules/planning/scenarios/util/util.cc
+____(10-17 15:28:46.426) [3,581 / 3,781] Linking modules/planning/navi/decider/libnavi_path_decider.so
+____(10-17 15:28:47.526) [3,588 / 3,781] Compiling modules/planning/tasks/task_factory.cc
+____(10-17 15:28:50.026) [3,593 / 3,781] Compiling modules/planning/scenarios/scenario.cc
+____(10-17 15:28:54.290) [3,596 / 3,781] Compiling modules/planning/scenarios/valet_parking/stage_parking.cc
+____(10-17 15:28:55.667) [3,607 / 3,781] Compiling modules/planning/scenarios/side_pass/side_pass_scenario_test.cc
+____(10-17 15:28:57.705) [3,614 / 3,781] Linking modules/planning/lattice/trajectory_generation/libbackup_trajectory_generator.so
+____(10-17 15:29:02.049) [3,631 / 3,781] Linking modules/planning/common/libframe.a
+____(10-17 15:29:02.264) [3,633 / 3,781] Compiling modules/planning/scenarios/lane_follow/lane_follow_scenario.cc
+____(10-17 15:29:02.324) [3,635 / 3,781] Linking modules/planning/tasks/deciders/speed_bounds_decider/speed_limit_decider_test
+____(10-17 15:29:04.343) [3,653 / 3,783] Testing //modules/planning/tasks/deciders/speed_bounds_decider:speed_limit_decider_test
+FAIL: (10-17 15:29:04.531) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_provider_test/test.log)
+____(10-17 15:29:04.531) From Testing //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test:
+==================== Test output for //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_provider_test.runfiles/apollo/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_provider_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:05.410) //modules/planning/tasks/deciders:side_pass_decider_test
+PASS: (10-17 15:29:05.478) //modules/planning/tasks/deciders/speed_bounds_decider:speed_limit_decider_test
+____(10-17 15:29:05.495) [3,661 / 3,786] Linking modules/planning/tasks/optimizers/road_graph/trajectory_cost_test
+FAIL: (10-17 15:29:06.481) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_optimizer_test/test.log)
+____(10-17 15:29:06.488) From Testing //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test:
+==================== Test output for //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_optimizer_test.runfiles/apollo/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_optimizer_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:06.581) //modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_test
+PASS: (10-17 15:29:06.961) //modules/planning/tasks/deciders:open_space_fallback_decider_test
+PASS: (10-17 15:29:07.580) //modules/planning/tasks/deciders:open_space_roi_decider_test
+PASS: (10-17 15:29:08.034) //modules/planning/tasks/optimizers/road_graph:comparable_cost_test
+PASS: (10-17 15:29:08.990) //modules/planning/tasks/optimizers/road_graph:trajectory_cost_test
+PASS: (10-17 15:29:09.089) //modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_test
+PASS: (10-17 15:29:09.374) //modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_test
+PASS: (10-17 15:29:09.515) //modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_test
+PASS: (10-17 15:29:10.459) //modules/planning/tasks/rss:decider_rss_test
+FAIL: (10-17 15:29:10.996) //modules/planning/open_space/coarse_trajectory_generator:node3d_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/node3d_test/test.log)
+____(10-17 15:29:10.996) From Testing //modules/planning/open_space/coarse_trajectory_generator:node3d_test:
+==================== Test output for //modules/planning/open_space/coarse_trajectory_generator:node3d_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/coarse_trajectory_generator/node3d_test.runfiles/apollo/modules/planning/open_space/coarse_trajectory_generator/node3d_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:11.037) [3,689 / 3,798] Linking modules/planning/scenarios/valet_parking/libvalet_parking.so
+FAIL: (10-17 15:29:11.295) //modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/hybrid_a_star_test/test.log)
+____(10-17 15:29:11.296) From Testing //modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test:
+==================== Test output for //modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/coarse_trajectory_generator/hybrid_a_star_test.runfiles/apollo/modules/planning/open_space/coarse_trajectory_generator/hybrid_a_star_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:12.103) //modules/planning/common:speed_profile_generator_test
+PASS: (10-17 15:29:12.147) //modules/planning/common:ego_info_test
+FAIL: (10-17 15:29:12.347) //modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/reeds_shepp_path_test/test.log)
+____(10-17 15:29:12.349) From Testing //modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test:
+==================== Test output for //modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/open_space/coarse_trajectory_generator/reeds_shepp_path_test.runfiles/apollo/modules/planning/open_space/coarse_trajectory_generator/reeds_shepp_path_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:12.402) //modules/planning/common:frame_test
+PASS: (10-17 15:29:13.930) //modules/planning/tuning:autotuning_raw_feature_generator_test
+FAIL: (10-17 15:29:19.010) //modules/planning/scenarios/side_pass:side_pass_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/side_pass/side_pass_scenario_test/test.log)
+____(10-17 15:29:19.010) From Testing //modules/planning/scenarios/side_pass:side_pass_scenario_test:
+==================== Test output for //modules/planning/scenarios/side_pass:side_pass_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/side_pass/side_pass_scenario_test.runfiles/apollo/modules/planning/scenarios/side_pass/side_pass_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:25.884) [3,721 / 3,802] Compiling modules/planning/planner/rtk/rtk_replay_planner.cc
+____(10-17 15:29:26.443) [3,723 / 3,802] Compiling modules/planning/planner/navi/navi_planner_test.cc
+____(10-17 15:29:27.092) [3,731 / 3,807] Linking modules/planning/scenarios/lane_follow/liblane_follow_scenario.a
+____(10-17 15:29:27.154) [3,744 / 3,820] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/scenarios/traffic_light/unprotected_left_turn/traffic_light_left_turn_unprotected_scenario_test.runfiles
+____(10-17 15:29:27.847) [3,757 / 3,835] Creating source manifest for //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test_cpplint
+____(10-17 15:29:28.119) [3,774 / 3,852] Compiling modules/planning/scenarios/stop_sign/unprotected/stop_sign_unprotected_scenario_test.cc
+____(10-17 15:29:28.386) [3,777 / 3,854] Linking modules/planning/scenarios/bare_intersection/unprotected/libbare_intersection_unprotected_scenario.a
+FAIL: (10-17 15:29:29.435) //modules/planning/scenarios/lane_follow:lane_follow_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/lane_follow/lane_follow_scenario_test/test.log)
+____(10-17 15:29:29.436) From Testing //modules/planning/scenarios/lane_follow:lane_follow_scenario_test:
+==================== Test output for //modules/planning/scenarios/lane_follow:lane_follow_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/lane_follow/lane_follow_scenario_test.runfiles/apollo/modules/planning/scenarios/lane_follow/lane_follow_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:29.574) [3,808 / 3,883] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/scenarios/valet_parking/stage_parking_test.runfiles
+____(10-17 15:29:30.556) [3,822 / 3,902] Compiling modules/planning/scenarios/narrow_street_u_turn/narrow_street_u_turn_scenario.cc
+FAIL: (10-17 15:29:30.770) //modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/bare_intersection/unprotected/bare_intersection_unprotected_scenario_test/test.log)
+____(10-17 15:29:30.770) From Testing //modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test:
+==================== Test output for //modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/bare_intersection/unprotected/bare_intersection_unprotected_scenario_test.runfiles/apollo/modules/planning/scenarios/bare_intersection/unprotected/bare_intersection_unprotected_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:30.995) [3,855 / 3,934] Writing file modules/planning/proto/libspiral_curve_config_proto_lib.so-2.params
+____(10-17 15:29:31.095) [3,866 / 3,947] Writing file modules/planning/proto/libqp_problem_lib.a-2.params
+____(10-17 15:29:31.201) [3,875 / 3,958] Generating Descriptor Set proto_library //modules/planning/proto:planner_open_space_config_proto_lib
+____(10-17 15:29:31.669) [3,918 / 4,001] Writing file modules/planning/proto/liblattice_structure_proto_lib.a-2.params
+____(10-17 15:29:31.856) [3,933 / 4,015] Expanding template modules/planning/navi/decider/navi_speed_decider_cpplint
+____(10-17 15:29:35.352) [4,036 / 4,113] Creating source manifest for //modules/planning/planner:planner_dispatcher_cpplint
+____(10-17 15:29:35.383) [4,042 / 4,119] Expanding template modules/planning/planner/on_lane_planner_dispatcher_test_cpplint
+____(10-17 15:29:35.565) [4,057 / 4,140] Writing file modules/planning/planner/public_road/public_road_planner_test-2.params
+____(10-17 15:29:35.608) [4,058 / 4,140] Compiling modules/planning/planner/public_road/public_road_planner_test.cc
+____(10-17 15:29:41.079) [4,089 / 4,167] Creating runfiles tree bazel-out/local-fastbuild/bin/modules/planning/planner/rtk/rtk_replay_planner_test.runfiles
+FAIL: (10-17 15:29:44.616) //modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/unprotected_left_turn/traffic_light_left_turn_unprotected_scenario_test/test.log)
+____(10-17 15:29:44.617) From Testing //modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test:
+==================== Test output for //modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/traffic_light/unprotected_left_turn/traffic_light_left_turn_unprotected_scenario_test.runfiles/apollo/modules/planning/scenarios/traffic_light/unprotected_left_turn/traffic_light_left_turn_unprotected_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:44.706) //modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/unprotected_right_turn/traffic_light_right_turn_unprotected_scenario_test/test.log)
+____(10-17 15:29:44.707) From Testing //modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test:
+==================== Test output for //modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/traffic_light/unprotected_right_turn/traffic_light_right_turn_unprotected_scenario_test.runfiles/apollo/modules/planning/scenarios/traffic_light/unprotected_right_turn/traffic_light_right_turn_unprotected_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:45.445) //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/protected/traffic_light_protected_scenario_test/test.log)
+____(10-17 15:29:45.446) From Testing //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test:
+==================== Test output for //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/traffic_light/protected/traffic_light_protected_scenario_test.runfiles/apollo/modules/planning/scenarios/traffic_light/protected/traffic_light_protected_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:45.542) [4,119 / 4,177] Compiling modules/planning/integration_tests/sunnyvale_big_loop_test.cc
+____(10-17 15:29:45.584) [4,120 / 4,177] Linking modules/planning/scenarios/valet_parking/valet_parking_scenario_test
+FAIL: (10-17 15:29:45.608) //modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/stop_sign/unprotected/stop_sign_unprotected_scenario_test/test.log)
+____(10-17 15:29:45.609) From Testing //modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test:
+==================== Test output for //modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/stop_sign/unprotected/stop_sign_unprotected_scenario_test.runfiles/apollo/modules/planning/scenarios/stop_sign/unprotected/stop_sign_unprotected_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:29:45.618) [4,121 / 4,177] Compiling modules/planning/integration_tests/sunnyvale_loop_test.cc
+FAIL: (10-17 15:29:45.978) //modules/planning/planner/navi:navi_planner_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/navi/navi_planner_test/test.log)
+____(10-17 15:29:45.979) From Testing //modules/planning/planner/navi:navi_planner_test:
+==================== Test output for //modules/planning/planner/navi:navi_planner_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/navi/navi_planner_test.runfiles/apollo/modules/planning/planner/navi/navi_planner_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:46.275) //modules/planning/scenarios/valet_parking:stage_parking_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/stage_parking_test/test.log)
+____(10-17 15:29:46.276) From Testing //modules/planning/scenarios/valet_parking:stage_parking_test:
+==================== Test output for //modules/planning/scenarios/valet_parking:stage_parking_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/valet_parking/stage_parking_test.runfiles/apollo/modules/planning/scenarios/valet_parking/stage_parking_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:46.578) //modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/stage_approaching_parking_spot_test/test.log)
+____(10-17 15:29:46.579) From Testing //modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test:
+==================== Test output for //modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/valet_parking/stage_approaching_parking_spot_test.runfiles/apollo/modules/planning/scenarios/valet_parking/stage_approaching_parking_spot_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:47.598) //modules/planning/scenarios/valet_parking:valet_parking_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/valet_parking_scenario_test/test.log)
+____(10-17 15:29:47.599) From Testing //modules/planning/scenarios/valet_parking:valet_parking_scenario_test:
+==================== Test output for //modules/planning/scenarios/valet_parking:valet_parking_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/valet_parking/valet_parking_scenario_test.runfiles/apollo/modules/planning/scenarios/valet_parking/valet_parking_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:29:48.638) //modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/narrow_street_u_turn/narrow_street_u_turn_scenario_test/test.log)
+____(10-17 15:29:48.639) From Testing //modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test:
+==================== Test output for //modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/scenarios/narrow_street_u_turn/narrow_street_u_turn_scenario_test.runfiles/apollo/modules/planning/scenarios/narrow_street_u_turn/narrow_street_u_turn_scenario_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:49.074) //modules/planning/planner/rtk:rtk_planner_cpplint
+PASS: (10-17 15:29:49.423) //modules/planning/planner/rtk:rtk_replay_planner_test_cpplint
+PASS: (10-17 15:29:49.938) //modules/planning/planner/open_space:open_space_planner_cpplint
+PASS: (10-17 15:29:50.190) //modules/planning/planner/open_space:open_space_planner_test_cpplint
+____(10-17 15:29:50.276) [4,143 / 4,188] Linking modules/planning/navi/decider/navi_decider_test
+PASS: (10-17 15:29:50.503) //modules/planning/planner/public_road:public_road_planner_test_cpplint
+PASS: (10-17 15:29:50.526) //modules/planning/planner/public_road:public_road_planner_cpplint
+PASS: (10-17 15:29:50.773) //modules/planning/planner:navi_planner_dispatcher_test_cpplint
+PASS: (10-17 15:29:50.800) //modules/planning/planner:on_lane_planner_dispatcher_test_cpplint
+PASS: (10-17 15:29:51.208) //modules/planning/planner:planner_dispatcher_cpplint
+PASS: (10-17 15:29:51.231) //modules/planning/planner:planner_cpplint
+PASS: (10-17 15:29:51.504) //modules/planning/lattice/behavior:feasible_region_cpplint
+PASS: (10-17 15:29:51.814) //modules/planning/lattice/behavior:prediction_querier_cpplint
+PASS: (10-17 15:29:51.857) //modules/planning/lattice/behavior:path_time_graph_cpplint
+PASS: (10-17 15:29:52.159) //modules/planning/lattice/trajectory_generation:backup_trajectory_generator_cpplint
+PASS: (10-17 15:29:52.399) //modules/planning/lattice/trajectory_generation:end_condition_sampler_cpplint
+PASS: (10-17 15:29:52.502) //modules/planning/lattice/trajectory_generation:lateral_osqp_optimizer_cpplint
+PASS: (10-17 15:29:52.893) //modules/planning/lattice/trajectory_generation:lateral_qp_optimizer_cpplint
+FAIL: (10-17 15:29:52.929) //modules/planning/planner/public_road:public_road_planner_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/public_road/public_road_planner_test/test.log)
+____(10-17 15:29:52.930) From Testing //modules/planning/planner/public_road:public_road_planner_test:
+==================== Test output for //modules/planning/planner/public_road:public_road_planner_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/public_road/public_road_planner_test.runfiles/apollo/modules/planning/planner/public_road/public_road_planner_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:53.042) //modules/planning/lattice/trajectory_generation:lattice_trajectory1d_cpplint
+PASS: (10-17 15:29:53.252) //modules/planning/navi/decider:navi_decider_test
+PASS: (10-17 15:29:53.275) //modules/planning/lattice/trajectory_generation:piecewise_braking_trajectory_generator_cpplint
+PASS: (10-17 15:29:53.402) //modules/planning/lattice/trajectory_generation:trajectory_combiner_cpplint
+PASS: (10-17 15:29:53.479) //modules/planning/lattice/trajectory_generation:trajectory1d_generator_cpplint
+PASS: (10-17 15:29:53.740) //modules/planning/lattice/trajectory_generation:trajectory_evaluator_cpplint
+PASS: (10-17 15:29:53.853) //modules/planning/traffic_rules:traffic_decider_cpplint
+____(10-17 15:29:53.857) [4,169 / 4,212] Testing //modules/planning/navi/decider:navi_path_decider_cpplint
+FAIL: (10-17 15:29:53.920) //modules/planning/planner/open_space:open_space_planner_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/open_space/open_space_planner_test/test.log)
+____(10-17 15:29:53.920) From Testing //modules/planning/planner/open_space:open_space_planner_test:
+==================== Test output for //modules/planning/planner/open_space:open_space_planner_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/open_space/open_space_planner_test.runfiles/apollo/modules/planning/planner/open_space/open_space_planner_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:54.378) //modules/planning/navi/decider:navi_obstacle_decider_cpplint
+PASS: (10-17 15:29:54.456) //modules/planning/navi/decider:navi_decider_test_cpplint
+PASS: (10-17 15:29:54.532) //modules/planning/navi/decider:navi_path_decider_cpplint
+PASS: (10-17 15:29:54.652) //modules/planning/navi/decider:navi_task_cpplint
+PASS: (10-17 15:29:54.849) //modules/planning/constraint_checker:constraint_checker1d_cpplint
+PASS: (10-17 15:29:54.919) //modules/planning/constraint_checker:collision_checker_cpplint
+PASS: (10-17 15:29:54.998) //modules/planning/navi/decider:navi_speed_decider_cpplint
+PASS: (10-17 15:29:55.141) //modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test_cpplint
+PASS: (10-17 15:29:55.153) //modules/planning/constraint_checker:constraint_checker_cpplint
+PASS: (10-17 15:29:55.200) //modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test_cpplint
+PASS: (10-17 15:29:55.312) //modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_cpplint
+PASS: (10-17 15:29:55.375) //modules/planning/scenarios/valet_parking:stage_parking_test_cpplint
+PASS: (10-17 15:29:55.411) //modules/planning/scenarios/valet_parking:valet_parking_scenario_test_cpplint
+PASS: (10-17 15:29:55.551) //modules/planning/scenarios/util:scenario_util_lib_cpplint
+PASS: (10-17 15:29:55.598) //modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test_cpplint
+PASS: (10-17 15:29:55.801) //modules/planning/scenarios/valet_parking:valet_parking_cpplint
+PASS: (10-17 15:29:55.803) //modules/planning/traffic_rules:traffic_rules_cpplint
+PASS: (10-17 15:29:55.837) //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test_cpplint
+PASS: (10-17 15:29:55.840) //modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test_cpplint
+PASS: (10-17 15:29:56.150) //modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test_cpplint
+PASS: (10-17 15:29:56.185) //modules/planning/scenarios/lane_follow:lane_follow_scenario_cpplint
+PASS: (10-17 15:29:56.191) //modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_cpplint
+PASS: (10-17 15:29:56.474) //modules/planning/scenarios/lane_follow:lane_follow_scenario_test_cpplint
+PASS: (10-17 15:29:56.486) //modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_unprotected_left_turn_scenario_cpplint
+PASS: (10-17 15:29:56.579) //modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_cpplint
+PASS: (10-17 15:29:56.626) //modules/planning/scenarios/side_pass:side_pass_scenario_test_cpplint
+PASS: (10-17 15:29:56.788) //modules/planning/scenarios/lane_follow:lane_follow_stage_cpplint
+PASS: (10-17 15:29:56.821) //modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test_cpplint
+PASS: (10-17 15:29:56.872) //modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_unprotected_right_turn_scenario_cpplint
+PASS: (10-17 15:29:56.999) //modules/planning/scenarios:scenario_cpplint
+PASS: (10-17 15:29:57.032) //modules/planning/integration_tests:garage_test_cpplint
+PASS: (10-17 15:29:57.258) //modules/planning/scenarios:scenario_manager_cpplint
+PASS: (10-17 15:29:57.283) //modules/planning/integration_tests:sunnyvale_loop_test_cpplint
+PASS: (10-17 15:29:57.378) //modules/planning/integration_tests:sunnyvale_big_loop_test_cpplint
+PASS: (10-17 15:29:57.380) //modules/planning/scenarios:stage_cpplint
+PASS: (10-17 15:29:57.421) //modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_cpplint
+PASS: (10-17 15:29:57.498) //modules/planning/integration_tests:planning_test_base_cpplint
+PASS: (10-17 15:29:57.534) //modules/planning/tasks/deciders/speed_bounds_decider:speed_limit_decider_test_cpplint
+PASS: (10-17 15:29:57.667) //modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_test_cpplint
+PASS: (10-17 15:29:57.775) //modules/planning/tasks/deciders:decider_base_cpplint
+PASS: (10-17 15:29:57.868) //modules/planning/tasks/deciders/speed_bounds_decider:speed_bounds_decider_cpplint
+PASS: (10-17 15:29:57.968) //modules/planning/scenarios/side_pass:side_pass_cpplint
+PASS: (10-17 15:29:57.987) //modules/planning/tasks/deciders:open_space_fallback_decider_test_cpplint
+PASS: (10-17 15:29:58.125) //modules/planning/tasks/deciders:open_space_fallback_decider_cpplint
+PASS: (10-17 15:29:58.138) //modules/planning/tasks/deciders:decider_rule_based_stop_cpplint
+PASS: (10-17 15:29:58.139) //modules/planning/tasks/deciders:open_space_roi_decider_test_cpplint
+PASS: (10-17 15:29:58.165) //modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_cpplint
+PASS: (10-17 15:29:58.383) //modules/planning/tasks/deciders:side_pass_decider_test_cpplint
+PASS: (10-17 15:29:58.414) //modules/planning/tasks/deciders:path_decider_obstacle_utils_cpplint
+PASS: (10-17 15:29:58.432) //modules/planning/tasks/deciders:path_assessment_decider_cpplint
+PASS: (10-17 15:29:58.449) //modules/planning/tasks/deciders:open_space_roi_decider_cpplint
+PASS: (10-17 15:29:58.609) //modules/planning/tasks/optimizers/qp_piecewise_jerk_path:qp_piecewise_jerk_path_optimizer_cpplint
+PASS: (10-17 15:29:58.624) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test_cpplint
+PASS: (10-17 15:29:58.679) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test_cpplint
+PASS: (10-17 15:29:58.692) //modules/planning/planner/navi:navi_planner_test_cpplint
+PASS: (10-17 15:29:58.706) //modules/planning/tasks/deciders:decider_cpplint
+PASS: (10-17 15:29:58.777) //modules/planning/tasks/optimizers/road_graph:comparable_cost_test_cpplint
+PASS: (10-17 15:29:58.875) //modules/planning/tasks/optimizers/road_graph:trajectory_cost_test_cpplint
+PASS: (10-17 15:29:58.876) //modules/planning/tasks/deciders:path_bounds_decider_cpplint
+FAIL: (10-17 15:29:58.888) //modules/planning/planner/rtk:rtk_replay_planner_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/rtk/rtk_replay_planner_test/test.log)
+____(10-17 15:29:58.888) From Testing //modules/planning/planner/rtk:rtk_replay_planner_test:
+==================== Test output for //modules/planning/planner/rtk:rtk_replay_planner_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/rtk/rtk_replay_planner_test.runfiles/apollo/modules/planning/planner/rtk/rtk_replay_planner_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+PASS: (10-17 15:29:59.005) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_cpplint
+PASS: (10-17 15:29:59.070) //modules/planning/tasks/optimizers/path_decider:path_decider_cpplint
+PASS: (10-17 15:29:59.079) //modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_cpplint
+PASS: (10-17 15:29:59.092) //modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_cpplint
+PASS: (10-17 15:29:59.102) //modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_test_cpplint
+PASS: (10-17 15:29:59.235) //modules/planning/tasks/optimizers/piecewise_jerk_path:piecewise_jerk_path_optimizer_cpplint
+PASS: (10-17 15:29:59.320) //modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_test_cpplint
+PASS: (10-17 15:29:59.384) //modules/planning/tasks/optimizers/dp_st_speed:st_graph_point_cpplint
+PASS: (10-17 15:29:59.387) //modules/planning/tasks/optimizers/dp_st_speed:dp_st_cost_cpplint
+PASS: (10-17 15:29:59.476) //modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_cpplint
+PASS: (10-17 15:29:59.525) //modules/planning/tasks/optimizers/dp_st_speed:dp_st_speed_optimizer_cpplint
+PASS: (10-17 15:29:59.665) //modules/planning/tasks/optimizers/speed_decider:speed_decider_cpplint
+PASS: (10-17 15:29:59.681) //modules/planning/tasks/optimizers/qp_spline_st_speed:qp_piecewise_st_graph_cpplint
+PASS: (10-17 15:29:59.683) //modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_test_cpplint
+PASS: (10-17 15:29:59.775) //modules/planning/tasks/optimizers/dp_poly_path:dp_poly_path_optimizer_cpplint
+PASS: (10-17 15:29:59.843) //modules/planning/tasks/optimizers/qp_spline_path:qp_spline_path_cpplint
+PASS: (10-17 15:29:59.899) //modules/planning/tasks/optimizers:path_optimizer_cpplint
+PASS: (10-17 15:29:59.911) //modules/planning/tasks/optimizers/qp_spline_st_speed:qp_spline_st_graph_cpplint
+PASS: (10-17 15:29:59.912) //modules/planning/tasks/optimizers/road_graph:road_graph_cpplint
+PASS: (10-17 15:29:59.932) //modules/planning/tasks/optimizers/qp_spline_st_speed:qp_spline_st_speed_optimizer_cpplint
+PASS: (10-17 15:29:59.943) //modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_cpplint
+PASS: (10-17 15:30:00.010) //modules/planning/tasks/optimizers:speed_optimizer_cpplint
+PASS: (10-17 15:30:00.051) //modules/planning/tasks/optimizers:trajectory_optimizer_cpplint
+PASS: (10-17 15:30:00.058) //modules/planning/tasks/smoothers:smoother_cpplint
+PASS: (10-17 15:30:00.126) //modules/planning/tasks/rss:decider_rss_test_cpplint
+PASS: (10-17 15:30:00.168) //modules/planning/common/trajectory:discretized_trajectory_test_cpplint
+PASS: (10-17 15:30:00.181) //modules/planning/tasks/rss:decider_rss_cpplint
+____(10-17 15:30:00.206) [4,264 / 4,306] Testing //modules/planning/common/trajectory1d:standing_still_trajectory1d_cpplint
+PASS: (10-17 15:30:00.250) //modules/planning/common/trajectory:publishable_trajectory_test_cpplint
+PASS: (10-17 15:30:00.279) //modules/planning/tasks:task_cpplint
+____(10-17 15:30:00.283) [4,266 / 4,308] Testing //modules/planning/common/path:discretized_path_test_cpplint
+PASS: (10-17 15:30:00.351) //modules/planning/common/speed:st_boundary_test_cpplint
+PASS: (10-17 15:30:00.377) //modules/planning/tasks:task_factory_cpplint
+PASS: (10-17 15:30:00.385) //modules/planning/common/trajectory:discretized_trajectory_cpplint
+PASS: (10-17 15:30:00.395) //modules/planning/common/speed:st_point_cpplint
+PASS: (10-17 15:30:00.415) //modules/planning/common/trajectory:publishable_trajectory_cpplint
+PASS: (10-17 15:30:00.474) //modules/planning/common/trajectory1d:standing_still_trajectory1d_cpplint
+PASS: (10-17 15:30:00.487) //modules/planning/common/trajectory1d:piecewise_acceleration_trajectory1d_cpplint
+PASS: (10-17 15:30:00.510) //modules/planning/common/trajectory1d:constant_deceleration_trajectory1d_cpplint
+PASS: (10-17 15:30:00.531) //modules/planning/common/path:discretized_path_test_cpplint
+PASS: (10-17 15:30:00.558) //modules/planning/common/trajectory1d:piecewise_jerk_trajectory1d_cpplint
+PASS: (10-17 15:30:00.591) //modules/planning/common/path:discretized_path_cpplint
+PASS: (10-17 15:30:00.641) //modules/planning/common/path:frenet_frame_path_test_cpplint
+PASS: (10-17 15:30:00.735) //modules/planning/common/path:frenet_frame_path_cpplint
+PASS: (10-17 15:30:00.767) //modules/planning/common/util:util_lib_cpplint
+PASS: (10-17 15:30:00.807) //modules/planning/common:ego_info_cpplint
+PASS: (10-17 15:30:00.817) //modules/planning/common:ego_info_test_cpplint
+PASS: (10-17 15:30:00.892) //modules/planning/common/trajectory1d:constant_jerk_trajectory1d_cpplint
+PASS: (10-17 15:30:00.922) //modules/planning/common/trajectory1d:piecewise_trajectory1d_cpplint
+____(10-17 15:30:00.924) [4,284 / 4,326] Testing //modules/planning/common:obstacle_blocking_analyzer_cpplint
+PASS: (10-17 15:30:00.936) //modules/planning/common:frame_test_cpplint
+PASS: (10-17 15:30:00.947) //modules/planning/common/path:path_data_cpplint
+____(10-17 15:30:00.998) [4,289 / 4,329] Testing //modules/planning/common:open_space_info_cpplint
+PASS: (10-17 15:30:01.042) //modules/planning/common:change_lane_decider_cpplint
+PASS: (10-17 15:30:01.043) //modules/planning/common:indexed_list_test_cpplint
+PASS: (10-17 15:30:01.052) //modules/planning/common:indexed_queue_test_cpplint
+PASS: (10-17 15:30:01.141) //modules/planning/common/speed:st_boundary_cpplint
+PASS: (10-17 15:30:01.160) //modules/planning/common:indexed_list_cpplint
+PASS: (10-17 15:30:01.180) //modules/planning/common:indexed_queue_cpplint
+PASS: (10-17 15:30:01.185) //modules/planning/common:local_view_cpplint
+PASS: (10-17 15:30:01.262) //modules/planning/common:open_space_info_test_cpplint
+PASS: (10-17 15:30:01.376) //modules/planning/common:reference_line_info_test_cpplint
+PASS: (10-17 15:30:01.380) //modules/planning/common:obstacle_blocking_analyzer_cpplint
+PASS: (10-17 15:30:01.395) //modules/planning/common:speed_limit_test_cpplint
+PASS: (10-17 15:30:01.432) //modules/planning/common:obstacle_test_cpplint
+PASS: (10-17 15:30:01.494) //modules/planning/common:speed_limit_cpplint
+PASS: (10-17 15:30:01.507) //modules/planning/common:path_decision_cpplint
+PASS: (10-17 15:30:01.524) //modules/planning/common:frame_cpplint
+PASS: (10-17 15:30:01.640) //modules/planning/common:speed_profile_generator_test_cpplint
+PASS: (10-17 15:30:01.654) //modules/planning/common:st_graph_data_test_cpplint
+PASS: (10-17 15:30:01.663) //modules/planning/reference_line:cos_theta_reference_line_smoother_test_cpplint
+PASS: (10-17 15:30:01.699) //modules/planning/common:st_graph_data_cpplint
+PASS: (10-17 15:30:01.711) //modules/planning/common:speed_profile_generator_cpplint
+PASS: (10-17 15:30:01.773) //modules/planning/common:open_space_info_cpplint
+PASS: (10-17 15:30:01.777) //modules/planning/reference_line:qp_spline_reference_line_smoother_test_cpplint
+PASS: (10-17 15:30:01.818) //modules/planning/common:trajectory_stitcher_cpplint
+PASS: (10-17 15:30:01.850) //modules/planning/common:planning_gflags_cpplint
+PASS: (10-17 15:30:01.947) //modules/planning/reference_line:qp_spline_reference_line_smoother_cpplint
+PASS: (10-17 15:30:01.968) //modules/planning/reference_line:spiral_reference_line_smoother_test_cpplint
+PASS: (10-17 15:30:01.996) //modules/planning/common:obstacle_cpplint
+PASS: (10-17 15:30:02.026) //modules/planning/reference_line:reference_line_smoother_cpplint
+____(10-17 15:30:02.028) [4,321 / 4,360] Testing //modules/planning/math/smoothing_spline:osqp_spline_1d_solver_cpplint
+PASS: (10-17 15:30:02.056) //modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_test_cpplint
+PASS: (10-17 15:30:02.075) //modules/planning/reference_line:smoother_util_cpplint
+PASS: (10-17 15:30:02.167) //modules/planning/common:reference_line_info_cpplint
+PASS: (10-17 15:30:02.215) //modules/planning/math/smoothing_spline:active_set_spline_1d_solver_cpplint
+PASS: (10-17 15:30:02.259) //modules/planning/math/smoothing_spline:active_set_spline_1d_solver_test_cpplint
+PASS: (10-17 15:30:02.271) //modules/planning/reference_line:spiral_smoother_util_cpplint
+PASS: (10-17 15:30:02.335) //modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_cpplint
+PASS: (10-17 15:30:02.335) //modules/planning/math/smoothing_spline:active_set_spline_2d_solver_test_cpplint
+PASS: (10-17 15:30:02.365) //modules/planning/math/smoothing_spline:active_set_spline_2d_solver_cpplint
+PASS: (10-17 15:30:02.381) //modules/planning/math/smoothing_spline:osqp_spline_1d_solver_test_cpplint
+PASS: (10-17 15:30:02.382) //modules/planning/math/smoothing_spline:affine_constraint_cpplint
+____(10-17 15:30:02.396) [4,333 / 4,371] Linking modules/planning/integration_tests/libplanning_test_base.a
+PASS: (10-17 15:30:02.463) //modules/planning/reference_line:cos_theta_reference_line_smoother_cpplint
+____(10-17 15:30:02.466) [4,335 / 4,372] Testing //modules/planning/math/smoothing_spline:spline_1d_kernel_cpplint
+PASS: (10-17 15:30:02.467) //modules/planning/math/smoothing_spline:osqp_spline_1d_solver_cpplint
+PASS: (10-17 15:30:02.498) //modules/planning/math/smoothing_spline:osqp_spline_2d_solver_cpplint
+PASS: (10-17 15:30:02.525) //modules/planning/math/smoothing_spline:osqp_spline_2d_solver_test_cpplint
+PASS: (10-17 15:30:02.530) //modules/planning/math/smoothing_spline:piecewise_linear_constraint_test_cpplint
+PASS: (10-17 15:30:02.535) //modules/planning/reference_line:reference_line_cpplint
+PASS: (10-17 15:30:02.648) //modules/planning/math/smoothing_spline:piecewise_linear_kernel_test_cpplint
+PASS: (10-17 15:30:02.667) //modules/planning/reference_line:reference_line_provider_cpplint
+PASS: (10-17 15:30:02.674) //modules/planning/math/smoothing_spline:piecewise_linear_constraint_cpplint
+PASS: (10-17 15:30:02.679) //modules/planning/math/smoothing_spline:piecewise_linear_generator_cpplint
+PASS: (10-17 15:30:02.705) //modules/planning/math/smoothing_spline:piecewise_linear_kernel_cpplint
+PASS: (10-17 15:30:02.754) //modules/planning/math/smoothing_spline:spline_1d_cpplint
+PASS: (10-17 15:30:02.809) //modules/planning/math/smoothing_spline:spline_1d_constraint_test_cpplint
+PASS: (10-17 15:30:02.849) //modules/planning/math/smoothing_spline:spline_1d_seg_cpplint
+PASS: (10-17 15:30:02.859) //modules/planning/reference_line:spiral_reference_line_smoother_cpplint
+PASS: (10-17 15:30:02.900) //modules/planning/math/smoothing_spline:spline_2d_kernel_test_cpplint
+PASS: (10-17 15:30:02.901) //modules/planning/math/smoothing_spline:spline_1d_kernel_cpplint
+PASS: (10-17 15:30:02.928) //modules/planning/math/smoothing_spline:spline_1d_solver_cpplint
+PASS: (10-17 15:30:02.931) //modules/planning/math/smoothing_spline:spline_2d_constraint_test_cpplint
+PASS: (10-17 15:30:02.950) //modules/planning/math/smoothing_spline:spline_2d_cpplint
+PASS: (10-17 15:30:02.985) //modules/planning/math/smoothing_spline:spline_1d_kernel_test_cpplint
+PASS: (10-17 15:30:03.031) //modules/planning/math/smoothing_spline:spline_2d_seg_cpplint
+PASS: (10-17 15:30:03.092) //modules/planning/math/curve1d:cubic_polynomial_curve1d_test_cpplint
+PASS: (10-17 15:30:03.101) //modules/planning/math/smoothing_spline:spline_seg_kernel_cpplint
+PASS: (10-17 15:30:03.107) //modules/planning/math/smoothing_spline:spline_2d_kernel_cpplint
+PASS: (10-17 15:30:03.152) //modules/planning/math/finite_element_qp:fem_1d_qp_problem_test_cpplint
+PASS: (10-17 15:30:03.170) //modules/planning/math/smoothing_spline:spline_2d_solver_cpplint
+PASS: (10-17 15:30:03.191) //modules/planning/math/curve1d:piecewise_quintic_spiral_path_test_cpplint
+PASS: (10-17 15:30:03.192) //modules/planning/math/curve1d:polynomial_curve1d_cpplint
+PASS: (10-17 15:30:03.212) //modules/planning/math/curve1d:curve1d_cpplint
+PASS: (10-17 15:30:03.235) //modules/planning/math/curve1d:piecewise_quintic_spiral_path_cpplint
+PASS: (10-17 15:30:03.280) //modules/planning/math/smoothing_spline:spline_1d_constraint_cpplint
+PASS: (10-17 15:30:03.281) //modules/planning/math/curve1d:quartic_polynomial_curve1d_test_cpplint
+PASS: (10-17 15:30:03.291) //modules/planning/math/curve1d:cubic_polynomial_curve1d_cpplint
+PASS: (10-17 15:30:03.359) //modules/planning/math/smoothing_spline:spline_2d_constraint_cpplint
+PASS: (10-17 15:30:03.371) //modules/planning/math/curve1d:quartic_polynomial_curve1d_cpplint
+PASS: (10-17 15:30:03.390) //modules/planning/math/curve1d:quintic_polynomial_curve1d_test_cpplint
+PASS: (10-17 15:30:03.408) //modules/planning/math:curve_math_test_cpplint
+PASS: (10-17 15:30:03.411) //modules/planning/math:curve_math_cpplint
+PASS: (10-17 15:30:03.433) //modules/planning/math/finite_element_qp:fem_1d_qp_problem_cpplint
+PASS: (10-17 15:30:03.455) //modules/planning/math/curve1d:quintic_polynomial_curve1d_cpplint
+PASS: (10-17 15:30:03.512) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test_cpplint
+PASS: (10-17 15:30:03.535) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test_cpplint
+PASS: (10-17 15:30:03.543) //modules/planning/math:polynomial_xd_cpplint
+PASS: (10-17 15:30:03.625) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test_cpplint
+PASS: (10-17 15:30:03.648) //modules/planning/open_space/trajectory_smoother:distance_approach_problem_cpplint
+PASS: (10-17 15:30:03.651) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_test_cpplint
+PASS: (10-17 15:30:03.657) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test_cpplint
+PASS: (10-17 15:30:03.697) //modules/planning/open_space/trajectory_smoother:distance_approach_problem_test_cpplint
+PASS: (10-17 15:30:03.716) //modules/planning/open_space/trajectory_smoother:planning_block_cpplint
+PASS: (10-17 15:30:03.802) //modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test_cpplint
+PASS: (10-17 15:30:03.849) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_cpplint
+PASS: (10-17 15:30:03.898) //modules/planning/open_space/coarse_trajectory_generator:node3d_test_cpplint
+PASS: (10-17 15:30:03.986) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_cpplint
+PASS: (10-17 15:30:04.006) //modules/planning/open_space/coarse_trajectory_generator:node3d_cpplint
+PASS: (10-17 15:30:04.019) //modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test_cpplint
+PASS: (10-17 15:30:04.029) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_cpplint
+PASS: (10-17 15:30:04.074) //modules/planning/math/curve1d:quintic_spiral_path_cpplint
+PASS: (10-17 15:30:04.076) //modules/planning/open_space/coarse_trajectory_generator:grid_search_cpplint
+PASS: (10-17 15:30:04.139) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_cpplint
+PASS: (10-17 15:30:04.147) //modules/planning/tuning/speed_model:autotuning_speed_feature_builder_test_cpplint
+PASS: (10-17 15:30:04.159) //modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_qp_interface_cpplint
+PASS: (10-17 15:30:04.160) //modules/planning/open_space/trajectory_partition:trajectory_partitioner_cpplint
+PASS: (10-17 15:30:04.226) //modules/planning/tuning/speed_model:autotuning_speed_mlp_model_test_cpplint
+PASS: (10-17 15:30:04.261) //modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_cpplint
+PASS: (10-17 15:30:04.303) //modules/planning/tuning:autotuning_mlp_net_model_test_cpplint
+PASS: (10-17 15:30:04.310) //modules/planning/tuning:autotuning_base_model_cpplint
+PASS: (10-17 15:30:04.315) //modules/planning/tuning:autotuning_mlp_net_model_cpplint
+PASS: (10-17 15:30:04.317) //modules/planning/tuning/speed_model:autotuning_speed_feature_builder_cpplint
+PASS: (10-17 15:30:04.349) //modules/planning/open_space/constraints_formulation:open_space_ROI_cpplint
+PASS: (10-17 15:30:04.350) //modules/planning/tuning:autotuning_raw_feature_generator_test_cpplint
+PASS: (10-17 15:30:04.370) //modules/planning/tuning:autotuning_feature_builder_cpplint
+PASS: (10-17 15:30:04.409) //modules/planning/open_space:open_space_trajectory_generator_cpplint
+PASS: (10-17 15:30:04.447) //modules/planning/tuning/speed_model:autotuning_speed_mlp_model_cpplint
+PASS: (10-17 15:30:04.469) //modules/planning/common:planning_context_cpplint
+PASS: (10-17 15:30:04.552) //modules/planning:planning_component_lib_cpplint
+PASS: (10-17 15:30:04.560) //modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_cpplint
+PASS: (10-17 15:30:04.562) //modules/planning/tuning:autotuning_raw_feature_generator_cpplint
+PASS: (10-17 15:30:04.629) //modules/planning/common/speed:speed_data_cpplint
+PASS: (10-17 15:30:04.716) //modules/planning/planner/lattice:lattice_planner_cpplint
+PASS: (10-17 15:30:04.788) //modules/planning/planner/navi:navi_planner_cpplint
+PASS: (10-17 15:30:05.030) //modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_cpplint
+PASS: (10-17 15:30:05.626) //modules/planning:planning_lib_cpplint
+==================== Test output for //modules/planning/planner:on_lane_planner_dispatcher_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/on_lane_planner_dispatcher_test.runfiles/apollo/modules/planning/planner/on_lane_planner_dispatcher_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:30:16.785) //modules/planning/planner:on_lane_planner_dispatcher_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/on_lane_planner_dispatcher_test/test.log)
+____(10-17 15:30:16.785) From Testing //modules/planning/planner:on_lane_planner_dispatcher_test:
+FAIL: (10-17 15:30:16.950) //modules/planning/planner:navi_planner_dispatcher_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/navi_planner_dispatcher_test/test.log)
+____(10-17 15:30:16.951) From Testing //modules/planning/planner:navi_planner_dispatcher_test:
+==================== Test output for //modules/planning/planner:navi_planner_dispatcher_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/planner/navi_planner_dispatcher_test.runfiles/apollo/modules/planning/planner/navi_planner_dispatcher_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:30:27.700) [4,433 / 4,441] Still waiting for 1 job to complete:
+      Running (local):
+        Compiling modules/planning/planning_component.cc, 41 s
+____(10-17 15:30:49.690) [4,436 / 4,441] Linking modules/planning/integration_tests/garage_test
+____(10-17 15:30:51.322) [4,439 / 4,442] Testing //modules/planning/integration_tests:garage_test
+____(10-17 15:30:51.371) [4,440 / 4,443] Testing //modules/planning/integration_tests:sunnyvale_big_loop_test
+FAIL: (10-17 15:30:51.414) //modules/planning/integration_tests:garage_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/garage_test/test.log)
+____(10-17 15:30:51.414) From Testing //modules/planning/integration_tests:garage_test:
+==================== Test output for //modules/planning/integration_tests:garage_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/integration_tests/garage_test.runfiles/apollo/modules/planning/integration_tests/garage_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:30:51.455) //modules/planning/integration_tests:sunnyvale_big_loop_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/sunnyvale_big_loop_test/test.log)
+____(10-17 15:30:51.456) From Testing //modules/planning/integration_tests:sunnyvale_big_loop_test:
+==================== Test output for //modules/planning/integration_tests:sunnyvale_big_loop_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/integration_tests/sunnyvale_big_loop_test.runfiles/apollo/modules/planning/integration_tests/sunnyvale_big_loop_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+FAIL: (10-17 15:30:51.590) //modules/planning/integration_tests:sunnyvale_loop_test (see /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/sunnyvale_loop_test/test.log)
+____(10-17 15:30:51.590) From Testing //modules/planning/integration_tests:sunnyvale_loop_test:
+==================== Test output for //modules/planning/integration_tests:sunnyvale_loop_test:
+/home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/bin/modules/planning/integration_tests/sunnyvale_loop_test.runfiles/apollo/modules/planning/integration_tests/sunnyvale_loop_test: error while loading shared libraries: libadolc.so.2: cannot open shared object file: No such file or directory
+================================================================================
+____(10-17 15:30:51.638) Elapsed time: 293.961s, Critical Path: 101.12s
+//modules/planning/common:change_lane_decider_cpplint                    PASSED in 0.6s
+//modules/planning/common:ego_info_cpplint                               PASSED in 0.3s
+//modules/planning/common:ego_info_test                                  PASSED in 1.9s
+//modules/planning/common:ego_info_test_cpplint                          PASSED in 0.3s
+//modules/planning/common:frame_cpplint                                  PASSED in 0.9s
+//modules/planning/common:frame_test                                     PASSED in 1.4s
+//modules/planning/common:frame_test_cpplint                             PASSED in 0.3s
+//modules/planning/common:indexed_list_cpplint                           PASSED in 0.4s
+//modules/planning/common:indexed_list_test                              PASSED in 0.3s
+//modules/planning/common:indexed_list_test_cpplint                      PASSED in 0.3s
+//modules/planning/common:indexed_queue_cpplint                          PASSED in 0.4s
+//modules/planning/common:indexed_queue_test                             PASSED in 0.4s
+//modules/planning/common:indexed_queue_test_cpplint                     PASSED in 0.2s
+//modules/planning/common:local_view_cpplint                             PASSED in 0.3s
+//modules/planning/common:obstacle_blocking_analyzer_cpplint             PASSED in 0.5s
+//modules/planning/common:obstacle_cpplint                               PASSED in 1.0s
+//modules/planning/common:obstacle_test                                  PASSED in 1.0s
+//modules/planning/common:obstacle_test_cpplint                          PASSED in 0.5s
+//modules/planning/common:open_space_info_cpplint                        PASSED in 0.8s
+//modules/planning/common:open_space_info_test                           PASSED in 1.4s
+//modules/planning/common:open_space_info_test_cpplint                   PASSED in 0.2s
+//modules/planning/common/path:discretized_path_cpplint                  PASSED in 0.3s
+//modules/planning/common/path:discretized_path_test                     PASSED in 0.8s
+//modules/planning/common/path:discretized_path_test_cpplint             PASSED in 0.2s
+//modules/planning/common/path:frenet_frame_path_cpplint                 PASSED in 0.4s
+//modules/planning/common/path:frenet_frame_path_test                    PASSED in 0.5s
+//modules/planning/common/path:frenet_frame_path_test_cpplint            PASSED in 0.3s
+//modules/planning/common/path:path_data_cpplint                         PASSED in 0.5s
+//modules/planning/common:path_decision_cpplint                          PASSED in 0.5s
+//modules/planning/common:planning_context_cpplint                       PASSED in 0.3s
+//modules/planning/common:planning_gflags_cpplint                        PASSED in 0.8s
+//modules/planning/common:reference_line_info_cpplint                    PASSED in 1.1s
+//modules/planning/common:reference_line_info_test                       PASSED in 1.6s
+//modules/planning/common:reference_line_info_test_cpplint               PASSED in 0.2s
+//modules/planning/common/speed:speed_data_cpplint                       PASSED in 0.4s
+//modules/planning/common/speed:st_boundary_cpplint                      PASSED in 0.8s
+//modules/planning/common/speed:st_boundary_test                         PASSED in 0.6s
+//modules/planning/common/speed:st_boundary_test_cpplint                 PASSED in 0.3s
+//modules/planning/common/speed:st_point_cpplint                         PASSED in 0.3s
+//modules/planning/common:speed_limit_cpplint                            PASSED in 0.3s
+//modules/planning/common:speed_limit_test                               PASSED in 0.5s
+//modules/planning/common:speed_limit_test_cpplint                       PASSED in 0.2s
+//modules/planning/common:speed_profile_generator_cpplint                PASSED in 0.5s
+//modules/planning/common:speed_profile_generator_test                   PASSED in 1.4s
+//modules/planning/common:speed_profile_generator_test_cpplint           PASSED in 0.4s
+//modules/planning/common:st_graph_data_cpplint                          PASSED in 0.4s
+//modules/planning/common:st_graph_data_test                             PASSED in 0.7s
+//modules/planning/common:st_graph_data_test_cpplint                     PASSED in 0.3s
+//modules/planning/common/trajectory:discretized_trajectory_cpplint      PASSED in 0.5s
+//modules/planning/common/trajectory:discretized_trajectory_test         PASSED in 0.6s
+//modules/planning/common/trajectory:discretized_trajectory_test_cpplint PASSED in 0.2s
+//modules/planning/common/trajectory:publishable_trajectory_cpplint      PASSED in 0.5s
+//modules/planning/common/trajectory:publishable_trajectory_test         PASSED in 0.6s
+//modules/planning/common/trajectory:publishable_trajectory_test_cpplint PASSED in 0.2s
+//modules/planning/common/trajectory1d:constant_deceleration_trajectory1d_cpplint PASSED in 0.4s
+//modules/planning/common/trajectory1d:constant_jerk_trajectory1d_cpplint PASSED in 0.4s
+//modules/planning/common/trajectory1d:piecewise_acceleration_trajectory1d_cpplint PASSED in 0.3s
+//modules/planning/common/trajectory1d:piecewise_jerk_trajectory1d_cpplint PASSED in 0.4s
+//modules/planning/common/trajectory1d:piecewise_trajectory1d_cpplint    PASSED in 0.4s
+//modules/planning/common/trajectory1d:standing_still_trajectory1d_cpplint PASSED in 0.3s
+//modules/planning/common:trajectory_stitcher_cpplint                    PASSED in 0.4s
+//modules/planning/common/util:util_lib_cpplint                          PASSED in 0.3s
+//modules/planning/constraint_checker:collision_checker_cpplint          PASSED in 0.5s
+//modules/planning/constraint_checker:constraint_checker1d_cpplint       PASSED in 0.3s
+//modules/planning/constraint_checker:constraint_checker_cpplint         PASSED in 0.5s
+//modules/planning/integration_tests:garage_test_cpplint                 PASSED in 0.2s
+//modules/planning/integration_tests:planning_test_base_cpplint          PASSED in 0.6s
+//modules/planning/integration_tests:sunnyvale_big_loop_test_cpplint     PASSED in 0.4s
+//modules/planning/integration_tests:sunnyvale_loop_test_cpplint         PASSED in 0.2s
+//modules/planning/lattice/behavior:feasible_region_cpplint              PASSED in 0.3s
+//modules/planning/lattice/behavior:path_time_graph_cpplint              PASSED in 0.6s
+//modules/planning/lattice/behavior:prediction_querier_cpplint           PASSED in 0.3s
+//modules/planning/lattice/trajectory_generation:backup_trajectory_generator_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory_generation:end_condition_sampler_cpplint PASSED in 0.5s
+//modules/planning/lattice/trajectory_generation:lateral_osqp_optimizer_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory_generation:lateral_qp_optimizer_cpplint PASSED in 0.5s
+//modules/planning/lattice/trajectory_generation:lattice_trajectory1d_cpplint PASSED in 0.5s
+//modules/planning/lattice/trajectory_generation:piecewise_braking_trajectory_generator_cpplint PASSED in 0.4s
+//modules/planning/lattice/trajectory_generation:trajectory1d_generator_cpplint PASSED in 0.5s
+//modules/planning/lattice/trajectory_generation:trajectory_combiner_cpplint PASSED in 0.4s
+//modules/planning/lattice/trajectory_generation:trajectory_evaluator_cpplint PASSED in 0.5s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_cpplint         PASSED in 0.4s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_test            PASSED in 0.1s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_test_cpplint    PASSED in 0.2s
+//modules/planning/math/curve1d:curve1d_cpplint                          PASSED in 0.3s
+//modules/planning/math/curve1d:piecewise_quintic_spiral_path_cpplint    PASSED in 0.3s
+//modules/planning/math/curve1d:piecewise_quintic_spiral_path_test       PASSED in 0.4s
+//modules/planning/math/curve1d:piecewise_quintic_spiral_path_test_cpplint PASSED in 0.3s
+//modules/planning/math/curve1d:polynomial_curve1d_cpplint               PASSED in 0.3s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_cpplint       PASSED in 0.4s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_test          PASSED in 0.1s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_test_cpplint  PASSED in 0.3s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_cpplint       PASSED in 0.4s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_test          PASSED in 0.1s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_test_cpplint  PASSED in 0.3s
+//modules/planning/math/curve1d:quintic_spiral_path_cpplint              PASSED in 1.0s
+//modules/planning/math:curve_math_cpplint                               PASSED in 0.3s
+//modules/planning/math:curve_math_test                                  PASSED in 0.0s
+//modules/planning/math:curve_math_test_cpplint                          PASSED in 0.3s
+//modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_cpplint PASSED in 0.6s
+//modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_test PASSED in 0.1s
+//modules/planning/math/finite_element_optimizer:finite_element1d_optimizer_test_cpplint PASSED in 0.2s
+//modules/planning/math/finite_element_qp:fem_1d_qp_problem_cpplint      PASSED in 0.7s
+//modules/planning/math/finite_element_qp:fem_1d_qp_problem_test         PASSED in 0.1s
+//modules/planning/math/finite_element_qp:fem_1d_qp_problem_test_cpplint PASSED in 0.3s
+//modules/planning/math:polynomial_xd_cpplint                            PASSED in 0.4s
+//modules/planning/math/smoothing_spline:active_set_spline_1d_solver_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:active_set_spline_1d_solver_test PASSED in 0.4s
+//modules/planning/math/smoothing_spline:active_set_spline_1d_solver_test_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:active_set_spline_2d_solver_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:active_set_spline_2d_solver_test PASSED in 0.4s
+//modules/planning/math/smoothing_spline:active_set_spline_2d_solver_test_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:affine_constraint_cpplint       PASSED in 0.4s
+//modules/planning/math/smoothing_spline:osqp_spline_1d_solver_cpplint   PASSED in 0.4s
+//modules/planning/math/smoothing_spline:osqp_spline_1d_solver_test      PASSED in 0.3s
+//modules/planning/math/smoothing_spline:osqp_spline_1d_solver_test_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:osqp_spline_2d_solver_cpplint   PASSED in 0.4s
+//modules/planning/math/smoothing_spline:osqp_spline_2d_solver_test      PASSED in 0.4s
+//modules/planning/math/smoothing_spline:osqp_spline_2d_solver_test_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_cpplint PASSED in 0.5s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_test PASSED in 0.1s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_test_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:piecewise_linear_generator_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_test    PASSED in 0.1s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_test_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_cpplint    PASSED in 0.9s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_test       PASSED in 0.1s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_test_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_1d_cpplint               PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_cpplint        PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_test           PASSED in 0.0s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_test_cpplint   PASSED in 0.5s
+//modules/planning/math/smoothing_spline:spline_1d_seg_cpplint           PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_1d_solver_cpplint        PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_cpplint    PASSED in 0.8s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_test       PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_test_cpplint PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_2d_cpplint               PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_cpplint        PASSED in 0.5s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_test           PASSED in 0.5s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_test_cpplint   PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_2d_seg_cpplint           PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_2d_solver_cpplint        PASSED in 0.5s
+//modules/planning/math/smoothing_spline:spline_seg_kernel_cpplint       PASSED in 0.4s
+//modules/planning/navi/decider:navi_decider_test                        PASSED in 1.0s
+//modules/planning/navi/decider:navi_decider_test_cpplint                PASSED in 1.0s
+//modules/planning/navi/decider:navi_obstacle_decider_cpplint            PASSED in 0.6s
+//modules/planning/navi/decider:navi_path_decider_cpplint                PASSED in 0.7s
+//modules/planning/navi/decider:navi_speed_decider_cpplint               PASSED in 1.1s
+//modules/planning/navi/decider:navi_task_cpplint                        PASSED in 0.3s
+//modules/planning/open_space/coarse_trajectory_generator:grid_search_cpplint PASSED in 0.6s
+//modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_cpplint PASSED in 0.7s
+//modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test_cpplint PASSED in 0.3s
+//modules/planning/open_space/coarse_trajectory_generator:node3d_cpplint PASSED in 0.4s
+//modules/planning/open_space/coarse_trajectory_generator:node3d_test_cpplint PASSED in 0.2s
+//modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_cpplint PASSED in 0.9s
+//modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test_cpplint PASSED in 0.4s
+//modules/planning/open_space/constraints_formulation:open_space_ROI_cpplint PASSED in 0.6s
+//modules/planning/open_space:open_space_trajectory_generator_cpplint    PASSED in 0.6s
+//modules/planning/open_space/trajectory_partition:trajectory_partitioner_cpplint PASSED in 0.5s
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_cpplint PASSED in 0.8s
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test_cpplint PASSED in 0.3s
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_cpplint PASSED in 1.8s
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test_cpplint PASSED in 0.3s
+//modules/planning/open_space/trajectory_smoother:distance_approach_problem_cpplint PASSED in 0.4s
+//modules/planning/open_space/trajectory_smoother:distance_approach_problem_test_cpplint PASSED in 0.4s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_cpplint PASSED in 0.8s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test_cpplint PASSED in 0.3s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_qp_interface_cpplint PASSED in 0.8s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_cpplint PASSED in 0.5s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_test PASSED in 0.8s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_osqp_interface_test_cpplint PASSED in 0.2s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_cpplint PASSED in 0.6s
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test_cpplint PASSED in 0.2s
+//modules/planning/open_space/trajectory_smoother:planning_block_cpplint PASSED in 0.3s
+//modules/planning/planner/lattice:lattice_planner_cpplint               PASSED in 0.4s
+//modules/planning/planner/navi:navi_planner_cpplint                     PASSED in 0.6s
+//modules/planning/planner/navi:navi_planner_test_cpplint                PASSED in 0.3s
+//modules/planning/planner:navi_planner_dispatcher_test_cpplint          PASSED in 0.3s
+//modules/planning/planner:on_lane_planner_dispatcher_test_cpplint       PASSED in 0.3s
+//modules/planning/planner/open_space:open_space_planner_cpplint         PASSED in 0.5s
+//modules/planning/planner/open_space:open_space_planner_test_cpplint    PASSED in 0.2s
+//modules/planning/planner:planner_cpplint                               PASSED in 0.5s
+//modules/planning/planner:planner_dispatcher_cpplint                    PASSED in 0.4s
+//modules/planning/planner/public_road:public_road_planner_cpplint       PASSED in 0.3s
+//modules/planning/planner/public_road:public_road_planner_test_cpplint  PASSED in 0.2s
+//modules/planning/planner/rtk:rtk_planner_cpplint                       PASSED in 0.4s
+//modules/planning/planner/rtk:rtk_replay_planner_test_cpplint           PASSED in 0.3s
+//modules/planning:planning_component_lib_cpplint                        PASSED in 0.4s
+//modules/planning:planning_lib_cpplint                                  PASSED in 1.5s
+//modules/planning/reference_line:cos_theta_reference_line_smoother_cpplint PASSED in 1.1s
+//modules/planning/reference_line:cos_theta_reference_line_smoother_test PASSED in 2.9s
+//modules/planning/reference_line:cos_theta_reference_line_smoother_test_cpplint PASSED in 0.2s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_cpplint PASSED in 0.4s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_test PASSED in 1.0s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_test_cpplint PASSED in 0.3s
+//modules/planning/reference_line:reference_line_cpplint                 PASSED in 1.0s
+//modules/planning/reference_line:reference_line_provider_cpplint        PASSED in 1.0s
+//modules/planning/reference_line:reference_line_smoother_cpplint        PASSED in 0.4s
+//modules/planning/reference_line:smoother_util_cpplint                  PASSED in 0.4s
+//modules/planning/reference_line:spiral_reference_line_smoother_cpplint PASSED in 1.2s
+//modules/planning/reference_line:spiral_reference_line_smoother_test    PASSED in 52.8s
+//modules/planning/reference_line:spiral_reference_line_smoother_test_cpplint PASSED in 0.3s
+//modules/planning/reference_line:spiral_smoother_util_cpplint           PASSED in 0.5s
+//modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_cpplint PASSED in 0.9s
+//modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test_cpplint PASSED in 0.3s
+//modules/planning/scenarios/lane_follow:lane_follow_scenario_cpplint    PASSED in 0.3s
+//modules/planning/scenarios/lane_follow:lane_follow_scenario_test_cpplint PASSED in 0.3s
+//modules/planning/scenarios/lane_follow:lane_follow_stage_cpplint       PASSED in 0.6s
+//modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_cpplint PASSED in 0.5s
+//modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test_cpplint PASSED in 0.2s
+//modules/planning/scenarios:scenario_cpplint                            PASSED in 0.4s
+//modules/planning/scenarios:scenario_manager_cpplint                    PASSED in 0.6s
+//modules/planning/scenarios/side_pass:side_pass_cpplint                 PASSED in 1.8s
+//modules/planning/scenarios/side_pass:side_pass_scenario_test_cpplint   PASSED in 0.3s
+//modules/planning/scenarios:stage_cpplint                               PASSED in 0.6s
+//modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_cpplint PASSED in 1.3s
+//modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test_cpplint PASSED in 0.2s
+//modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_cpplint PASSED in 0.8s
+//modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test_cpplint PASSED in 0.3s
+//modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test_cpplint PASSED in 0.3s
+//modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_unprotected_left_turn_scenario_cpplint PASSED in 0.6s
+//modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test_cpplint PASSED in 0.2s
+//modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_unprotected_right_turn_scenario_cpplint PASSED in 1.1s
+//modules/planning/scenarios/util:scenario_util_lib_cpplint              PASSED in 0.3s
+//modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test_cpplint PASSED in 0.2s
+//modules/planning/scenarios/valet_parking:stage_parking_test_cpplint    PASSED in 0.2s
+//modules/planning/scenarios/valet_parking:valet_parking_cpplint         PASSED in 0.6s
+//modules/planning/scenarios/valet_parking:valet_parking_scenario_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/deciders:decider_base_cpplint                   PASSED in 0.3s
+//modules/planning/tasks/deciders:decider_cpplint                        PASSED in 1.2s
+//modules/planning/tasks/deciders:decider_rule_based_stop_cpplint        PASSED in 0.6s
+//modules/planning/tasks/deciders:open_space_fallback_decider_cpplint    PASSED in 0.5s
+//modules/planning/tasks/deciders:open_space_fallback_decider_test       PASSED in 1.6s
+//modules/planning/tasks/deciders:open_space_fallback_decider_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/deciders:open_space_roi_decider_cpplint         PASSED in 0.6s
+//modules/planning/tasks/deciders:open_space_roi_decider_test            PASSED in 1.6s
+//modules/planning/tasks/deciders:open_space_roi_decider_test_cpplint    PASSED in 0.3s
+//modules/planning/tasks/deciders:path_assessment_decider_cpplint        PASSED in 0.5s
+//modules/planning/tasks/deciders:path_bounds_decider_cpplint            PASSED in 0.9s
+//modules/planning/tasks/deciders:path_decider_obstacle_utils_cpplint    PASSED in 0.3s
+//modules/planning/tasks/deciders:side_pass_decider_test                 PASSED in 1.4s
+//modules/planning/tasks/deciders:side_pass_decider_test_cpplint         PASSED in 0.2s
+//modules/planning/tasks/deciders/speed_bounds_decider:speed_bounds_decider_cpplint PASSED in 0.6s
+//modules/planning/tasks/deciders/speed_bounds_decider:speed_limit_decider_test PASSED in 1.1s
+//modules/planning/tasks/deciders/speed_bounds_decider:speed_limit_decider_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_cpplint PASSED in 0.8s
+//modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_test PASSED in 1.1s
+//modules/planning/tasks/deciders/speed_bounds_decider:st_boundary_mapper_test_cpplint PASSED in 0.3s
+//modules/planning/tasks/optimizers/dp_poly_path:dp_poly_path_optimizer_cpplint PASSED in 0.3s
+//modules/planning/tasks/optimizers/dp_st_speed:dp_st_cost_cpplint       PASSED in 0.5s
+//modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_cpplint      PASSED in 0.6s
+//modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_test         PASSED in 0.9s
+//modules/planning/tasks/optimizers/dp_st_speed:dp_st_graph_test_cpplint PASSED in 0.3s
+//modules/planning/tasks/optimizers/dp_st_speed:dp_st_speed_optimizer_cpplint PASSED in 0.5s
+//modules/planning/tasks/optimizers/dp_st_speed:st_graph_point_cpplint   PASSED in 0.3s
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_cpplint PASSED in 0.9s
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_cpplint PASSED in 0.7s
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_cpplint PASSED in 0.6s
+//modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_test PASSED in 1.0s
+//modules/planning/tasks/optimizers/open_space_trajectory_partition:open_space_trajectory_partition_test_cpplint PASSED in 0.3s
+//modules/planning/tasks/optimizers/path_decider:path_decider_cpplint    PASSED in 0.4s
+//modules/planning/tasks/optimizers:path_optimizer_cpplint               PASSED in 0.4s
+//modules/planning/tasks/optimizers/piecewise_jerk_path:piecewise_jerk_path_optimizer_cpplint PASSED in 0.6s
+//modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_cpplint PASSED in 0.3s
+//modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_test PASSED in 1.3s
+//modules/planning/tasks/optimizers/proceed_with_caution_speed:proceed_with_caution_speed_generator_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/optimizers/qp_piecewise_jerk_path:qp_piecewise_jerk_path_optimizer_cpplint PASSED in 0.4s
+//modules/planning/tasks/optimizers/qp_spline_path:qp_spline_path_cpplint PASSED in 1.1s
+//modules/planning/tasks/optimizers/qp_spline_st_speed:qp_piecewise_st_graph_cpplint PASSED in 0.6s
+//modules/planning/tasks/optimizers/qp_spline_st_speed:qp_spline_st_graph_cpplint PASSED in 0.7s
+//modules/planning/tasks/optimizers/qp_spline_st_speed:qp_spline_st_speed_optimizer_cpplint PASSED in 0.6s
+//modules/planning/tasks/optimizers/road_graph:comparable_cost_test      PASSED in 1.1s
+//modules/planning/tasks/optimizers/road_graph:comparable_cost_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/optimizers/road_graph:road_graph_cpplint        PASSED in 1.3s
+//modules/planning/tasks/optimizers/road_graph:trajectory_cost_test      PASSED in 1.4s
+//modules/planning/tasks/optimizers/road_graph:trajectory_cost_test_cpplint PASSED in 0.2s
+//modules/planning/tasks/optimizers/speed_decider:speed_decider_cpplint  PASSED in 0.6s
+//modules/planning/tasks/optimizers:speed_optimizer_cpplint              PASSED in 0.3s
+//modules/planning/tasks/optimizers:trajectory_optimizer_cpplint         PASSED in 0.4s
+//modules/planning/tasks/rss:decider_rss_cpplint                         PASSED in 0.4s
+//modules/planning/tasks/rss:decider_rss_test                            PASSED in 1.4s
+//modules/planning/tasks/rss:decider_rss_test_cpplint                    PASSED in 0.3s
+//modules/planning/tasks/smoothers:smoother_cpplint                      PASSED in 0.4s
+//modules/planning/tasks:task_cpplint                                    PASSED in 0.4s
+//modules/planning/tasks:task_factory_cpplint                            PASSED in 0.5s
+//modules/planning/traffic_rules:traffic_decider_cpplint                 PASSED in 0.6s
+//modules/planning/traffic_rules:traffic_rules_cpplint                   PASSED in 2.4s
+//modules/planning/tuning:autotuning_base_model_cpplint                  PASSED in 0.3s
+//modules/planning/tuning:autotuning_feature_builder_cpplint             PASSED in 0.3s
+//modules/planning/tuning:autotuning_mlp_net_model_cpplint               PASSED in 0.2s
+//modules/planning/tuning:autotuning_mlp_net_model_test                  PASSED in 0.3s
+//modules/planning/tuning:autotuning_mlp_net_model_test_cpplint          PASSED in 0.2s
+//modules/planning/tuning:autotuning_raw_feature_generator_cpplint       PASSED in 0.4s
+//modules/planning/tuning:autotuning_raw_feature_generator_test          PASSED in 1.4s
+//modules/planning/tuning:autotuning_raw_feature_generator_test_cpplint  PASSED in 0.2s
+//modules/planning/tuning/speed_model:autotuning_speed_feature_builder_cpplint PASSED in 0.5s
+//modules/planning/tuning/speed_model:autotuning_speed_feature_builder_test PASSED in 0.1s
+//modules/planning/tuning/speed_model:autotuning_speed_feature_builder_test_cpplint PASSED in 0.2s
+//modules/planning/tuning/speed_model:autotuning_speed_mlp_model_cpplint PASSED in 0.5s
+//modules/planning/tuning/speed_model:autotuning_speed_mlp_model_test    PASSED in 0.5s
+//modules/planning/tuning/speed_model:autotuning_speed_mlp_model_test_cpplint PASSED in 0.2s
+//modules/planning/integration_tests:garage_test                         FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/garage_test/test.log
+//modules/planning/integration_tests:sunnyvale_big_loop_test             FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/sunnyvale_big_loop_test/test.log
+//modules/planning/integration_tests:sunnyvale_loop_test                 FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/integration_tests/sunnyvale_loop_test/test.log
+//modules/planning/open_space/coarse_trajectory_generator:hybrid_a_star_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/hybrid_a_star_test/test.log
+//modules/planning/open_space/coarse_trajectory_generator:node3d_test    FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/node3d_test/test.log
+//modules/planning/open_space/coarse_trajectory_generator:reeds_shepp_path_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/coarse_trajectory_generator/reeds_shepp_path_test/test.log
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_cuda_interface_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_cuda_interface_test/test.log
+//modules/planning/open_space/trajectory_smoother:distance_approach_ipopt_interface_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_ipopt_interface_test/test.log
+//modules/planning/open_space/trajectory_smoother:distance_approach_problem_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/distance_approach_problem_test/test.log
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_ipopt_interface_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_ipopt_interface_test/test.log
+//modules/planning/open_space/trajectory_smoother:dual_variable_warm_start_problem_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/open_space/trajectory_smoother/dual_variable_warm_start_problem_test/test.log
+//modules/planning/planner/navi:navi_planner_test                        FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/navi/navi_planner_test/test.log
+//modules/planning/planner:navi_planner_dispatcher_test                  FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/navi_planner_dispatcher_test/test.log
+//modules/planning/planner:on_lane_planner_dispatcher_test               FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/on_lane_planner_dispatcher_test/test.log
+//modules/planning/planner/open_space:open_space_planner_test            FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/open_space/open_space_planner_test/test.log
+//modules/planning/planner/public_road:public_road_planner_test          FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/public_road/public_road_planner_test/test.log
+//modules/planning/planner/rtk:rtk_replay_planner_test                   FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/planner/rtk/rtk_replay_planner_test/test.log
+//modules/planning/scenarios/bare_intersection/unprotected:bare_intersection_unprotected_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/bare_intersection/unprotected/bare_intersection_unprotected_scenario_test/test.log
+//modules/planning/scenarios/lane_follow:lane_follow_scenario_test       FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/lane_follow/lane_follow_scenario_test/test.log
+//modules/planning/scenarios/narrow_street_u_turn:narrow_street_u_turn_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/narrow_street_u_turn/narrow_street_u_turn_scenario_test/test.log
+//modules/planning/scenarios/side_pass:side_pass_scenario_test           FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/side_pass/side_pass_scenario_test/test.log
+//modules/planning/scenarios/stop_sign/unprotected:stop_sign_unprotected_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/stop_sign/unprotected/stop_sign_unprotected_scenario_test/test.log
+//modules/planning/scenarios/traffic_light/protected:traffic_light_protected_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/protected/traffic_light_protected_scenario_test/test.log
+//modules/planning/scenarios/traffic_light/unprotected_left_turn:traffic_light_left_turn_unprotected_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/unprotected_left_turn/traffic_light_left_turn_unprotected_scenario_test/test.log
+//modules/planning/scenarios/traffic_light/unprotected_right_turn:traffic_light_right_turn_unprotected_scenario_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/traffic_light/unprotected_right_turn/traffic_light_right_turn_unprotected_scenario_test/test.log
+//modules/planning/scenarios/valet_parking:stage_approaching_parking_spot_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/stage_approaching_parking_spot_test/test.log
+//modules/planning/scenarios/valet_parking:stage_parking_test            FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/stage_parking_test/test.log
+//modules/planning/scenarios/valet_parking:valet_parking_scenario_test   FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/scenarios/valet_parking/valet_parking_scenario_test/test.log
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_optimizer_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_optimizer_test/test.log
+//modules/planning/tasks/optimizers/open_space_trajectory_generation:open_space_trajectory_provider_test FAILED in 0.1s
+  /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot/apollo/bazel-out/local-fastbuild/testlogs/modules/planning/tasks/optimizers/open_space_trajectory_generation/open_space_trajectory_provider_test/test.log
+
+Executed 335 out of 335 tests: 305 tests pass and 30 fail locally.

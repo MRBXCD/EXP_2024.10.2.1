@@ -1,0 +1,35 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20180906_2002 ...
+dev-x86_64-20180906_2002: Pulling from apolloauto/apollo
+Digest: sha256:ce9e7706b64dc566b398db377c004290de62d54e76f47ab693ec97183ee9df62
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20180906_2002
+docker.io/apolloauto/apollo:dev-x86_64-20180906_2002
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+95896bc81e3421efaf565b3739fde18ff89fade12d4823eb8fd08df1b4e97468
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+0ea8d430f9fcb8cab16e1b26a2f8444b5e5979a6b89afc3498cf59ef477c1436
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+3e33e3a13dba0b480f8beae6e8a4d03637bdfc781f56b7ddddc0a565029dd7f8
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+12622a043616d22599ce112d0fc36ad0433094e0d034f6f2a718e38c702e8647
+[[34m[1mINFO[0m] Starting docker container "apollo_dev" ...
+d8e2acd10f6a8ec5140ac5b14d6d0b20e71a02565c66ff230ea2b7d769fa87e9
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

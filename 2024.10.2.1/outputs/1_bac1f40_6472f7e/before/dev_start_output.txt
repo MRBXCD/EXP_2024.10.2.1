@@ -1,0 +1,59 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20190617_1100 ...
+dev-x86_64-20190617_1100: Pulling from apolloauto/apollo
+Digest: sha256:d1e2eb085bdafc2c663bf8a622bf38d9de1288efc6ca67e908290e4bbd5ec00e
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20190617_1100
+docker.io/apolloauto/apollo:dev-x86_64-20190617_1100
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+c396df718ab87f9a8ecce0289345b0787bcd8c176e746fc5c835b1647dc1f2c4
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+cfae64d7f9f383af5a56d35abeb18cca9a73fa72d069e852bf54a2aa369dacac
+map_volume-sunnyvale_with_two_offices-latest: Pulling from apolloauto/apollo
+Digest: sha256:5893abb847f7cffb5dd310f9bac307d5c2537797c247eb1c609f36de1943bdf5
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_with_two_offices-latest
+2b06b92ee6e9eebe8049928ff3471d4f38a0add46f7aa2913f56e4dbef6430d9
+map_volume-san_mateo-latest: Pulling from apolloauto/apollo
+Digest: sha256:12b04dbfa947f7f06dc5c3b7604be08988c560e850c037a2571998478f0ccf80
+Status: Image is up to date for apolloauto/apollo:map_volume-san_mateo-latest
+docker.io/apolloauto/apollo:map_volume-san_mateo-latest
+83cd7357e05e525e3b5afd4031218ebb36f4eacb0ad04b36b9569bed0258f05e
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+c4787539f2bde7a9a3d3dea663bb684d1df41f1c904870716563552b21c84fd3
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+26019f05bea9a4ab30dda546eb697dc1955f376befee4ae5eab6c7ae1be11bc5
+paddlepaddle_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:901f110a4f13501e074f599b2c7d636a7584d290f59ef50237a7d77e66d025fb
+Status: Image is up to date for apolloauto/apollo:paddlepaddle_volume-x86_64-latest
+docker.io/apolloauto/apollo:paddlepaddle_volume-x86_64-latest
+8cf97bd2c9105e8c5d60e502472d66c8329719230bc210adb3d124bc7b14a222
+local_third_party_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:b844c40ab0af0733ce69c38b220a8b14f752bd834f63343392ce8508b98b546b
+Status: Image is up to date for apolloauto/apollo:local_third_party_volume-x86_64-latest
+docker.io/apolloauto/apollo:local_third_party_volume-x86_64-latest
+5f2becfd9bc79265a5ddd65327461c56586c19901cd25b428747066d2da54c8c
+[[34m[1mINFO[0m] Starting docker container "apollo_dev_user" ...
+++ local_volumes
+++ set +x
++ nvidia-docker run -it -d --privileged --name apollo_dev_user --volumes-from apollo_map_volume-sunnyvale_big_loop_user --volumes-from apollo_map_volume-sunnyvale_loop_user --volumes-from apollo_map_volume-sunnyvale_with_two_offices_user --volumes-from apollo_map_volume-san_mateo_user --volumes-from apollo_yolo3d_volume_user --volumes-from apollo_localization_volume_user --volumes-from apollo_paddlepaddle_volume_user --volumes-from apollo_local_third_party_volume_user -e DISPLAY=:0 -e DOCKER_USER=user -e USER=user -e DOCKER_USER_ID=1000 -e DOCKER_GRP=user -e DOCKER_GRP_ID=1000 -e DOCKER_IMG=apolloauto/apollo:dev-x86_64-20190617_1100 -e USE_GPU=1 -v /home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_0:/apollo -v /home/user/.cache:/home/user/.cache -v /dev:/dev -v /media:/media -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /etc/localtime:/etc/localtime:ro -v /usr/src:/usr/src -v /lib/modules:/lib/modules --net host -w /apollo --add-host in_dev_docker:127.0.0.1 --add-host e55ff43a-5863-4e19-a42b-8e5ce682ba43:127.0.0.1 --hostname in_dev_docker --shm-size 2G --pid=host -v /dev/null:/dev/raw1394 apolloauto/apollo:dev-x86_64-20190617_1100 /bin/bash
+66c9857bf59bcebd5d76ea43fac34433b11f90cac9248e33cc63eba7b8667c12
++ set +x
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

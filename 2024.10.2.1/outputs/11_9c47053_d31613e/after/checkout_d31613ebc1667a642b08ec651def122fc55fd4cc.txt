@@ -1,0 +1,2 @@
+Previous HEAD position was 9c47053442 PnC: Simple refactor on unit tests.
+HEAD is now at d31613ebc1 planning: open space fixed wrong fallback trajectory
