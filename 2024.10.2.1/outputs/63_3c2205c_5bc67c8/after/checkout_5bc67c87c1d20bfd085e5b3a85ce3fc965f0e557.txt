@@ -1,0 +1,2 @@
+Previous HEAD position was 3c2205c1ba Planning: When hotstart fails, re-init the problem and solve again. (#1162)
+HEAD is now at 5bc67c87c1 Planning: fixed the trajectory deviation bug by increasing reference line weight and adjusting low speed range. (#1167)

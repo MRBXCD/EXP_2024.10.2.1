@@ -1,0 +1,5 @@
+System check passed. Build continue ...
+[33m[WARNING] ESD CAN library supplied by ESD Electronics does not exist. If you need ESD CAN, please refer to third_party/can_card_library/esd_can/README.md.[0m
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+INFO: Starting clean.
+INFO: Output tree moved to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/execroot_tmp_180 for deletion

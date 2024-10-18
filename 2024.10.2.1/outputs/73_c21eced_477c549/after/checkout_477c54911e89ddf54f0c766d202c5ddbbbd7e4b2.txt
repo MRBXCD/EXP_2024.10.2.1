@@ -1,0 +1,2 @@
+Previous HEAD position was c21eced843 script: build common/proto/gnss_status.proto py lib. (#824)
+HEAD is now at 477c54911e Prediction: fix the problem of nearby obstacles no prediction trajectories (#826)

@@ -1,0 +1,2 @@
+Previous HEAD position was 28cd780499 Planning: added scenario place holder. (#5580)
+HEAD is now at 22e0bb2462 planning & reference line: added spiral_smoother_util; bug fix in spiral reference line smoother; parameter adjusted

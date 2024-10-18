@@ -1,0 +1,9 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 87 targets (59 packages loaded)
+ERROR: /apollo/modules/common/math/BUILD:106:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/common/math:kalman_filter'
+ERROR: Analysis of target '//modules/canbus:canbus' failed; build aborted
+INFO: Elapsed time: 1.243s
+FAILED: Build did NOT complete successfully (59 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

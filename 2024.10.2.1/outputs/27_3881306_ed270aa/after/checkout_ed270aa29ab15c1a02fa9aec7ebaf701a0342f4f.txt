@@ -1,0 +1,2 @@
+Previous HEAD position was 388130685f Planning: fix hessian
+HEAD is now at ed270aa29a planning: modified default values for lateral trajectory optimization weights

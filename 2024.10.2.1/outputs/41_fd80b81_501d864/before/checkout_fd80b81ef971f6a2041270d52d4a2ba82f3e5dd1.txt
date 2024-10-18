@@ -1,0 +1,18 @@
+Note: switching to 'fd80b81ef971f6a2041270d52d4a2ba82f3e5dd1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at fd80b81ef9 Update relative_map period in diagonsis tools and minor cleaning (#2996)

@@ -1,0 +1,2 @@
+Previous HEAD position was 5e9463613f Planning: fixed a bug on Shrink -- it could fail.
+HEAD is now at ac5df8b1cd Planning: (1) fixed turn signal bug. Localization: (2) fixed wrong order initilized variables. (#1800)

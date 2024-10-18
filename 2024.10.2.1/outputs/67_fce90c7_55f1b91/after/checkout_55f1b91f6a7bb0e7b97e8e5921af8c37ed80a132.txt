@@ -1,0 +1,2 @@
+Previous HEAD position was fce90c722c routing: change min distance to drive before change lane to 100 ft, i.e., 30.48m.
+HEAD is now at 55f1b91f6a Planning: fixed the confusion of spline order for spline_seg_kernel and polynomial_xd. More to be fixed.

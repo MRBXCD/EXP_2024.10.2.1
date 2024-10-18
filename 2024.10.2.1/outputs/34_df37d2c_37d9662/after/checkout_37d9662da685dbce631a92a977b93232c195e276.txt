@@ -1,0 +1,2 @@
+Previous HEAD position was df37d2c791 drivers: add support for velodyne HDL32E (#4067)
+HEAD is now at 37d9662da6 Relative map: fixed a bug at end of reference line -- some point index could be skipped so that only == is not enough.

@@ -1,0 +1,9 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 89 targets (42 packages loaded)
+ERROR: /apollo/modules/prediction/container/obstacles/BUILD:19:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/prediction/container/obstacles:obstacle'
+ERROR: Analysis of target '//modules/prediction/container/obstacles:obstacles_container' failed; build aborted
+INFO: Elapsed time: 1.354s
+FAILED: Build did NOT complete successfully (42 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

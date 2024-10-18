@@ -1,0 +1,9 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 129 targets (51 packages loaded)
+ERROR: /apollo/modules/prediction/network/BUILD:53:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/prediction/network:net_util_test'
+ERROR: Analysis of target '//modules/prediction/network:net_util_test' failed; build aborted
+INFO: Elapsed time: 1.435s
+FAILED: Build did NOT complete successfully (54 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

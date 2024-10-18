@@ -1,0 +1,2 @@
+Previous HEAD position was 519d9a6a78 navi: show different line style for human and map routings
+HEAD is now at a5c2ec02e9 planning: fix waypoint tracking bug in pnc_map

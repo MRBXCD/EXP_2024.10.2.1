@@ -1,0 +1,2 @@
+Previous HEAD position was eb9be2ff6d planning: spiral reference line smoother adjusted search variable search bounds
+HEAD is now at 70751ba15a Planning: [lattice] fix lateral distance computing and relative_time loop range

@@ -1,0 +1,2 @@
+Previous HEAD position was 5bc67c87c1 Planning: fixed the trajectory deviation bug by increasing reference line weight and adjusting low speed range. (#1167)
+HEAD is now at b8b4503f1b prediction: fixed the dynamic model for obstacle prediction; temporarily disable some prediction unit tests

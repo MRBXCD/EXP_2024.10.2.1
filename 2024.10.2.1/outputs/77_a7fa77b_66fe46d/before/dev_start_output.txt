@@ -1,0 +1,68 @@
+/apollo/data/core/core_%e.%p
+Type 'y' or 'Y' to pull docker image from China mirror or any other key from US mirror.
+dev-x86_64-20170926_1848: Pulling from apolloauto/apollo
+Digest: sha256:0d2a9b7384843471c76e094bf9816d01eed2d8b31be5615386c4e309f0c1fc2c
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20170926_1848
+docker.io/apolloauto/apollo:dev-x86_64-20170926_1848
+[33m[WARNING] Failed to find device with pattern "ttyUSB*" ...[0m
+[[32m[1m OK [0m] Found device: /dev/ttyS31.
+[[32m[1m OK [0m] Found device: /dev/ttyS30.
+[[32m[1m OK [0m] Found device: /dev/ttyS29.
+[[32m[1m OK [0m] Found device: /dev/ttyS28.
+[[32m[1m OK [0m] Found device: /dev/ttyS27.
+[[32m[1m OK [0m] Found device: /dev/ttyS26.
+[[32m[1m OK [0m] Found device: /dev/ttyS25.
+[[32m[1m OK [0m] Found device: /dev/ttyS24.
+[[32m[1m OK [0m] Found device: /dev/ttyS23.
+[[32m[1m OK [0m] Found device: /dev/ttyS22.
+[[32m[1m OK [0m] Found device: /dev/ttyS21.
+[[32m[1m OK [0m] Found device: /dev/ttyS20.
+[[32m[1m OK [0m] Found device: /dev/ttyS19.
+[[32m[1m OK [0m] Found device: /dev/ttyS18.
+[[32m[1m OK [0m] Found device: /dev/ttyS17.
+[[32m[1m OK [0m] Found device: /dev/ttyS16.
+[[32m[1m OK [0m] Found device: /dev/ttyS15.
+[[32m[1m OK [0m] Found device: /dev/ttyS14.
+[[32m[1m OK [0m] Found device: /dev/ttyS13.
+[[32m[1m OK [0m] Found device: /dev/ttyS12.
+[[32m[1m OK [0m] Found device: /dev/ttyS11.
+[[32m[1m OK [0m] Found device: /dev/ttyS10.
+[[32m[1m OK [0m] Found device: /dev/ttyS9.
+[[32m[1m OK [0m] Found device: /dev/ttyS8.
+[[32m[1m OK [0m] Found device: /dev/ttyS7.
+[[32m[1m OK [0m] Found device: /dev/ttyS6.
+[[32m[1m OK [0m] Found device: /dev/ttyS5.
+[[32m[1m OK [0m] Found device: /dev/ttyS4.
+[[32m[1m OK [0m] Found device: /dev/ttyS3.
+[[32m[1m OK [0m] Found device: /dev/ttyS2.
+[[32m[1m OK [0m] Found device: /dev/ttyS1.
+[[32m[1m OK [0m] Found device: /dev/ttyS0.
+[[32m[1m OK [0m] Found device: /dev/can3.
+[[32m[1m OK [0m] Found device: /dev/can2.
+[[32m[1m OK [0m] Found device: /dev/can1.
+[[32m[1m OK [0m] Found device: /dev/can0.
+[33m[WARNING] Failed to find device with pattern "ram*" ...[0m
+[[32m[1m OK [0m] Found device: /dev/loop7.
+[[32m[1m OK [0m] Found device: /dev/loop6.
+[[32m[1m OK [0m] Found device: /dev/loop5.
+[[32m[1m OK [0m] Found device: /dev/loop4.
+[[32m[1m OK [0m] Found device: /dev/loop3.
+[[32m[1m OK [0m] Found device: /dev/loop2.
+[[32m[1m OK [0m] Found device: /dev/loop1.
+[[32m[1m OK [0m] Found device: /dev/loop0.
+[[32m[1m OK [0m] Found device: /dev/loop-control.
+[[32m[1m OK [0m] Found device: /dev/nvidia-caps.
+[[32m[1m OK [0m] Found device: /dev/nvidia-caps/nvidia-cap2.
+[[32m[1m OK [0m] Found device: /dev/nvidia-caps/nvidia-cap1.
+[[32m[1m OK [0m] Found device: /dev/nvidia-nvswitchctl.
+[[32m[1m OK [0m] Found device: /dev/nvidia-modeset.
+[[32m[1m OK [0m] Found device: /dev/nvidia-uvm-tools.
+[[32m[1m OK [0m] Found device: /dev/nvidia-uvm.
+[[32m[1m OK [0m] Found device: /dev/nvidia0.
+[[32m[1m OK [0m] Found device: /dev/nvidiactl.
+371708107ddae6c1322c17fbdc421ae41cc23761a95178f0e1b55ae22bffb251
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.

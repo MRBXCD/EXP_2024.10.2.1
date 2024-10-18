@@ -1,0 +1,14 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 87 targets (12 packages loaded)
+Analyzing: 87 targets (14 packages loaded)
+Analyzing: 87 targets (32 packages loaded)
+Analyzing: 87 targets (34 packages loaded)
+Analyzing: 87 targets (45 packages loaded)
+ERROR: /apollo/modules/common/math/BUILD:232:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/common/math:cartesian_frenet_conversion'
+ERROR: Analysis of target '//modules/canbus/vehicle:vehicle_controller_base' failed; build aborted
+INFO: Elapsed time: 6.083s
+FAILED: Build did NOT complete successfully (59 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

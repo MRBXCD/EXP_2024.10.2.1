@@ -1,0 +1,2 @@
+Previous HEAD position was b05d7c1bb0 Planning: fixed scenario 56.
+HEAD is now at 0f2a675956 planning: fixed the problem that piecewise braking trajectory evaluation out of bound

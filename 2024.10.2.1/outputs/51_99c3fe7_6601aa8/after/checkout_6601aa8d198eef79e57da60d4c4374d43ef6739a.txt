@@ -1,0 +1,2 @@
+Previous HEAD position was 99c3fe7d86 Update modules/data/tools/recorder
+HEAD is now at 6601aa8d19 Planning: fixed an inconsistent trajectory issue by using historical speed data to estimate travel distance at each evaluate time. (#1833)

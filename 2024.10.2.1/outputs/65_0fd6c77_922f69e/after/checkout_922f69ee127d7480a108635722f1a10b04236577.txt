@@ -1,0 +1,2 @@
+Previous HEAD position was 0fd6c77444 Common: Migrate StrCat to the original version.
+HEAD is now at 922f69ee12 Planning: fixed U-turn bug by adding reference line kernel and relaxed init ddl. (#1139)

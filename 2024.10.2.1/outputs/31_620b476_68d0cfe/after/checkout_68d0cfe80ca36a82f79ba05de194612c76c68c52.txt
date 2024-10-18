@@ -1,0 +1,2 @@
+Previous HEAD position was 620b476bf0 Docs: improved the document: "how_to_use_apollo_2.5_navigation_mode"
+HEAD is now at 68d0cfe80c Map: added the path priority parameter for a navigation path and fixed a bug in NavigationLane::MergeNavigationLineAndLaneMarker().

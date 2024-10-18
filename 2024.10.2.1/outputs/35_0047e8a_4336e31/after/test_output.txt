@@ -1,0 +1,98 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 87 targets (58 packages loaded)
+INFO: Analysed 87 targets (68 packages loaded).
+INFO: Found 19 targets and 68 test targets...
+[0 / 9] BazelWorkspaceStatusAction stable-status.txt
+[85 / 359] Compiling external/qpOASES/src/SQProblemSchur.cpp; 0s local ... (20 actions running)
+[101 / 359] Compiling external/qpOASES/src/QProblem.cpp; 1s local ... (20 actions running)
+[123 / 359] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 2s local ... (20 actions running)
+[145 / 359] Compiling external/com_google_protobuf/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc [for host]; 1s local ... (20 actions running)
+[173 / 359] Compiling external/com_google_protobuf/src/google/protobuf/compiler/javanano/javanano_message.cc [for host]; 0s local ... (19 actions running)
+[190 / 359] Compiling external/com_google_protobuf/src/google/protobuf/compiler/parser.cc [for host]; 1s local ... (19 actions running)
+[217 / 359] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 2s local ... (19 actions running)
+[258 / 359] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 3s local ... (19 actions running)
+[302 / 396] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 3s local ... (20 actions running)
+[1,183 / 1,682] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 5s local ... (20 actions running)
+[1,455 / 1,930] 40 / 68 tests; Testing //modules/canbus/vehicle/lincoln/protocol:canbus_lincoln_protocol_cpplint; 1s local ... (14 actions running)
+[1,618 / 1,930] 42 / 68 tests; Compiling modules/common/transform_listener/transform_listener.cc; 3s local ... (19 actions running)
+[1,719 / 1,930] 42 / 68 tests; Compiling modules/drivers/proto/delphi_esr.pb.cc; 2s local ... (20 actions running)
+[1,819 / 1,930] 42 / 68 tests; Compiling modules/canbus/vehicle/lincoln/lincoln_message_manager_test.cc; 1s local ... (19 actions running)
+[1,858 / 1,933] 45 / 68 tests; Compiling modules/canbus/tools/teleop.cc; 3s local ... (20 actions running)
+[1,938 / 1,955] 67 / 68 tests; Compiling modules/canbus/tools/teleop.cc; 8s local ... (4 actions running)
+[1,947 / 1,955] 67 / 68 tests; Compiling modules/common/adapters/adapter_manager.cc; 12s local
+[1,947 / 1,955] 67 / 68 tests; Compiling modules/common/adapters/adapter_manager.cc; 18s local
+[1,954 / 1,956] 68 / 68 tests; Linking modules/canbus/tools/teleop; 1s local ... (2 actions running)
+INFO: Elapsed time: 48.313s, Critical Path: 31.83s
+INFO: Build completed successfully, 1956 total actions
+//modules/canbus:canbus_cpplint                                          PASSED in 0.1s
+//modules/canbus:canbus_lib_cpplint                                      PASSED in 0.3s
+//modules/canbus:canbus_test                                             PASSED in 0.2s
+//modules/canbus:canbus_test_cpplint                                     PASSED in 0.1s
+//modules/canbus/common:canbus_common_cpplint                            PASSED in 0.2s
+//modules/canbus/tools:canbus_tester_cpplint                             PASSED in 0.1s
+//modules/canbus/tools:teleop_cpplint                                    PASSED in 0.3s
+//modules/canbus/vehicle:abstract_vehicle_factory_cpplint                PASSED in 0.2s
+//modules/canbus/vehicle/gem:gem_controller_cpplint                      PASSED in 0.4s
+//modules/canbus/vehicle/gem:gem_message_manager_cpplint                 PASSED in 0.3s
+//modules/canbus/vehicle/gem:gem_vehicle_factory_cpplint                 PASSED in 0.2s
+//modules/canbus/vehicle/gem/protocol:canbus_gem_protocol_cpplint        PASSED in 2.4s
+//modules/canbus/vehicle/lincoln:lincoln_controller_cpplint              PASSED in 0.5s
+//modules/canbus/vehicle/lincoln:lincoln_controller_test                 PASSED in 0.5s
+//modules/canbus/vehicle/lincoln:lincoln_controller_test_cpplint         PASSED in 0.2s
+//modules/canbus/vehicle/lincoln:lincoln_message_manager_cpplint         PASSED in 0.2s
+//modules/canbus/vehicle/lincoln:lincoln_message_manager_test            PASSED in 0.1s
+//modules/canbus/vehicle/lincoln:lincoln_message_manager_test_cpplint    PASSED in 0.2s
+//modules/canbus/vehicle/lincoln:lincoln_vehicle_factory_cpplint         PASSED in 0.2s
+//modules/canbus/vehicle/lincoln:lincoln_vehicle_factory_test            PASSED in 0.1s
+//modules/canbus/vehicle/lincoln:lincoln_vehicle_factory_test_cpplint    PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:accel_6b_test                  PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:accel_6b_test_cpplint          PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:brake_60_test                  PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:brake_60_test_cpplint          PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:brake_61_test                  PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:brake_61_test_cpplint          PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:brakeinfo_74_test              PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:brakeinfo_74_test_cpplint      PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:canbus_lincoln_protocol_cpplint PASSED in 3.2s
+//modules/canbus/vehicle/lincoln/protocol:fuellevel_72_test              PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:fuellevel_72_test_cpplint      PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:gear_66_test                   PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gear_66_test_cpplint           PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:gear_67_test                   PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gear_67_test_cpplint           PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:gps_6d_test                    PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gps_6d_test_cpplint            PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:gps_6e_test                    PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gps_6e_test_cpplint            PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:gps_6f_test                    PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gps_6f_test_cpplint            PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gyro_6c_test                   PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:gyro_6c_test_cpplint           PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:misc_69_test                   PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:misc_69_test_cpplint           PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:steering_64_test               PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:steering_64_test_cpplint       PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:steering_65_test               PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:steering_65_test_cpplint       PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:surround_73_test               PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:surround_73_test_cpplint       PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:throttle_62_test               PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:throttle_62_test_cpplint       PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:throttle_63_test               PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:throttle_63_test_cpplint       PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:throttleinfo_75_test           PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:throttleinfo_75_test_cpplint   PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:tirepressure_71_test           PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:tirepressure_71_test_cpplint   PASSED in 0.2s
+//modules/canbus/vehicle/lincoln/protocol:turnsignal_68_test             PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:turnsignal_68_test_cpplint     PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:version_7f_test                PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:version_7f_test_cpplint        PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:wheelspeed_6a_test             PASSED in 0.1s
+//modules/canbus/vehicle/lincoln/protocol:wheelspeed_6a_test_cpplint     PASSED in 0.1s
+//modules/canbus/vehicle:vehicle_controller_base_cpplint                 PASSED in 0.3s
+//modules/canbus/vehicle:vehicle_factory_cpplint                         PASSED in 0.2s
+
+Executed 68 out of 68 tests: 68 tests pass.

@@ -1,0 +1,2 @@
+Previous HEAD position was fd80b81ef9 Update relative_map period in diagonsis tools and minor cleaning (#2996)
+HEAD is now at 501d864f54 Fix an estop bug in planning.cc (#3000)

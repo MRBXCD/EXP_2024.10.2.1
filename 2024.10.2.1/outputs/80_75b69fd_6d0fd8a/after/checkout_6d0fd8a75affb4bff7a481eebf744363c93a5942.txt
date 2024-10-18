@@ -1,0 +1,2 @@
+Previous HEAD position was 75b69fd6a4 [perception] Update README and FAQ document
+HEAD is now at 6d0fd8a75a Planning: Fixed bugs for high speed cruising; updated unit tests; added a TODO for a potential pointer crash in math.

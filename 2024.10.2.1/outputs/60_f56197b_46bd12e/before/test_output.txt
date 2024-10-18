@@ -1,0 +1,13 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 35 targets (9 packages loaded)
+Analyzing: 35 targets (11 packages loaded)
+Analyzing: 35 targets (27 packages loaded)
+Analyzing: 35 targets (30 packages loaded)
+ERROR: /apollo/modules/map/hdmap/adapter/BUILD:5:1: no such package '@proj4//': Prefix proj.4-4.9.3 was given, but not found in the zip and referenced by '//modules/map/hdmap/adapter:opendrive_adapter'
+ERROR: Analysis of target '//modules/map/tools:sim_map_generator' failed; build aborted
+INFO: Elapsed time: 5.636s
+FAILED: Build did NOT complete successfully (30 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

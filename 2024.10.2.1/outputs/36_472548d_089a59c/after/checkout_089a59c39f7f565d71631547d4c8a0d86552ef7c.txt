@@ -1,0 +1,2 @@
+Previous HEAD position was 472548d2d6 Canbus : minor fix bug of and lint
+HEAD is now at 089a59c39f Fix bug in turn signal command reset

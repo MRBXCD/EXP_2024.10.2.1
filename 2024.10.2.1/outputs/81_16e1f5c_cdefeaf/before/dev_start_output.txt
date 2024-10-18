@@ -1,0 +1,219 @@
+dev-20170707_1129: Pulling from apolloauto/apollo
+cb56c90f0b30: Already exists
+0acc551e5716: Already exists
+8956dcd35143: Already exists
+908242721214: Already exists
+b44ff14dd3bb: Already exists
+68a565a88d05: Pulling fs layer
+84198a14886c: Pulling fs layer
+d4b61997bf6f: Pulling fs layer
+fad90c9e6967: Pulling fs layer
+c3a71b8081c8: Pulling fs layer
+1b6b7f5fd058: Pulling fs layer
+59564810fdd3: Pulling fs layer
+c3cf6685d4cd: Pulling fs layer
+8ce4073e8bb7: Pulling fs layer
+fb888a093cc0: Pulling fs layer
+6bc8b4e3c140: Pulling fs layer
+c3a71b8081c8: Waiting
+7b7fe4477995: Pulling fs layer
+89a17d68e3e2: Pulling fs layer
+e274af5eb115: Pulling fs layer
+59564810fdd3: Waiting
+cd580452c88c: Pulling fs layer
+f5499142713f: Pulling fs layer
+08ef9610a2f5: Pulling fs layer
+1b6b7f5fd058: Waiting
+c3cf6685d4cd: Waiting
+46e28973d034: Pulling fs layer
+276ce7aafce3: Pulling fs layer
+b9a2230796d7: Pulling fs layer
+d125bdde2f39: Pulling fs layer
+fad90c9e6967: Waiting
+598a4b6f9275: Pulling fs layer
+29c4a1ccdc5b: Pulling fs layer
+8ce4073e8bb7: Waiting
+1022ce674994: Pulling fs layer
+aa9329b7dd1e: Pulling fs layer
+7b7fe4477995: Waiting
+fb888a093cc0: Waiting
+6bc8b4e3c140: Waiting
+89a17d68e3e2: Waiting
+0a464d8cb669: Pulling fs layer
+587566f9fa9a: Pulling fs layer
+e274af5eb115: Waiting
+57d7ecae556d: Pulling fs layer
+b9a2230796d7: Waiting
+ec7992419a91: Pulling fs layer
+1022ce674994: Waiting
+29c4a1ccdc5b: Waiting
+65a09c54e731: Pulling fs layer
+d125bdde2f39: Waiting
+e2f3689560f1: Pulling fs layer
+598a4b6f9275: Waiting
+419b3e44ef6d: Pulling fs layer
+505679240dc6: Pulling fs layer
+aa9329b7dd1e: Waiting
+57d7ecae556d: Waiting
+ec7992419a91: Waiting
+cd580452c88c: Waiting
+419b3e44ef6d: Waiting
+0a464d8cb669: Waiting
+65a09c54e731: Waiting
+e2f3689560f1: Waiting
+587566f9fa9a: Waiting
+08ef9610a2f5: Waiting
+505679240dc6: Waiting
+f5499142713f: Waiting
+276ce7aafce3: Waiting
+d4b61997bf6f: Verifying Checksum
+d4b61997bf6f: Download complete
+84198a14886c: Verifying Checksum
+84198a14886c: Download complete
+fad90c9e6967: Verifying Checksum
+fad90c9e6967: Download complete
+c3a71b8081c8: Verifying Checksum
+c3a71b8081c8: Download complete
+59564810fdd3: Verifying Checksum
+59564810fdd3: Download complete
+c3cf6685d4cd: Download complete
+8ce4073e8bb7: Download complete
+fb888a093cc0: Verifying Checksum
+fb888a093cc0: Download complete
+6bc8b4e3c140: Verifying Checksum
+6bc8b4e3c140: Download complete
+7b7fe4477995: Download complete
+68a565a88d05: Verifying Checksum
+68a565a88d05: Download complete
+89a17d68e3e2: Verifying Checksum
+89a17d68e3e2: Download complete
+cd580452c88c: Verifying Checksum
+cd580452c88c: Download complete
+f5499142713f: Verifying Checksum
+f5499142713f: Download complete
+08ef9610a2f5: Verifying Checksum
+08ef9610a2f5: Download complete
+46e28973d034: Verifying Checksum
+46e28973d034: Download complete
+e274af5eb115: Verifying Checksum
+e274af5eb115: Download complete
+276ce7aafce3: Verifying Checksum
+276ce7aafce3: Download complete
+b9a2230796d7: Verifying Checksum
+b9a2230796d7: Download complete
+d125bdde2f39: Verifying Checksum
+d125bdde2f39: Download complete
+29c4a1ccdc5b: Verifying Checksum
+29c4a1ccdc5b: Download complete
+598a4b6f9275: Download complete
+1022ce674994: Verifying Checksum
+1022ce674994: Download complete
+aa9329b7dd1e: Verifying Checksum
+aa9329b7dd1e: Download complete
+1b6b7f5fd058: Verifying Checksum
+1b6b7f5fd058: Download complete
+587566f9fa9a: Download complete
+57d7ecae556d: Verifying Checksum
+57d7ecae556d: Download complete
+ec7992419a91: Verifying Checksum
+ec7992419a91: Download complete
+0a464d8cb669: Verifying Checksum
+0a464d8cb669: Download complete
+e2f3689560f1: Verifying Checksum
+e2f3689560f1: Download complete
+505679240dc6: Verifying Checksum
+505679240dc6: Download complete
+419b3e44ef6d: Verifying Checksum
+419b3e44ef6d: Download complete
+65a09c54e731: Verifying Checksum
+65a09c54e731: Download complete
+68a565a88d05: Pull complete
+84198a14886c: Pull complete
+d4b61997bf6f: Pull complete
+fad90c9e6967: Pull complete
+c3a71b8081c8: Pull complete
+1b6b7f5fd058: Pull complete
+59564810fdd3: Pull complete
+c3cf6685d4cd: Pull complete
+8ce4073e8bb7: Pull complete
+fb888a093cc0: Pull complete
+6bc8b4e3c140: Pull complete
+7b7fe4477995: Pull complete
+89a17d68e3e2: Pull complete
+e274af5eb115: Pull complete
+cd580452c88c: Pull complete
+f5499142713f: Pull complete
+08ef9610a2f5: Pull complete
+46e28973d034: Pull complete
+276ce7aafce3: Pull complete
+b9a2230796d7: Pull complete
+d125bdde2f39: Pull complete
+598a4b6f9275: Pull complete
+29c4a1ccdc5b: Pull complete
+1022ce674994: Pull complete
+aa9329b7dd1e: Pull complete
+0a464d8cb669: Pull complete
+587566f9fa9a: Pull complete
+57d7ecae556d: Pull complete
+ec7992419a91: Pull complete
+65a09c54e731: Pull complete
+e2f3689560f1: Pull complete
+419b3e44ef6d: Pull complete
+505679240dc6: Pull complete
+Digest: sha256:09aeb7850578a877fdb855bfe7319c857289faa1f68df3eede1a548a09783d09
+Status: Downloaded newer image for apolloauto/apollo:dev-20170707_1129
+docker.io/apolloauto/apollo:dev-20170707_1129
+/home/user/experiments/EXP_2024.10.2.1/2024.10.2.1/apollo_pair_80/data/core/core_%e.%p
+[33m[WARNING] Failed to find device with pattern "ttyUSB*" ...[0m
+[[32m[1m OK [0m] Found device: /dev/ttyS31.
+[[32m[1m OK [0m] Found device: /dev/ttyS30.
+[[32m[1m OK [0m] Found device: /dev/ttyS29.
+[[32m[1m OK [0m] Found device: /dev/ttyS28.
+[[32m[1m OK [0m] Found device: /dev/ttyS27.
+[[32m[1m OK [0m] Found device: /dev/ttyS26.
+[[32m[1m OK [0m] Found device: /dev/ttyS25.
+[[32m[1m OK [0m] Found device: /dev/ttyS24.
+[[32m[1m OK [0m] Found device: /dev/ttyS23.
+[[32m[1m OK [0m] Found device: /dev/ttyS22.
+[[32m[1m OK [0m] Found device: /dev/ttyS21.
+[[32m[1m OK [0m] Found device: /dev/ttyS20.
+[[32m[1m OK [0m] Found device: /dev/ttyS19.
+[[32m[1m OK [0m] Found device: /dev/ttyS18.
+[[32m[1m OK [0m] Found device: /dev/ttyS17.
+[[32m[1m OK [0m] Found device: /dev/ttyS16.
+[[32m[1m OK [0m] Found device: /dev/ttyS15.
+[[32m[1m OK [0m] Found device: /dev/ttyS14.
+[[32m[1m OK [0m] Found device: /dev/ttyS13.
+[[32m[1m OK [0m] Found device: /dev/ttyS12.
+[[32m[1m OK [0m] Found device: /dev/ttyS11.
+[[32m[1m OK [0m] Found device: /dev/ttyS10.
+[[32m[1m OK [0m] Found device: /dev/ttyS9.
+[[32m[1m OK [0m] Found device: /dev/ttyS8.
+[[32m[1m OK [0m] Found device: /dev/ttyS7.
+[[32m[1m OK [0m] Found device: /dev/ttyS6.
+[[32m[1m OK [0m] Found device: /dev/ttyS5.
+[[32m[1m OK [0m] Found device: /dev/ttyS4.
+[[32m[1m OK [0m] Found device: /dev/ttyS3.
+[[32m[1m OK [0m] Found device: /dev/ttyS2.
+[[32m[1m OK [0m] Found device: /dev/ttyS1.
+[[32m[1m OK [0m] Found device: /dev/ttyS0.
+[[32m[1m OK [0m] Found device: /dev/can3.
+[[32m[1m OK [0m] Found device: /dev/can2.
+[[32m[1m OK [0m] Found device: /dev/can1.
+[[32m[1m OK [0m] Found device: /dev/can0.
+[33m[WARNING] Failed to find device with pattern "ram*" ...[0m
+[[32m[1m OK [0m] Found device: /dev/loop7.
+[[32m[1m OK [0m] Found device: /dev/loop6.
+[[32m[1m OK [0m] Found device: /dev/loop5.
+[[32m[1m OK [0m] Found device: /dev/loop4.
+[[32m[1m OK [0m] Found device: /dev/loop3.
+[[32m[1m OK [0m] Found device: /dev/loop2.
+[[32m[1m OK [0m] Found device: /dev/loop1.
+[[32m[1m OK [0m] Found device: /dev/loop0.
+[[32m[1m OK [0m] Found device: /dev/loop-control.
+5bba4c48dbd86487fdd8d3e34c23ba4a40200635c7cd4b34030572546003a201
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.

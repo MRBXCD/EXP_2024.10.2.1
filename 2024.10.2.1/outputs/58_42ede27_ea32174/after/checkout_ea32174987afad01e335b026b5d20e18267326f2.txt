@@ -1,0 +1,2 @@
+Previous HEAD position was 42ede2704f Prediction: added still trajectory for both lane and move sequences and fixed a bug (#1422)
+HEAD is now at ea32174987 update map: fix test errors caused by updating map

@@ -1,0 +1,2 @@
+Previous HEAD position was a48c5fbad8 Add changes to teleop and gem controller Prior to this commit the teleop had a bug in it that prevented testing control. Also the gem controller had bugs that caused compilation issues. This commit fixes both those issues.
+HEAD is now at 90f2967b4c Add changes to controller to get functionality out of gem Prior to this commit there were some incorrect scaling values, as well as some assuptions about payload sizes that prevented the gem from fully working. This commit fixes those issues.

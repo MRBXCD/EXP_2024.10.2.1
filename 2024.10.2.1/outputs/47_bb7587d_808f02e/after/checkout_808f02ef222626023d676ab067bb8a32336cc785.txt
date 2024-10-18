@@ -1,0 +1,2 @@
+Previous HEAD position was bb7587d408 Prediction: fix obstacle is-on-lane logit and adjust lane angle diff
+HEAD is now at 808f02ef22 Prediction: fixed velocity estimate when heading is different from position difference

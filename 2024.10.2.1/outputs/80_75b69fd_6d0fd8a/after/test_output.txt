@@ -1,0 +1,10 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 201 targets (62 packages loaded)
+ERROR: /apollo/modules/planning/planner/em/BUILD:5:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/planning/planner/em:decider'
+ERROR: /apollo/modules/planning/planner/em/BUILD:26:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/planning/planner/em:em_planner'
+ERROR: Analysis of target '//modules/planning/integration_tests:planning_test_base' failed; build aborted
+INFO: Elapsed time: 1.462s
+FAILED: Build did NOT complete successfully (62 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

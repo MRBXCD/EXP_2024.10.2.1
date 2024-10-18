@@ -1,0 +1,18 @@
+Note: switching to '5bc67c87c1d20bfd085e5b3a85ce3fc965f0e557'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 5bc67c87c1 Planning: fixed the trajectory deviation bug by increasing reference line weight and adjusting low speed range. (#1167)

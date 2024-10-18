@@ -1,0 +1,18 @@
+Note: switching to 'bb7587d40848ec7205801485f9bf9582a9f8c99a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at bb7587d408 Prediction: fix obstacle is-on-lane logit and adjust lane angle diff

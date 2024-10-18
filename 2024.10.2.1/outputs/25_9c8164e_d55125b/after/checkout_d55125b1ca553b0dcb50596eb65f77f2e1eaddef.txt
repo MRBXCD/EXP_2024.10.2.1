@@ -1,0 +1,2 @@
+Previous HEAD position was 9c8164e0e7 PointCloud Proto: added pointcloud proto.
+HEAD is now at d55125b1ca planning: fixed inlane stop while failed to find valid pull-over spot to pull over

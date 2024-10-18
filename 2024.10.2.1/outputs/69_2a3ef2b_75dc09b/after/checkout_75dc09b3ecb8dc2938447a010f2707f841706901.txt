@@ -1,0 +1,2 @@
+Previous HEAD position was 2a3ef2b1be Monitor: a minor fix
+HEAD is now at 75dc09b3ec Planning: fixed a boundary bug in qp_spline_path. We cannot use adc_sl_boundary because it include the vehicle width.

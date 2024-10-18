@@ -1,0 +1,2 @@
+Previous HEAD position was a985eed453 Control: Update MPC based on test
+HEAD is now at 4f69ed9685 Planning: fixed the check for smoothed reference line to avoid accumulated error.

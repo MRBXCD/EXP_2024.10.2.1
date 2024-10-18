@@ -1,0 +1,18 @@
+Note: switching to 'e82841fe2a61757c399048b6d8a82ff3a0fa5317'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e82841fe2a RelativeMap: down sampled raw navigation path data. Apollo 3.0 used a new smoothing algorithm to generate the navigation path, which makes the number of points in the navigation path very large. It may cause the ROS buffer to overflow and thus result in the navigation path not being sent successfully. Using a down sampling strategy can effectively solve this problem. Instructions: 1. Do not use downsampling  bash /apollo/scripts/navigator.sh left.smoothed right.smoothed --navigator_down_sample=0 2. Use downsampling   bash /apollo/scripts/navigator.sh left.smoothed right.smoothed --navigator_down_sample=1 or   bash /apollo/scripts/navigator.sh left.smoothed right.smoothed

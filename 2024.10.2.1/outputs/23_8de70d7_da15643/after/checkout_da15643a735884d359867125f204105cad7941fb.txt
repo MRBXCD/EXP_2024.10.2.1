@@ -1,0 +1,2 @@
+Previous HEAD position was 8de70d7309 Dreamview: fix a deadlock case (#5315)
+HEAD is now at da15643a73 fix speed_decider for keep_clear; add more tests with more thorough road tests on keep_clear

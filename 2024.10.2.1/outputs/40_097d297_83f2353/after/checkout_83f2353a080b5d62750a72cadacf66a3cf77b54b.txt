@@ -1,0 +1,2 @@
+Previous HEAD position was 097d29754b Perception: moved memory operation related util to common folder.
+HEAD is now at 83f2353a08 Prediction: fix bug in front lateral distance cost and enlarge lane search range

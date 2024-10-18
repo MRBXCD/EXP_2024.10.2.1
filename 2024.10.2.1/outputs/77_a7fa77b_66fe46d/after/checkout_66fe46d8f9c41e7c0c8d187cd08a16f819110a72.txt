@@ -1,0 +1,2 @@
+Previous HEAD position was a7fa77b841 util: convert Distance2D to DistanceXY for more genearal usage. (#565)
+HEAD is now at 66fe46d8f9 Planning: (1) fixed a serious bug when adding spline kernels. NOTICE: the standard format of QP problem is to minimize 1/2 * x^T * H * x + x^T * G (2) added unit test for active_set_qp_solver. (3) fixed all failed tests. (#566)

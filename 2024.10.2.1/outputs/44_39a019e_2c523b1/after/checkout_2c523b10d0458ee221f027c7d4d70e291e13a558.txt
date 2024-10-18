@@ -1,0 +1,2 @@
+Previous HEAD position was 39a019e384 Dreamview: Fix frontend error unable to set visible of undefined
+HEAD is now at 2c523b10d0 Planning: check is curve is valid in dp_poly_path. fixed array out of range bug.

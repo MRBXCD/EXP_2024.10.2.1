@@ -1,0 +1,2 @@
+Previous HEAD position was 1b636c2b1d Merge ci jobs into one cicheck.
+HEAD is now at bd496c3510 Planning: fixed a bug in qp_spline_path when using longitudinal extension. optimized codes in spiral reference line smoother.

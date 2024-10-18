@@ -1,0 +1,221 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 339 targets (36 packages loaded)
+Analyzing: 339 targets (39 packages loaded)
+Analyzing: 339 targets (91 packages loaded)
+Analyzing: 339 targets (99 packages loaded)
+Analyzing: 339 targets (99 packages loaded)
+INFO: Analysed 339 targets (100 packages loaded).
+INFO: Found 153 targets and 186 test targets...
+[0 / 110] Creating source manifest for @com_google_protobuf//:protoc [for host]
+[54 / 496] Compiling external/com_google_protobuf/src/google/protobuf/extension_set.cc [for host]; 0s local ... (20 actions running)
+[70 / 496] Compiling external/com_google_protobuf/src/google/protobuf/util/message_differencer.cc [for host]; 1s local ... (20 actions running)
+[91 / 496] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 2s local ... (20 actions running)
+[116 / 496] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 4s local ... (19 actions running)
+[143 / 496] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 5s local ... (19 actions running)
+[182 / 496] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 2s local ... (20 actions running)
+[1,095 / 1,584] Compiling modules/planning/math/smoothing_spline/spline_1d_generator.cc; 1s local ... (20 actions running)
+[1,256 / 1,584] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 3s local ... (20 actions running)
+[1,340 / 1,584] Compiling modules/canbus/proto/chassis_detail.pb.cc; 3s local ... (19 actions running)
+[1,444 / 1,650] Compiling modules/map/hdmap/hdmap_impl.cc; 4s local ... (19 actions running)
+[1,614 / 1,780] Compiling modules/planning/common/planning_util.cc; 7s local ... (19 actions running)
+[1,757 / 1,892] Compiling modules/planning/common/planning_util.cc; 12s local ... (20 actions running)
+[1,842 / 1,929] Compiling modules/planning/common/reference_line_info.cc; 14s local ... (20 actions running)
+[2,010 / 2,062] Compiling modules/common/adapters/adapter_manager.cc; 19s local ... (20 actions running)
+[2,244 / 2,291] Compiling modules/planning/reference_line/reference_line_provider.cc; 17s local ... (20 actions running)
+[2,839 / 2,875] 103 / 186 tests; Compiling modules/planning/planning.cc; 15s local ... (20 actions running)
+[3,065 / 3,069] 146 / 186 tests; Linking modules/planning/planning; 1s local ... (2 actions running)
+[3,068 / 3,074] 147 / 186 tests; Writing file modules/planning/tasks/st_graph/st_boundary_mapper_test-2.params
+[3,365 / 3,372] 182 / 186 tests; Linking modules/planning/integration_tests/libplanning_test_base.a
+INFO: Elapsed time: 107.302s, Critical Path: 45.00s
+INFO: Build completed successfully, 3376 total actions
+//modules/planning/common:change_lane_decider_cpplint                    PASSED in 0.2s
+//modules/planning/common:frame_cpplint                                  PASSED in 0.5s
+//modules/planning/common:frame_test                                     PASSED in 0.5s
+//modules/planning/common:frame_test_cpplint                             PASSED in 0.2s
+//modules/planning/common:indexed_list_cpplint                           PASSED in 0.2s
+//modules/planning/common:indexed_list_test                              PASSED in 0.1s
+//modules/planning/common:indexed_list_test_cpplint                      PASSED in 0.2s
+//modules/planning/common:indexed_queue_cpplint                          PASSED in 0.2s
+//modules/planning/common:indexed_queue_test                             PASSED in 0.1s
+//modules/planning/common:indexed_queue_test_cpplint                     PASSED in 0.2s
+//modules/planning/common:lag_prediction_cpplint                         PASSED in 0.2s
+//modules/planning/common:obstacle_cpplint                               PASSED in 0.3s
+//modules/planning/common:obstacle_test                                  PASSED in 0.3s
+//modules/planning/common:obstacle_test_cpplint                          PASSED in 0.2s
+//modules/planning/common/path:discretized_path_cpplint                  PASSED in 0.2s
+//modules/planning/common/path:discretized_path_test                     PASSED in 0.2s
+//modules/planning/common/path:discretized_path_test_cpplint             PASSED in 0.2s
+//modules/planning/common/path:frenet_frame_path_cpplint                 PASSED in 0.3s
+//modules/planning/common/path:frenet_frame_path_test                    PASSED in 0.2s
+//modules/planning/common/path:frenet_frame_path_test_cpplint            PASSED in 0.2s
+//modules/planning/common/path:path_data_cpplint                         PASSED in 0.3s
+//modules/planning/common:path_decision_cpplint                          PASSED in 0.3s
+//modules/planning/common:path_obstacle_cpplint                          PASSED in 0.4s
+//modules/planning/common:path_obstacle_test                             PASSED in 0.2s
+//modules/planning/common:path_obstacle_test_cpplint                     PASSED in 0.3s
+//modules/planning/common:planning_gflags_cpplint                        PASSED in 0.4s
+//modules/planning/common:planning_thread_pool_cpplint                   PASSED in 0.2s
+//modules/planning/common:planning_util_cpplint                          PASSED in 0.2s
+//modules/planning/common:reference_line_info_cpplint                    PASSED in 0.5s
+//modules/planning/common/speed:speed_data_cpplint                       PASSED in 0.2s
+//modules/planning/common/speed:st_boundary_cpplint                      PASSED in 0.3s
+//modules/planning/common/speed:st_boundary_test                         PASSED in 0.1s
+//modules/planning/common/speed:st_boundary_test_cpplint                 PASSED in 0.2s
+//modules/planning/common/speed:st_point_cpplint                         PASSED in 0.2s
+//modules/planning/common:speed_limit_cpplint                            PASSED in 0.2s
+//modules/planning/common:speed_limit_test                               PASSED in 0.1s
+//modules/planning/common:speed_limit_test_cpplint                       PASSED in 0.2s
+//modules/planning/common/trajectory:discretized_trajectory_cpplint      PASSED in 0.3s
+//modules/planning/common/trajectory:discretized_trajectory_test         PASSED in 0.2s
+//modules/planning/common/trajectory:discretized_trajectory_test_cpplint PASSED in 0.2s
+//modules/planning/common/trajectory:publishable_trajectory_cpplint      PASSED in 0.2s
+//modules/planning/common/trajectory:publishable_trajectory_test         PASSED in 0.2s
+//modules/planning/common/trajectory:publishable_trajectory_test_cpplint PASSED in 0.2s
+//modules/planning/common/trajectory:trajectory_cpplint                  PASSED in 0.2s
+//modules/planning/common/trajectory:trajectory_stitcher_cpplint         PASSED in 0.3s
+//modules/planning/constraint_checker:collision_checker_cpplint          PASSED in 0.3s
+//modules/planning/constraint_checker:constraint_checker1d_cpplint       PASSED in 0.4s
+//modules/planning/constraint_checker:constraint_checker_cpplint         PASSED in 0.5s
+//modules/planning/integration_tests:garage_test                         PASSED in 0.9s
+//modules/planning/integration_tests:garage_test_cpplint                 PASSED in 0.5s
+//modules/planning/integration_tests:navigation_mode_test                PASSED in 0.7s
+//modules/planning/integration_tests:navigation_mode_test_cpplint        PASSED in 0.5s
+//modules/planning/integration_tests:planning_test_base_cpplint          PASSED in 0.9s
+//modules/planning/integration_tests:sunnyvale_big_loop_test             PASSED in 9.9s
+//modules/planning/integration_tests:sunnyvale_big_loop_test_cpplint     PASSED in 0.8s
+//modules/planning/integration_tests:sunnyvale_loop_test                 PASSED in 3.4s
+//modules/planning/integration_tests:sunnyvale_loop_test_cpplint         PASSED in 0.2s
+//modules/planning/lattice/behavior:feasible_region_cpplint              PASSED in 0.2s
+//modules/planning/lattice/behavior:path_time_graph_cpplint              PASSED in 0.4s
+//modules/planning/lattice/behavior:prediction_querier_cpplint           PASSED in 0.2s
+//modules/planning/lattice/trajectory1d:constant_deceleration_trajectory1d_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory1d:constant_jerk_trajectory1d_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory1d:lattice_trajectory1d_cpplint     PASSED in 0.3s
+//modules/planning/lattice/trajectory1d:piecewise_acceleration_trajectory1d_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory1d:piecewise_jerk_trajectory1d_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory1d:piecewise_trajectory1d_cpplint   PASSED in 0.2s
+//modules/planning/lattice/trajectory1d:standing_still_trajectory1d_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory_generation:backup_trajectory_generator_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory_generation:end_condition_sampler_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory_generation:lateral_trajectory_optimizer_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory_generation:lateral_trajectory_optimizer_interface_cpplint PASSED in 0.4s
+//modules/planning/lattice/trajectory_generation:piecewise_braking_trajectory_generator_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory_generation:trajectory1d_generator_cpplint PASSED in 0.3s
+//modules/planning/lattice/trajectory_generation:trajectory_combiner_cpplint PASSED in 0.2s
+//modules/planning/lattice/trajectory_generation:trajectory_evaluator_cpplint PASSED in 0.4s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_cpplint         PASSED in 0.2s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_test            PASSED in 0.0s
+//modules/planning/math/curve1d:cubic_polynomial_curve1d_test_cpplint    PASSED in 0.2s
+//modules/planning/math/curve1d:curve1d_cpplint                          PASSED in 0.2s
+//modules/planning/math/curve1d:polynomial_curve1d_cpplint               PASSED in 0.2s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_cpplint       PASSED in 0.2s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_test          PASSED in 0.0s
+//modules/planning/math/curve1d:quartic_polynomial_curve1d_test_cpplint  PASSED in 0.1s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_cpplint       PASSED in 0.2s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_test          PASSED in 0.0s
+//modules/planning/math/curve1d:quintic_polynomial_curve1d_test_cpplint  PASSED in 0.1s
+//modules/planning/math/curve1d:quintic_spiral_path_cpplint              PASSED in 0.3s
+//modules/planning/math:curve_math_cpplint                               PASSED in 0.2s
+//modules/planning/math:curve_math_test                                  PASSED in 0.0s
+//modules/planning/math:curve_math_test_cpplint                          PASSED in 0.2s
+//modules/planning/math:polynomial_xd_cpplint                            PASSED in 0.2s
+//modules/planning/math/smoothing_spline:affine_constraint_cpplint       PASSED in 0.2s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_test PASSED in 0.0s
+//modules/planning/math/smoothing_spline:piecewise_linear_constraint_test_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:piecewise_linear_generator_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_test    PASSED in 0.0s
+//modules/planning/math/smoothing_spline:piecewise_linear_kernel_test_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_cpplint    PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_test       PASSED in 0.0s
+//modules/planning/math/smoothing_spline:spline_1d_constraint_test_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_1d_cpplint               PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_1d_generator_cpplint     PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_1d_generator_test        PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_1d_generator_test_cpplint PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_cpplint        PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_test           PASSED in 0.0s
+//modules/planning/math/smoothing_spline:spline_1d_kernel_test_cpplint   PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_1d_seg_cpplint           PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_cpplint    PASSED in 0.4s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_test       PASSED in 0.0s
+//modules/planning/math/smoothing_spline:spline_2d_constraint_test_cpplint PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_2d_cpplint               PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_cpplint        PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_test           PASSED in 0.1s
+//modules/planning/math/smoothing_spline:spline_2d_kernel_test_cpplint   PASSED in 0.1s
+//modules/planning/math/smoothing_spline:spline_2d_seg_cpplint           PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_2d_solver_cpplint        PASSED in 0.3s
+//modules/planning/math/smoothing_spline:spline_2d_solver_test           PASSED in 0.1s
+//modules/planning/math/smoothing_spline:spline_2d_solver_test_cpplint   PASSED in 0.2s
+//modules/planning/math/smoothing_spline:spline_seg_kernel_cpplint       PASSED in 0.3s
+//modules/planning/math/spiral_curve:cubic_sprial_curve_cpplint          PASSED in 0.2s
+//modules/planning/math/spiral_curve:quintic_sprial_curve_cpplint        PASSED in 0.3s
+//modules/planning/math/spiral_curve:spiral_curve_cpplint                PASSED in 0.3s
+//modules/planning/math/spiral_curve:spiral_formula_cpplint              PASSED in 0.4s
+//modules/planning/navi/common:common_cpplint                            PASSED in 0.3s
+//modules/planning/navi/decider:navi_decider_test                        PASSED in 0.3s
+//modules/planning/navi/decider:navi_decider_test_cpplint                PASSED in 0.3s
+//modules/planning/navi/decider:navi_obstacle_decider_cpplint            PASSED in 0.4s
+//modules/planning/navi/decider:navi_path_decider_cpplint                PASSED in 0.4s
+//modules/planning/navi/decider:navi_speed_decider_cpplint               PASSED in 0.5s
+//modules/planning/planner/em:em_planner_cpplint                         PASSED in 0.4s
+//modules/planning/planner/lattice:lattice_planner_cpplint               PASSED in 0.4s
+//modules/planning/planner/navi:navi_planner_cpplint                     PASSED in 0.4s
+//modules/planning/planner/navi:navi_planner_test                        PASSED in 0.4s
+//modules/planning/planner/navi:navi_planner_test_cpplint                PASSED in 0.1s
+//modules/planning/planner:planner_cpplint                               PASSED in 0.2s
+//modules/planning/planner/rtk:rtk_planner_cpplint                       PASSED in 0.3s
+//modules/planning/planner/rtk:rtk_replay_planner_test                   PASSED in 0.5s
+//modules/planning/planner/rtk:rtk_replay_planner_test_cpplint           PASSED in 0.2s
+//modules/planning:planning_cpplint                                      PASSED in 0.2s
+//modules/planning:planning_lib_cpplint                                  PASSED in 0.4s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_cpplint PASSED in 0.3s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_test PASSED in 0.3s
+//modules/planning/reference_line:qp_spline_reference_line_smoother_test_cpplint PASSED in 0.2s
+//modules/planning/reference_line:reference_line_cpplint                 PASSED in 0.6s
+//modules/planning/reference_line:reference_line_provider_cpplint        PASSED in 0.6s
+//modules/planning/reference_line:reference_line_smoother_cpplint        PASSED in 0.2s
+//modules/planning/reference_line:smoother_util_cpplint                  PASSED in 0.2s
+//modules/planning/reference_line:spiral_reference_line_smoother_cpplint PASSED in 0.7s
+//modules/planning/tasks/dp_poly_path:comparable_cost_test               PASSED in 0.4s
+//modules/planning/tasks/dp_poly_path:comparable_cost_test_cpplint       PASSED in 0.2s
+//modules/planning/tasks/dp_poly_path:dp_poly_path_cpplint               PASSED in 0.7s
+//modules/planning/tasks/dp_poly_path:dp_poly_path_optimizer_cpplint     PASSED in 0.2s
+//modules/planning/tasks/dp_poly_path:trajectory_cost_test               PASSED in 0.3s
+//modules/planning/tasks/dp_poly_path:trajectory_cost_test_cpplint       PASSED in 0.2s
+//modules/planning/tasks/dp_st_speed:dp_st_cost_cpplint                  PASSED in 0.4s
+//modules/planning/tasks/dp_st_speed:dp_st_graph_cpplint                 PASSED in 0.4s
+//modules/planning/tasks/dp_st_speed:dp_st_graph_test                    PASSED in 0.3s
+//modules/planning/tasks/dp_st_speed:dp_st_graph_test_cpplint            PASSED in 0.2s
+//modules/planning/tasks/dp_st_speed:dp_st_speed_optimizer_cpplint       PASSED in 0.3s
+//modules/planning/tasks/dp_st_speed:st_graph_point_cpplint              PASSED in 0.2s
+//modules/planning/tasks/path_decider:path_decider_cpplint               PASSED in 0.3s
+//modules/planning/tasks:path_optimizer_cpplint                          PASSED in 0.2s
+//modules/planning/tasks/poly_st_speed:poly_st_graph_cpplint             PASSED in 0.3s
+//modules/planning/tasks/poly_st_speed:poly_st_speed_optimizer_cpplint   PASSED in 0.3s
+//modules/planning/tasks/poly_st_speed:speed_profile_cost_cpplint        PASSED in 0.2s
+//modules/planning/tasks/qp_spline_path:qp_spline_path_cpplint           PASSED in 0.7s
+//modules/planning/tasks/qp_spline_st_speed:qp_piecewise_st_graph_cpplint PASSED in 0.5s
+//modules/planning/tasks/qp_spline_st_speed:qp_spline_st_graph_cpplint   PASSED in 0.4s
+//modules/planning/tasks/qp_spline_st_speed:qp_spline_st_speed_optimizer_cpplint PASSED in 0.4s
+//modules/planning/tasks/speed_decider:speed_decider_cpplint             PASSED in 0.4s
+//modules/planning/tasks:speed_optimizer_cpplint                         PASSED in 0.2s
+//modules/planning/tasks/st_graph:speed_limit_decider_test               PASSED in 0.4s
+//modules/planning/tasks/st_graph:speed_limit_decider_test_cpplint       PASSED in 0.2s
+//modules/planning/tasks/st_graph:st_boundary_mapper_cpplint             PASSED in 0.6s
+//modules/planning/tasks/st_graph:st_boundary_mapper_test                PASSED in 0.5s
+//modules/planning/tasks/st_graph:st_boundary_mapper_test_cpplint        PASSED in 0.3s
+//modules/planning/tasks/st_graph:st_graph_data_cpplint                  PASSED in 0.3s
+//modules/planning/tasks/st_graph:st_graph_data_test                     PASSED in 0.1s
+//modules/planning/tasks/st_graph:st_graph_data_test_cpplint             PASSED in 0.3s
+//modules/planning/tasks:task_cpplint                                    PASSED in 0.2s
+//modules/planning/tasks/traffic_decider:traffic_decider_cpplint         PASSED in 0.3s
+//modules/planning/tasks/traffic_decider:traffic_rules_cpplint           PASSED in 1.9s
+//modules/planning/tools:planning_stats_cpplint                          PASSED in 0.2s
+
+Executed 186 out of 186 tests: 186 tests pass.

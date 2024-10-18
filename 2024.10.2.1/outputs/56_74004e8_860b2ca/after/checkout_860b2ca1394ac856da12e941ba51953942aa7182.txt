@@ -1,0 +1,2 @@
+Previous HEAD position was 74004e8531 Dreamview: updated traffic light presentation (#1697)
+HEAD is now at 860b2ca139 Planning: (1) fixed lane change failures; (2) added cost check for out of lane

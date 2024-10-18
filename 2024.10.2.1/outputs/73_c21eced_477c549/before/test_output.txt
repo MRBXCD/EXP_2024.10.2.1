@@ -1,0 +1,14 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 89 targets (17 packages loaded)
+Analyzing: 89 targets (19 packages loaded)
+Analyzing: 89 targets (41 packages loaded)
+Analyzing: 89 targets (41 packages loaded)
+ERROR: /apollo/modules/prediction/predictor/sequence/BUILD:5:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/prediction/predictor/sequence:sequence_predictor'
+ERROR: /apollo/modules/prediction/predictor/lane_sequence/BUILD:5:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/prediction/predictor/lane_sequence:lane_sequence_predictor'
+ERROR: Analysis of target '//modules/prediction/predictor/lane_sequence:lane_sequence_predictor' failed; build aborted
+INFO: Elapsed time: 5.269s
+FAILED: Build did NOT complete successfully (41 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

@@ -1,0 +1,2 @@
+Previous HEAD position was b0be9bbd90 Dreamview: arranged PNC graphs, updated sidebar
+HEAD is now at 8030dfc179 Planning: fixed a stop position shaking bug by changing reference line length.

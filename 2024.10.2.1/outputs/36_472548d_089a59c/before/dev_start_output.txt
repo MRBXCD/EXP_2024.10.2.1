@@ -1,0 +1,73 @@
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+d3f5e3a87dc38f0c3faddfc8ad906075330b36ded626c7cf86a1533602de33fe
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+63e5a88cbd7f35295efaa9eecfd6e84c447693eb46ae3d297b258e7f9e851a47
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20180404_1530 ...
+dev-x86_64-20180404_1530: Pulling from apolloauto/apollo
+286b175c283f: Already exists
+01ff24a32906: Already exists
+a1a601a05071: Already exists
+baa11bb80080: Already exists
+481b7b6a0535: Already exists
+39bb3ff41a5b: Already exists
+133c02592fd3: Already exists
+d0dd998b15f8: Already exists
+812877fefe39: Already exists
+b4d443b5ade3: Already exists
+cd27e0317998: Already exists
+87f0ec12eef9: Already exists
+fe5a872a7f1b: Already exists
+922a475dfe27: Already exists
+8057ed981ae1: Already exists
+133cdb28630d: Already exists
+02b265bf90b4: Already exists
+940f1805e4f0: Already exists
+9d46c6ce503b: Already exists
+ee63b043510d: Already exists
+b75f1cff3401: Already exists
+420883ba84f2: Already exists
+8afecd8a5b64: Already exists
+f6581db08701: Already exists
+151610eb1e1f: Already exists
+2cd3bb011f3d: Already exists
+bf5c8ac23d3d: Already exists
+d14f758b1e97: Already exists
+82e68e5a0f55: Already exists
+21759bbf577b: Already exists
+7fab12d9471e: Already exists
+b1a72f26c56a: Already exists
+8d03371a8ecc: Already exists
+ac1e2b360f10: Already exists
+3bd498af354b: Already exists
+864311fb9c50: Already exists
+ab0ee1921042: Already exists
+28a5e7535a2b: Already exists
+Digest: sha256:830fecc64ea46c4d14169e710ae145a6cd7c82c9e343431af1ce525fea21e6a8
+Status: Downloaded newer image for apolloauto/apollo:dev-x86_64-20180404_1530
+docker.io/apolloauto/apollo:dev-x86_64-20180404_1530
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+b5b6301a28394ef9153d41b68701987603eb8075c183c6bb383ea158e3e5790f
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+db74e8584589ff5d003c32a6642553da39e5cc2b10a184d05ac7663b54002cf4
+[[34m[1mINFO[0m] Starting docker container "apollo_dev" ...
+51271462198aa9b6bd2d53ed50d411ab48dbd9f7715dfb2410a41117d07776e1
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

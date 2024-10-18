@@ -1,0 +1,5 @@
+Extracting Bazel installation...
+.
+ERROR: error loading package '': Encountered error while reading extension file 'cpp/rules.bzl': no such package '@org_pubref_rules_protobuf//cpp': Error downloading [https://github.com/pubref/rules_protobuf/archive/v0.7.1.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/org_pubref_rules_protobuf/v0.7.1.tar.gz: GET returned 300 Multiple Choices.
+____Elapsed time: 4.075s
+ERROR: Couldn't start the build. Unable to run tests.

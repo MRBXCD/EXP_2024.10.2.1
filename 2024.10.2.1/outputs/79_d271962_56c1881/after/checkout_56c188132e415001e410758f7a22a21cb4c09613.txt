@@ -1,0 +1,2 @@
+Previous HEAD position was d27196223c Buildify to run on *BUILD files and correct vtk.BUILD comment (#441)
+HEAD is now at 56c188132e Planning: added regularization for spline_2d to avoid error in reference line smoother. (#442)

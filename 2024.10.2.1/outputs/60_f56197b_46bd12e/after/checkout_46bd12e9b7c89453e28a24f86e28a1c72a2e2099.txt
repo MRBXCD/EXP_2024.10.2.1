@@ -1,0 +1,2 @@
+Previous HEAD position was f56197b1c4 planning: fix failed planning integration test
+HEAD is now at 46bd12e9b7 hdmap: fix bug (#1262)

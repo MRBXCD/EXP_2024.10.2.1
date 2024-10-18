@@ -1,0 +1,9 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 219 targets (65 packages loaded)
+ERROR: /apollo/modules/planning/common/trajectory/BUILD:17:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/planning/common/trajectory:discretized_trajectory'
+ERROR: Analysis of target '//modules/planning/tasks/st_graph:st_boundary_mapper_test' failed; build aborted
+INFO: Elapsed time: 1.397s
+FAILED: Build did NOT complete successfully (66 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

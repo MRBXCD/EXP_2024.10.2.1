@@ -1,0 +1,2 @@
+Previous HEAD position was a3e4d06bff Filter out monitor tool targets when esd_can lib not exsit.
+HEAD is now at 4a5fd23fda Planning: fixed a bug in high-speed follow. No need to cut at max s, otherwise the speed will unnecessarily drop. (#870)

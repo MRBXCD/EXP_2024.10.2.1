@@ -1,0 +1,2 @@
+Previous HEAD position was 209028f3d2 [WIP] Common : VehicleState clean up
+HEAD is now at d1ae569895 planning: fixed a bug not stop at a stop sign if passing if 2nd and consecutive round

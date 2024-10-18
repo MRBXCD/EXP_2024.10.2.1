@@ -1,0 +1,2 @@
+Previous HEAD position was 8121d11aa9 Add libgstreamer and plugin package into docker. (#631)
+HEAD is now at bf7e3f465b Planning: fixed a bug when adding third derivative constraint. LOG matrix info when qp fails.

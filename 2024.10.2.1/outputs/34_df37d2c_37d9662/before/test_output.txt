@@ -1,0 +1,57 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 54 targets (10 packages loaded)
+Analyzing: 54 targets (15 packages loaded)
+Analyzing: 54 targets (49 packages loaded)
+Analyzing: 54 targets (68 packages loaded)
+INFO: Analysed 54 targets (69 packages loaded).
+Building: no action running
+INFO: Found 27 targets and 27 test targets...
+[0 / 112] BazelWorkspaceStatusAction stable-status.txt
+[658 / 952] Compiling external/qpOASES/src/Matrices.cpp; 0s local ... (17 actions running)
+[683 / 985] Compiling external/qpOASES/src/QProblem.cpp; 1s local ... (19 actions running)
+[720 / 1,027] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc; 1s local ... (20 actions running)
+[828 / 1,296] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 2s local ... (19 actions running)
+[1,024 / 1,338] Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/js_generator.cc [for host]; 1s local ... (19 actions running)
+[1,067 / 1,384] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 2s local ... (19 actions running)
+[1,120 / 1,452] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 2s local ... (19 actions running)
+[1,187 / 1,517] Compiling external/com_google_protobuf/src/google/protobuf/generated_message_reflection.cc [for host]; 2s local ... (19 actions running)
+[1,308 / 1,564] 6 / 27 tests; Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 5s local ... (3 actions running)
+[1,419 / 1,564] 6 / 27 tests; Compiling modules/map/proto/map_road.pb.cc; 0s local ... (18 actions running)
+[1,525 / 1,564] 6 / 27 tests; Compiling modules/canbus/proto/chassis_detail.pb.cc; 3s local ... (14 actions running)
+[1,555 / 1,565] 6 / 27 tests; Compiling modules/common/adapters/adapter_manager.cc; 5s local ... (4 actions running)
+[1,558 / 1,565] 7 / 27 tests; Compiling modules/common/adapters/adapter_manager.cc; 11s local ... (2 actions running)
+[1,857 / 1,878] 23 / 27 tests; Compiling modules/map/relative_map/relative_map.cc; 6s local ... (5 actions running)
+INFO: Elapsed time: 58.699s, Critical Path: 36.20s
+INFO: Build completed successfully, 1882 total actions
+//modules/map/hdmap/adapter:opendrive_adapter_cpplint                    PASSED in 1.4s
+//modules/map/hdmap:hdmap_cpplint                                        PASSED in 1.4s
+//modules/map/hdmap:hdmap_map_test                                       PASSED in 0.6s
+//modules/map/hdmap:hdmap_map_test_cpplint                               PASSED in 0.4s
+//modules/map/hdmap:hdmap_util_cpplint                                   PASSED in 0.3s
+//modules/map/hdmap:hdmap_util_test                                      PASSED in 0.2s
+//modules/map/hdmap:hdmap_util_test_cpplint                              PASSED in 0.2s
+//modules/map/pnc_map:path_cpplint                                       PASSED in 0.8s
+//modules/map/pnc_map:pnc_map_cpplint                                    PASSED in 0.5s
+//modules/map/pnc_map:pnc_map_test                                       PASSED in 1.2s
+//modules/map/pnc_map:pnc_map_test_cpplint                               PASSED in 0.3s
+//modules/map/pnc_map:pnc_path_test                                      PASSED in 5.1s
+//modules/map/pnc_map:pnc_path_test_cpplint                              PASSED in 0.5s
+//modules/map/pnc_map:route_segments_cpplint                             PASSED in 0.4s
+//modules/map/pnc_map:route_segments_test                                PASSED in 1.3s
+//modules/map/pnc_map:route_segments_test_cpplint                        PASSED in 0.3s
+//modules/map/relative_map/common:relative_map_gflags_cpplint            PASSED in 0.2s
+//modules/map/relative_map:navigation_lane_lib_cpplint                   PASSED in 0.3s
+//modules/map/relative_map:relative_map_cpplint                          PASSED in 0.1s
+//modules/map/relative_map:relative_map_lib_cpplint                      PASSED in 0.3s
+//modules/map/relative_map/tools:navigation_dummy_cpplint                PASSED in 0.2s
+//modules/map/tools:map_tool_cpplint                                     PASSED in 0.3s
+//modules/map/tools:map_xysl_cpplint                                     PASSED in 0.3s
+//modules/map/tools:proto_map_generator_cpplint                          PASSED in 0.3s
+//modules/map/tools:quaternion_euler_cpplint                             PASSED in 0.3s
+//modules/map/tools:refresh_default_end_way_point_cpplint                PASSED in 0.3s
+//modules/map/tools:sim_map_generator_cpplint                            PASSED in 0.2s
+
+Executed 27 out of 27 tests: 27 tests pass.

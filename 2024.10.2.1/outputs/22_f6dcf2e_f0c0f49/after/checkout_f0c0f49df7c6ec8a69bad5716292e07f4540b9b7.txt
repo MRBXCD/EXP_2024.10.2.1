@@ -1,0 +1,2 @@
+Previous HEAD position was f6dcf2e533 Control : update the steer limit calculation
+HEAD is now at f0c0f49df7 Control : fix steer angle scaling issue

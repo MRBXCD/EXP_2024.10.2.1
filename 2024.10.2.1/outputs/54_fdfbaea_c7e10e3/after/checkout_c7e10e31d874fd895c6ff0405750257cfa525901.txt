@@ -1,0 +1,2 @@
+Previous HEAD position was fdfbaeade7 Dreamview: updated route editing bar icons
+HEAD is now at c7e10e31d8 Planning: fixed an issue in dp_road_graph sampler by extending the min sample distance to 60m.

@@ -1,0 +1,2 @@
+Previous HEAD position was a793f102cc planning: fix time alignment algorithm
+HEAD is now at 563a8cab4a planning: fixed the collision cost calculation, in order to nudge properly

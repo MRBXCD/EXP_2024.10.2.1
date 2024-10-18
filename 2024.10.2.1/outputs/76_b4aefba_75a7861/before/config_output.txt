@@ -1,0 +1,12 @@
+System check passed. Build continue ...
+[33m[WARNING] ESD CAN library supplied by ESD Electronics does not exist. If you need ESD CAN, please refer to third_party/can_card_library/esd_can/README.md.[0m
++ python modules/tools/configurator/configurator.py
+Traceback (most recent call last):
+  File "modules/tools/configurator/configurator.py", line 160, in <module>
+    curses.wrapper(main)
+  File "/usr/lib/python2.7/curses/wrapper.py", line 22, in wrapper
+    stdscr = curses.initscr()
+  File "/usr/lib/python2.7/curses/__init__.py", line 33, in initscr
+    fd=_sys.__stdout__.fileno())
+error: setupterm: could not find terminal
+

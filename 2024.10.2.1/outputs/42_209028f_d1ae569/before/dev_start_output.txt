@@ -1,0 +1,20 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20180130_1338 ...
+dev-x86_64-20180130_1338: Pulling from apolloauto/apollo
+Digest: sha256:c4c153fa44480e284d3d843819e6ad367452e922dd665e3970a3e6972c3879fc
+Status: Image is up to date for apolloauto/apollo:dev-x86_64-20180130_1338
+docker.io/apolloauto/apollo:dev-x86_64-20180130_1338
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+b26ee59a036359f5d8a0631a544638018774a60c0ea7e220821e7c7305e6a6f5
+[[34m[1mINFO[0m] Starting docker container "apollo_dev" ...
+eaff6ae96d3f45fd9d85078ee2beada76c44fcbee1d4f9aa96b820cf81b70409
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

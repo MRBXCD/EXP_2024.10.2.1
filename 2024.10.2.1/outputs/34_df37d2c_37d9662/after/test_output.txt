@@ -1,0 +1,57 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 54 targets (49 packages loaded)
+INFO: Analysed 54 targets (69 packages loaded).
+INFO: Found 27 targets and 27 test targets...
+[0 / 22] Creating source manifest for //modules/map/hdmap:hdmap_util_test
+[669 / 970] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/datapiece.cc; 0s local ... (19 actions running)
+[707 / 1,124] Compiling modules/common/util/string_util.cc; 1s local ... (18 actions running)
+[728 / 1,124] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 1s local ... (19 actions running)
+[751 / 1,124] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 2s local ... (19 actions running)
+[768 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 3s local ... (19 actions running)
+[791 / 1,148] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 1s local ... (19 actions running)
+[815 / 1,172] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 2s local ... (19 actions running)
+[839 / 1,196] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 2s local ... (19 actions running)
+[874 / 1,228] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 3s local ... (19 actions running)
+[1,135 / 1,423] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 2s local ... (17 actions running)
+[1,339 / 1,661] 2 / 27 tests; Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 4s local ... (19 actions running)
+[1,549 / 1,877] 22 / 27 tests; Compiling modules/common/transform_listener/transform_listener.cc; 3s local ... (19 actions running)
+[1,652 / 1,877] 22 / 27 tests; Compiling modules/common/apollo_app.cc; 2s local ... (19 actions running)
+[1,791 / 1,877] 22 / 27 tests; Compiling modules/map/hdmap/hdmap_impl.cc; 3s local ... (20 actions running)
+[1,850 / 1,878] 22 / 27 tests; Compiling modules/map/relative_map/tools/navigation_dummy.cc; 4s local ... (8 actions running)
+[1,851 / 1,878] 23 / 27 tests; Compiling modules/map/relative_map/tools/navigation_dummy.cc; 8s local ... (7 actions running)
+[1,858 / 1,878] 23 / 27 tests; Compiling modules/common/adapters/adapter_manager.cc; 12s local ... (3 actions running)
+[1,863 / 1,878] 23 / 27 tests; Compiling modules/common/adapters/adapter_manager.cc; 18s local
+[1,871 / 1,878] 23 / 27 tests; Linking modules/map/tools/map_tool; 3s local ... (7 actions running)
+INFO: Elapsed time: 54.771s, Critical Path: 38.48s
+INFO: Build completed successfully, 1882 total actions
+//modules/map/hdmap/adapter:opendrive_adapter_cpplint                    PASSED in 1.5s
+//modules/map/hdmap:hdmap_cpplint                                        PASSED in 1.4s
+//modules/map/hdmap:hdmap_map_test                                       PASSED in 0.6s
+//modules/map/hdmap:hdmap_map_test_cpplint                               PASSED in 0.4s
+//modules/map/hdmap:hdmap_util_cpplint                                   PASSED in 0.3s
+//modules/map/hdmap:hdmap_util_test                                      PASSED in 0.2s
+//modules/map/hdmap:hdmap_util_test_cpplint                              PASSED in 0.2s
+//modules/map/pnc_map:path_cpplint                                       PASSED in 0.7s
+//modules/map/pnc_map:pnc_map_cpplint                                    PASSED in 0.5s
+//modules/map/pnc_map:pnc_map_test                                       PASSED in 1.2s
+//modules/map/pnc_map:pnc_map_test_cpplint                               PASSED in 0.2s
+//modules/map/pnc_map:pnc_path_test                                      PASSED in 5.0s
+//modules/map/pnc_map:pnc_path_test_cpplint                              PASSED in 0.4s
+//modules/map/pnc_map:route_segments_cpplint                             PASSED in 0.4s
+//modules/map/pnc_map:route_segments_test                                PASSED in 1.2s
+//modules/map/pnc_map:route_segments_test_cpplint                        PASSED in 0.2s
+//modules/map/relative_map/common:relative_map_gflags_cpplint            PASSED in 0.1s
+//modules/map/relative_map:navigation_lane_lib_cpplint                   PASSED in 0.3s
+//modules/map/relative_map:relative_map_cpplint                          PASSED in 0.1s
+//modules/map/relative_map:relative_map_lib_cpplint                      PASSED in 0.3s
+//modules/map/relative_map/tools:navigation_dummy_cpplint                PASSED in 0.2s
+//modules/map/tools:map_tool_cpplint                                     PASSED in 0.2s
+//modules/map/tools:map_xysl_cpplint                                     PASSED in 0.3s
+//modules/map/tools:proto_map_generator_cpplint                          PASSED in 0.2s
+//modules/map/tools:quaternion_euler_cpplint                             PASSED in 0.2s
+//modules/map/tools:refresh_default_end_way_point_cpplint                PASSED in 0.2s
+//modules/map/tools:sim_map_generator_cpplint                            PASSED in 0.2s
+
+Executed 27 out of 27 tests: 27 tests pass.

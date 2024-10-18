@@ -175,7 +175,8 @@ def main():
         # 获取当前用户
         DOCKER_USER = 'user'  # 请将此处的用户名修改为您的实际用户名
         DEV_CONTAINER_PREFIX = 'apollo_dev_'
-        DEV_CONTAINER = f"{DEV_CONTAINER_PREFIX}{DOCKER_USER}"
+        # DEV_CONTAINER = f"{DEV_CONTAINER_PREFIX}{DOCKER_USER}"
+        DEV_CONTAINER = 'apollo_dev'
 
         # 定义两种状态的输出目录：before 和 after
         output_states = {

@@ -1,0 +1,2 @@
+Previous HEAD position was 462caee558 planning: enable KeepClear feature (test is temporarily disabled because we need new test data based on the new map)
+HEAD is now at a9bcb6cebf Relative_map: added "FLAGS_enable_cyclic_rerouting" to enable/disable auto rerouting in a in a cyclic/circular navigaton line.

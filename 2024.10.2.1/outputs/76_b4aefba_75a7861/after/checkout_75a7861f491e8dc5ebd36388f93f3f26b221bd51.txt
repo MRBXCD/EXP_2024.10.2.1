@@ -1,0 +1,2 @@
+Previous HEAD position was b4aefba987 util: added uniform_slice function and test (#570)
+HEAD is now at 75a7861f49 Planning: (1) fixed 2d qp solver kernel bug; (2) used 1e-4 as precision to speed up qp solver; (3) replaced hard constraint to soft kernel in qp_spline_st_graph

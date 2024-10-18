@@ -1,0 +1,108 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20180103_1300 ...
+dev-x86_64-20180103_1300: Pulling from apolloauto/apollo
+cb56c90f0b30: Already exists
+0acc551e5716: Already exists
+8956dcd35143: Already exists
+908242721214: Already exists
+b44ff14dd3bb: Already exists
+4e68297aef7a: Already exists
+f2e60cbbc46b: Already exists
+4def827f3388: Already exists
+d7024597d4d3: Already exists
+886213b9c3ba: Already exists
+b1ac6ddbc6b7: Already exists
+6d28c630a322: Already exists
+d505646e6e5b: Already exists
+7968bcb3836a: Already exists
+8f0fa8c34222: Already exists
+bb8e16126598: Already exists
+f3b7c5d69675: Already exists
+1aedc3a0410b: Already exists
+33c030e7093a: Already exists
+da48ec85ed49: Already exists
+24852ac95ef0: Already exists
+fe4e65935e53: Already exists
+4779c4c9cb2e: Already exists
+27f6eba23a1a: Already exists
+15ab83019eb2: Already exists
+199e339073f8: Already exists
+3ae09dace98d: Already exists
+d09a647016dd: Already exists
+a7cb11a41e97: Already exists
+3e7686bdef0b: Already exists
+78198803f767: Already exists
+9b76be8176e0: Already exists
+74c48b5e54a2: Already exists
+200abc1adefd: Already exists
+ce47e44da8ce: Already exists
+8e863c5dfee2: Already exists
+85b9d775f6a6: Already exists
+618a1ac568c6: Already exists
+efc4bc9b4119: Already exists
+4e46d20fcf03: Already exists
+2b448e40506a: Already exists
+d12c8cf5699d: Already exists
+f2ba7ad4cfc7: Already exists
+351ecb254b60: Already exists
+dd1b1bafa413: Already exists
+8a5e2bea418d: Already exists
+7e610bf57646: Already exists
+32a374005d6c: Already exists
+1307670d704c: Already exists
+e43cb256c38c: Already exists
+353dcb25c39c: Already exists
+52e15f6717a2: Already exists
+a1d13a7f5398: Already exists
+1208b862d4c9: Already exists
+21f3dfc7fc87: Already exists
+85ae4b0dd353: Already exists
+042b5ae882da: Already exists
+707d68e96343: Already exists
+268269a5caca: Already exists
+45dfbd87c718: Already exists
+94f5779d4af0: Already exists
+82ccbf80d7fa: Already exists
+86315e78db66: Already exists
+06bc6911f9d4: Already exists
+26637a5d7bcf: Already exists
+2b8610ad644b: Already exists
+e07c96625704: Already exists
+8c7b2e11d4bd: Already exists
+e19a886efafb: Already exists
+76a96bcddfb9: Already exists
+eca8c00b150c: Already exists
+cebb627b586b: Already exists
+18107c0ddc3f: Already exists
+bf89e5c82131: Already exists
+08868fe92128: Already exists
+7475105e49a7: Already exists
+b648e96d3179: Already exists
+5c5c05b88a7a: Already exists
+9b5af117a430: Already exists
+b3fdca3369ce: Already exists
+0bca68339510: Already exists
+94032661a096: Already exists
+700cbca3e5d6: Already exists
+d1e5db4cac4a: Already exists
+f0592134e176: Already exists
+7a19213b0cd2: Already exists
+d1ac977ce7a2: Already exists
+892c4672348b: Already exists
+d915e8a8d8cb: Already exists
+4d233f0f8483: Already exists
+6e03bccc2355: Already exists
+ec8486d7401c: Already exists
+759dfabf9e8d: Already exists
+Digest: sha256:257b4864ea7c4d865b9674fba2a2cf9b3865d6298b1aa26c7fda09990d2f23e4
+Status: Downloaded newer image for apolloauto/apollo:dev-x86_64-20180103_1300
+docker.io/apolloauto/apollo:dev-x86_64-20180103_1300
+[[34m[1mINFO[0m] Starting docker container "apollo_dev" ...
+b1f764ebf61591de724a3fb2a73e73e45903d3ec9deffaa65e842b6f5b4eff05
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!

@@ -1,0 +1,2 @@
+Previous HEAD position was e5f97ccadc Create General_FAQs_cn.md
+HEAD is now at 1bda381373 planning: 1. fixed trajectory stitcher 2. return true localization data in vehicle state. 3. updated prev_trajectory transformation

@@ -1,0 +1,325 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Extracting Bazel installation...
+..................
+____Loading package: modules/perception/onboard/proto
+____Loading package: @bazel_tools//tools/cpp
+____Loading package: @local_config_xcode//
+____Loading package: @local_jdk//
+____Loading package: @local_config_cc//
+____Loading complete.  Analyzing...
+____Loading package:
+____Loading package: @bazel_tools//tools/zip
+____Loading package: modules/common/configs
+____Loading package: modules/common/math
+____Loading package: modules/common/data
+____Loading package: modules/drivers/proto
+____Loading package: @com_github_gflags_gflags//
+____Loading package: modules/common/transform_listener
+____Loading package: modules/drivers/radar/racobit_radar/proto
+____Loading package: modules/drivers/radar/ultrasonic_radar/proto
+____Loading package: @glew//
+____Downloading file:/home/tmp/googletest-release-1.8.0.tar.gz: 1,122,304 bytes
+____Downloading file:/home/tmp/opencv-2.4.13.2.zip: 43,065,344 bytes
+____Loading package: @gtest//
+____Loading package: @yaml_cpp//
+____Loading package: @vtk//
+____Loading package: @eigen//
+____Loading package: @bazel_tools//tools/genrule
+____Loading package: modules/common/math/qp_solver
+____Loading package: @qpOASES//
+____Loading package: modules/common/vehicle_state/proto
+____Cloning https://github.com/google/styleguide.git: remote: Enumerating objects (0 / 0)
+____Cloning https://github.com/google/styleguide.git: remote: Counting objects (669 / 743)
+____Cloning https://github.com/google/styleguide.git: remote: Compressing objects (101 / 104)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (4 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (56 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (169 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (244 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (420 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (572 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (574 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (575 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (658 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (1118 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (1411 / 1650)
+____Cloning https://github.com/google/styleguide.git: Receiving objects (1517 / 1650)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (16 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (108 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (177 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (247 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (477 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (777 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (789 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (799 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (823 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (861 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (892 / 983)
+____Cloning https://github.com/google/styleguide.git: Resolving deltas (951 / 983)
+____Cloning https://github.com/google/styleguide.git: Updating references (0 / 8)
+____Loading package: @opencv2//
+____Loading package: @google_styleguide//
+____Loading package: modules/map/hdmap/adapter
+____Loading package: @tinyxml2//
+____Loading package: @proj4//
+____Found 147 targets and 156 test targets...
+____Building...
+____[0 / 87] Expanding template modules/perception/obstacle/radar/modest/conti_radar_id_expansion_test_cpplint
+____[34 / 128] Writing file external/com_google_protobuf/libprotobuf_lite.a-2.params [for host]
+____[65 / 621] Symlinking virtual headers for @ros//:ros_common
+____[133 / 749] Symlinking virtual headers for @ros//:ros_common
+____[217 / 749] Symlinking virtual headers for @ros//:ros_common
+____[297 / 749] Symlinking virtual headers for @ros//:ros_common
+____[380 / 749] Symlinking virtual headers for @ros//:ros_common
+____[528 / 816] Symlinking virtual headers for @ros//:ros_common
+____[619 / 892] Symlinking virtual headers for @ros//:ros_common
+____[645 / 938] Compiling external/qpOASES/src/SolutionAnalysis.cpp
+____[645 / 938] Compiling external/com_google_protobuf/src/google/protobuf/compiler/js/embed.cc [for host]
+____[646 / 941] Writing file modules/perception/obstacle/radar/dummy/libdummy.so-2.params
+____[706 / 968] Compiling external/com_google_protobuf/src/google/protobuf/compiler/java/java_context.cc [for host]
+____[743 / 968] Compiling external/com_google_protobuf/src/google/protobuf/compiler/python/python_generator.cc [for host]
+____[755 / 968] Compiling external/com_google_protobuf/src/google/protobuf/compiler/objectivec/objectivec_message_field.cc [for host]
+____[765 / 968] Compiling external/com_google_protobuf/src/google/protobuf/compiler/objectivec/objectivec_helpers.cc [for host]
+____[801 / 972] Compiling external/qpOASES/src/Utils.cpp
+____[804 / 996] Compiling external/opencv2/modules/imgproc/src/utils.cpp
+____[826 / 1,012] Compiling external/qpOASES/src/LAPACKReplacement.cpp
+____[834 / 1,019] Compiling external/opencv2/modules/imgproc/src/contours.cpp
+____[951 / 1,120] Compiling modules/common/math/qp_solver/qp_solver.cc
+____[953 / 1,124] Compiling external/com_google_protobuf/src/google/protobuf/service.cc
+____[980 / 1,168] Compiling external/com_google_protobuf/src/google/protobuf/extension_set_heavy.cc
+____[988 / 1,181] Compiling external/qpOASES/src/SparseSolver.cpp
+____[1,004 / 1,208] Compiling external/opencv2/modules/imgproc/src/thresh.cpp
+____[1,012 / 1,217] Compiling external/opencv2/modules/imgproc/src/tables.cpp
+____[1,225 / 1,315] Compiling external/com_google_protobuf/src/google/protobuf/util/internal/json_stream_parser.cc
+____[1,234 / 1,324] Creating source manifest for //modules/perception/obstacle/radar/modest:conti_radar_util_test
+____[1,240 / 1,339] Compiling modules/routing/proto/routing_config.pb.cc
+____[1,244 / 1,347] Writing file modules/common/math/libsearch.so-2.params
+____[1,245 / 1,350] Compiling modules/monitor/proto/monitor_conf.pb.cc
+____[1,271 / 1,398] Writing file modules/drivers/gnss/proto/libins_proto_lib.so-2.params
+____[1,298 / 1,421] Compiling modules/control/proto/lon_controller_conf.pb.cc
+____[1,308 / 1,427] Compiling modules/control/proto/control_conf.pb.cc
+____[1,315 / 1,434] Writing file modules/common/configs/libconfig_gflags.so-2.params
+____[1,324 / 1,445] Writing file modules/drivers/gnss/proto/libgnss_status_proto_lib.so-2.params
+____[1,357 / 1,480] Compiling modules/drivers/proto/racobit_radar.pb.cc
+____[1,389 / 1,519] Compiling modules/map/proto/map_speed_bump.pb.cc
+____[1,403 / 1,527] Compiling modules/map/proto/map_crosswalk.pb.cc
+____[1,422 / 1,549] Writing file external/com_google_protobuf/libprotobuf.so-2.params
+____[1,436 / 1,570] Compiling modules/prediction/proto/prediction_obstacle.pb.cc
+____[1,436 / 1,571] Writing file modules/prediction/proto/libprediction_proto_lib.so-2.params
+____[1,444 / 1,584] Writing file modules/perception/obstacle/onboard/libhdmapinput.so-2.params
+____[1,448 / 1,590] Writing file modules/map/hdmap/adapter/libopendrive_adapter.so-2.params
+____[1,460 / 1,614] Writing file modules/drivers/radar/ultrasonic_radar/proto/libultrasonic_radar_proto_lib.so-2.params
+____[1,478 / 1,646] Writing file modules/drivers/gnss/proto/libconfig_lib.so-2.params
+____[1,515 / 1,672] Compiling modules/common/math/qp_solver/active_set_qp_solver.cc
+____[1,524 / 1,672] Linking modules/drivers/radar/ultrasonic_radar/proto/libultrasonic_radar_proto_lib.so
+____[1,549 / 1,672] Compiling modules/common/math/cartesian_frenet_conversion.cc
+____[1,555 / 1,672] Compiling modules/common/time/timer.cc
+____[1,562 / 1,672] Linking modules/common/math/qp_solver/libactive_set_qp_solver.so
+____[1,569 / 1,672] Compiling modules/map/hdmap/adapter/opendrive_adapter.cc
+____[1,579 / 1,672] Compiling modules/map/hdmap/adapter/xml_parser/objects_xml_parser.cc
+____[1,592 / 1,672] Compiling modules/perception/obstacle/base/object_supplement.cc
+____[1,597 / 1,672] Compiling modules/perception/obstacle/common/pose_util.cc
+____[1,599 / 1,672] Compiling modules/perception/obstacle/common/hungarian_bigraph_matcher.cc
+____[1,601 / 1,672] Compiling modules/perception/obstacle/onboard/hdmap_input.cc
+____[1,612 / 1,672] Linking modules/common/time/libtime.so
+____[1,630 / 1,679] Compiling modules/perception/lib/base/registerer.cc
+____[1,637 / 1,683] Compiling external/gtest/googlemock/src/gmock-cardinalities.cc
+____[1,642 / 1,689] Linking modules/perception/common/libcommon.so
+____[1,648 / 1,693] Compiling external/gtest/googletest/src/gtest.cc
+____[1,652 / 1,697] Compiling external/gtest/googletest/src/gtest-printers.cc
+____[1,661 / 1,704] Expanding template modules/perception/obstacle/radar/dummy/dummy_cpplint
+____[1,673 / 1,712] Expanding template modules/perception/obstacle/common/common_test_cpplint
+____[1,677 / 1,716] Compiling external/gtest/googletest/src/gtest-port.cc
+____[1,695 / 1,736] Compiling modules/perception/obstacle/radar/modest/conti_radar_id_expansion_test.cc
+____[1,702 / 1,744] Creating source manifest for //modules/perception/obstacle/radar/interface:interface_cpplint
+PASS: //modules/perception/obstacle/radar/modest:conti_radar_id_expansion_test_cpplint
+PASS: //modules/perception/lib/base:perception_lib_base_test_cpplint
+PASS: //modules/perception/obstacle/radar/interface:interface_cpplint
+PASS: //modules/perception/obstacle/camera/filter:camera_extended_kalman_filter_cpplint
+PASS: //modules/perception/tool/data_generator:data_generator_lib_cpplint
+PASS: //modules/perception/obstacle/radar/dummy:dummy_cpplint
+PASS: //modules/perception/obstacle/common:common_test_cpplint
+PASS: //modules/perception/obstacle/common:common_cpplint
+____[1,749 / 1,787] Compiling modules/perception/obstacle/lidar/tracker/hm_tracker/object_track.cc
+PASS: //modules/perception:perception_lib_cpplint
+____[1,755 / 1,793] Compiling modules/perception/obstacle/fusion/probabilistic_fusion/pbf_sensor.cc
+PASS: //modules/perception/lib/base:base_cpplint
+PASS: //modules/perception/lib/config_manager:config_manager_cpplint
+PASS: //modules/perception/lib/base:perception_lib_base_test
+____[1,776 / 1,805] Compiling modules/perception/obstacle/onboard/radar_process_subnode.cc
+____From Compiling modules/perception/obstacle/fusion/probabilistic_fusion/pbf_track_object_distance.cc:
+modules/perception/obstacle/fusion/probabilistic_fusion/pbf_track_object_distance.cc: In member function 'float apollo::perception::PbfTrackObjectDistance::ComputeDistanceAngleMatchProb(const std::shared_ptr<apollo::perception::PbfSensorObject>&, const std::shared_ptr<apollo::perception::PbfSensorObject>&, const apollo::perception::TrackObjectDistanceOptions&)':
+modules/perception/obstacle/fusion/probabilistic_fusion/pbf_track_object_distance.cc:185:16: warning: unused variable 'distance_tolerance_max' [-Wunused-variable]
+   static float distance_tolerance_max = 5.0f;
+                ^
+____[1,784 / 1,813] Compiling modules/perception/obstacle/camera/common/util.cc
+____[1,785 / 1,814] Compiling modules/perception/obstacle/onboard/cipv_subnode.cc
+ERROR: /apollo/modules/perception/obstacle/lidar/segmentation/cnnseg/BUILD:30:1: C++ compilation of rule '//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_feature_generator' failed (Exit 1).
+In file included from /usr/include/caffe/common.hpp:19:0,
+                 from /usr/include/caffe/blob.hpp:9,
+                 from /usr/include/caffe/caffe.hpp:7,
+                 from ./modules/perception/obstacle/lidar/segmentation/cnnseg/feature_generator.h:23,
+                 from modules/perception/obstacle/lidar/segmentation/cnnseg/feature_generator.cc:17:
+/usr/include/caffe/util/device_alternate.hpp:34:23: fatal error: cublas_v2.h: No such file or directory
+ #include <cublas_v2.h>
+                       ^
+compilation terminated.
+____Building complete.
+____Elapsed time: 54.709s, Critical Path: 27.92s
+//modules/perception/lib/base:base_cpplint                               PASSED in 0.7s
+//modules/perception/lib/base:perception_lib_base_test                   PASSED in 0.1s
+//modules/perception/lib/base:perception_lib_base_test_cpplint           PASSED in 0.2s
+//modules/perception/lib/config_manager:config_manager_cpplint           PASSED in 0.5s
+//modules/perception/obstacle/camera/filter:camera_extended_kalman_filter_cpplint PASSED in 0.3s
+//modules/perception/obstacle/common:common_cpplint                      PASSED in 0.5s
+//modules/perception/obstacle/common:common_test_cpplint                 PASSED in 0.2s
+//modules/perception/obstacle/radar/dummy:dummy_cpplint                  PASSED in 0.2s
+//modules/perception/obstacle/radar/interface:interface_cpplint          PASSED in 0.3s
+//modules/perception/obstacle/radar/modest:conti_radar_id_expansion_test_cpplint PASSED in 0.2s
+//modules/perception:perception_lib_cpplint                              PASSED in 0.2s
+//modules/perception/tool/data_generator:data_generator_lib_cpplint      PASSED in 0.4s
+//modules/perception/common:common_cpplint                            NO STATUS
+//modules/perception/common:common_test                               NO STATUS
+//modules/perception/common:common_test_cpplint                       NO STATUS
+//modules/perception/common:convex_hullxy_cpplint                     NO STATUS
+//modules/perception/common:convex_hullxy_test                        NO STATUS
+//modules/perception/common:convex_hullxy_test_cpplint                NO STATUS
+//modules/perception/common:pcl_util_cpplint                          NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_test  NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_test_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_test NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_test_cpplint NO STATUS
+//modules/perception/cuda_util:cuda_util_cpplint                      NO STATUS
+//modules/perception/cuda_util:integrated_cuda_util_cpplint           NO STATUS
+//modules/perception/integration_tests:perception_test_base_cpplint   NO STATUS
+//modules/perception/integration_tests:sunnyvale_big_loop_test        NO STATUS
+//modules/perception/integration_tests:sunnyvale_big_loop_test_cpplint NO STATUS
+//modules/perception/obstacle/base:base_cpplint                       NO STATUS
+//modules/perception/obstacle/base:base_test                          NO STATUS
+//modules/perception/obstacle/base:base_test_cpplint                  NO STATUS
+//modules/perception/obstacle/camera/cipv:camera_cipv_cpplint         NO STATUS
+//modules/perception/obstacle/camera/common:cnn_adapter_cpplint       NO STATUS
+//modules/perception/obstacle/camera/common:common_cpplint            NO STATUS
+//modules/perception/obstacle/camera/common:projector_cpplint         NO STATUS
+//modules/perception/obstacle/camera/common:util_cpplint              NO STATUS
+//modules/perception/obstacle/camera/converter:converter_cpplint      NO STATUS
+//modules/perception/obstacle/camera/converter:geometry_camera_converter_test NO STATUS
+//modules/perception/obstacle/camera/converter:geometry_camera_converter_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/common:feature_extractor_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:util_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_test NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/dummy:dummy_cpplint              NO STATUS
+//modules/perception/obstacle/camera/filter:filter_cpplint            NO STATUS
+//modules/perception/obstacle/camera/interface:interface_cpplint      NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_test NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:lane_frame_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:connected_component_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:projector_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:type_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:util_cpplint NO STATUS
+//modules/perception/obstacle/camera/motion:motion_cpplint            NO STATUS
+//modules/perception/obstacle/camera/tracker:base_affinity_cpplint    NO STATUS
+//modules/perception/obstacle/camera/tracker/cs2d:cs2d_cpplint        NO STATUS
+//modules/perception/obstacle/camera/tracker/dlf:dlf_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker/kcf:kcf_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker:tracker_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker:util_cpplint             NO STATUS
+//modules/perception/obstacle/camera/transformer:transformer_cpplint  NO STATUS
+//modules/perception/obstacle/camera/visualizer:camera_visualizer_cpplint NO STATUS
+//modules/perception/obstacle/camera/visualizer/common:common_cpplint NO STATUS
+//modules/perception/obstacle/camera/visualizer:visualizer_cpplint    NO STATUS
+//modules/perception/obstacle/common:common_test                      NO STATUS
+//modules/perception/obstacle/fusion/async_fusion:async_fusion_cpplint NO STATUS
+//modules/perception/obstacle/fusion/interface:interface_cpplint      NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_motion_fusion_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_motion_fusion_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_sensor_manager_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_sensor_manager_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_track_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_track_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/dummy:dummy_cpplint               NO STATUS
+//modules/perception/obstacle/lidar/interface:interface_cpplint       NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_test NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_test NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_cpplint NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_test NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnn_segmentation_test NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnn_segmentation_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_cluster2d_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_feature_generator_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_util_cpplint NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_cpplint NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_test NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/visualizer/opengl_visualizer:opengl_visualizer_cpplint NO STATUS
+//modules/perception/obstacle/onboard:camera_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:cipv_subnode_cpplint            NO STATUS
+//modules/perception/obstacle/onboard:fusion_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:hdmap_input_test                NO STATUS
+//modules/perception/obstacle/onboard:hdmap_input_test_cpplint        NO STATUS
+//modules/perception/obstacle/onboard:hdmapinput_cpplint              NO STATUS
+//modules/perception/obstacle/onboard:lane_post_processing_subnode_cpplint NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_test              NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_test_cpplint      NO STATUS
+//modules/perception/obstacle/onboard:lidar_subnode_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:motion_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:obstacle_perception_cpplint     NO STATUS
+//modules/perception/obstacle/onboard:perception_obstacle_shared_data_cpplint NO STATUS
+//modules/perception/obstacle/onboard:radar_subnode_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:ultrasonic_obstacle_subnode_cpplint NO STATUS
+//modules/perception/obstacle/onboard:visualization_subnode_cpplint   NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_id_expansion_test NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_util_test      NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_util_test_cpplint NO STATUS
+//modules/perception/obstacle/radar/modest:modest_detector_cpplint    NO STATUS
+//modules/perception/obstacle/radar/modest:modest_radar_detector_test NO STATUS
+//modules/perception/obstacle/radar/modest:modest_radar_detector_test_cpplint NO STATUS
+//modules/perception/onboard:onboard_cpplint                          NO STATUS
+//modules/perception/onboard:subnode_test                             NO STATUS
+//modules/perception/onboard:subnode_test_cpplint                     NO STATUS
+//modules/perception:perception_cpplint                               NO STATUS
+//modules/perception/tool/data_generator/common:data_generator_gflags_cpplint NO STATUS
+//modules/perception/tool/data_generator:data_generator_cpplint       NO STATUS
+//modules/perception/tool/export_sensor_data:export_sensor_data_cpplint NO STATUS
+//modules/perception/tool/export_sensor_data:export_sensor_data_lib_cpplint NO STATUS
+//modules/perception/tool/offline_visualizer_tool:offline_lidar_visualizer_tool_cpplint NO STATUS
+//modules/perception/tool/offline_visualizer_tool:offline_sequential_obstacle_perception_test_cpplint NO STATUS
+//modules/perception/traffic_light/base:base_cpplint                  NO STATUS
+//modules/perception/traffic_light/base:base_test                     NO STATUS
+//modules/perception/traffic_light/base:base_test_cpplint             NO STATUS
+//modules/perception/traffic_light/interface:interface_cpplint        NO STATUS
+//modules/perception/traffic_light/onboard:onboard_cpplint            NO STATUS
+//modules/perception/traffic_light/preprocessor:perception_traffic_light_preprocessor_cpplint NO STATUS
+//modules/perception/traffic_light/preprocessor:tl_preprocessor_test  NO STATUS
+//modules/perception/traffic_light/preprocessor:tl_preprocessor_test_cpplint NO STATUS
+//modules/perception/traffic_light/projection:multi_camera_projection_test NO STATUS
+//modules/perception/traffic_light/projection:multi_camera_projection_test_cpplint NO STATUS
+//modules/perception/traffic_light/projection:perception_traffic_light_projection_cpplint NO STATUS
+//modules/perception/traffic_light/recognizer:perception_traffic_light_recognizer_cpplint NO STATUS
+//modules/perception/traffic_light/recognizer:unity_recognize_test    NO STATUS
+//modules/perception/traffic_light/recognizer:unity_recognize_test_cpplint NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_cpplint NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_test NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_test_cpplint NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_cpplint NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_test NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_test_cpplint NO STATUS
+//modules/perception/traffic_light/util:util_cpplint                  NO STATUS
+//modules/perception/traffic_light/visualizer:perception_traffic_light_visualizer_cpplint NO STATUS
+
+Executed 12 out of 156 tests: 12 tests pass and 144 were skipped.

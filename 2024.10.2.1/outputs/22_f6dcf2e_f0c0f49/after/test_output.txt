@@ -1,0 +1,74 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+Loading:
+Loading: 0 packages loaded
+Analyzing: 70 targets (61 packages loaded)
+INFO: Analysed 70 targets (65 packages loaded).
+INFO: Found 24 targets and 46 test targets...
+[0 / 1] BazelWorkspaceStatusAction stable-status.txt
+[751 / 1,125] Compiling external/qpOASES/src/QProblem.cpp; 0s local ... (20 actions running)
+[777 / 1,125] Compiling external/qpOASES/src/QProblem.cpp; 1s local ... (19 actions running)
+[801 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 1s local ... (19 actions running)
+[816 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 3s local ... (19 actions running)
+[835 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 4s local ... (19 actions running)
+[856 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 5s local ... (18 actions running)
+[878 / 1,125] Compiling external/com_google_protobuf/src/google/protobuf/compiler/cpp/cpp_message.cc [for host]; 3s local ... (19 actions running)
+[1,068 / 1,516] Compiling external/com_google_protobuf/src/google/protobuf/compiler/command_line_interface.cc [for host]; 1s local ... (20 actions running)
+[1,345 / 1,791] 1 / 46 tests; Compiling modules/common/transform_listener/transform_listener.cc; 1s local ... (20 actions running)
+[1,406 / 1,810] 33 / 46 tests; Compiling modules/common/transform_listener/transform_listener.cc; 3s local ... (20 actions running)
+[1,503 / 1,810] 33 / 46 tests; Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 2s local ... (20 actions running)
+[1,593 / 1,810] 33 / 46 tests; Compiling modules/drivers/proto/delphi_esr.pb.cc; 2s local ... (20 actions running)
+[1,699 / 1,810] 33 / 46 tests; Compiling modules/planning/proto/planning_internal.pb.cc; 1s local ... (20 actions running)
+[1,715 / 1,811] 33 / 46 tests; Compiling modules/control/tools/control_tester.cc; 4s local ... (20 actions running)
+[1,808 / 1,855] 33 / 46 tests; Compiling modules/control/tools/control_tester.cc; 8s local ... (10 actions running)
+[1,841 / 1,864] 42 / 46 tests; Compiling modules/common/adapters/adapter_manager.cc; 12s local ... (5 actions running)
+[1,853 / 1,864] 42 / 46 tests; Compiling modules/common/adapters/adapter_manager.cc; 21s local
+INFO: Elapsed time: 46.350s, Critical Path: 33.68s
+INFO: Build completed successfully, 1868 total actions
+//modules/control/common:control_gflags_cpplint                          PASSED in 0.2s
+//modules/control/common:hysteresis_filter_cpplint                       PASSED in 0.2s
+//modules/control/common:hysteresis_filter_test                          PASSED in 0.0s
+//modules/control/common:hysteresis_filter_test_cpplint                  PASSED in 0.2s
+//modules/control/common:interpolation_1d_cpplint                        PASSED in 0.2s
+//modules/control/common:interpolation_1d_test                           PASSED in 0.3s
+//modules/control/common:interpolation_1d_test_cpplint                   PASSED in 0.2s
+//modules/control/common:interpolation_2d_cpplint                        PASSED in 0.2s
+//modules/control/common:interpolation_2d_test                           PASSED in 0.2s
+//modules/control/common:interpolation_2d_test_cpplint                   PASSED in 0.2s
+//modules/control/common:pid_BC_controller_cpplint                       PASSED in 0.2s
+//modules/control/common:pid_BC_controller_test                          PASSED in 0.2s
+//modules/control/common:pid_BC_controller_test_cpplint                  PASSED in 0.2s
+//modules/control/common:pid_IC_controller_cpplint                       PASSED in 0.2s
+//modules/control/common:pid_IC_controller_test                          PASSED in 0.2s
+//modules/control/common:pid_IC_controller_test_cpplint                  PASSED in 0.2s
+//modules/control/common:pid_controller_cpplint                          PASSED in 0.2s
+//modules/control/common:pid_controller_test                             PASSED in 0.2s
+//modules/control/common:pid_controller_test_cpplint                     PASSED in 0.2s
+//modules/control/common:trajectory_analyzer_cpplint                     PASSED in 0.3s
+//modules/control/common:trajectory_analyzer_test                        PASSED in 0.1s
+//modules/control/common:trajectory_analyzer_test_cpplint                PASSED in 0.2s
+//modules/control:control_cpplint                                        PASSED in 0.1s
+//modules/control:control_lib_cpplint                                    PASSED in 0.3s
+//modules/control:control_test                                           PASSED in 0.3s
+//modules/control:control_test_cpplint                                   PASSED in 0.2s
+//modules/control/controller:controller_agent_cpplint                    PASSED in 0.2s
+//modules/control/controller:controller_interface_cpplint                PASSED in 0.2s
+//modules/control/controller:lat_controller_cpplint                      PASSED in 0.4s
+//modules/control/controller:lat_controller_test                         PASSED in 0.2s
+//modules/control/controller:lat_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/controller:lon_controller_cpplint                      PASSED in 0.5s
+//modules/control/controller:lon_controller_test                         PASSED in 0.3s
+//modules/control/controller:lon_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/controller:mpc_controller_cpplint                      PASSED in 0.5s
+//modules/control/controller:mpc_controller_test                         PASSED in 0.2s
+//modules/control/controller:mpc_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/integration_tests:control_test_base_cpplint            PASSED in 0.3s
+//modules/control/integration_tests:mpc_controller_test                  PASSED in 0.3s
+//modules/control/integration_tests:mpc_controller_test_cpplint          PASSED in 0.2s
+//modules/control/integration_tests:relative_position_test               PASSED in 0.3s
+//modules/control/integration_tests:relative_position_test_cpplint       PASSED in 0.2s
+//modules/control/integration_tests:simple_control_test                  PASSED in 0.5s
+//modules/control/integration_tests:simple_control_test_cpplint          PASSED in 0.2s
+//modules/control/tools:control_tester_cpplint                           PASSED in 0.2s
+//modules/control/tools:pad_terminal_cpplint                             PASSED in 0.2s
+
+Executed 46 out of 46 tests: 46 tests pass.

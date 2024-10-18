@@ -1,0 +1,2 @@
+Previous HEAD position was 4f4f91c359 drivers:gnss add rawmuxb config/ (#1333)
+HEAD is now at 3e65e28232 planning: bug fix for spiral reference line smoother to determine starting constrained anchor point

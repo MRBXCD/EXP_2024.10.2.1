@@ -1,0 +1,2 @@
+Previous HEAD position was 81881f0ad6 tools: added tool for map generation.
+HEAD is now at fca016f94e Planning: fixed a path issue when all possible paths are blocked by a leading vehicle.

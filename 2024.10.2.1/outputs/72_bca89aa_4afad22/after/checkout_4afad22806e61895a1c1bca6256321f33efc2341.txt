@@ -1,0 +1,2 @@
+Previous HEAD position was bca89aaed7 HMI: Update HMI README to reflect code changes.
+HEAD is now at 4afad22806 Planning: fixed a bug when adding equality constraint in qp_spline_path_generator. (#844)

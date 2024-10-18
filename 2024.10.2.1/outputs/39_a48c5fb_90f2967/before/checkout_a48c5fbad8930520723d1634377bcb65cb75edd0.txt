@@ -1,0 +1,18 @@
+Note: switching to 'a48c5fbad8930520723d1634377bcb65cb75edd0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a48c5fbad8 Add changes to teleop and gem controller Prior to this commit the teleop had a bug in it that prevented testing control. Also the gem controller had bugs that caused compilation issues. This commit fixes both those issues.

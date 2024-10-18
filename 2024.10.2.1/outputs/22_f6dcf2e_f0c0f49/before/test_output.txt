@@ -1,0 +1,84 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 70 targets (8 packages loaded)
+Analyzing: 70 targets (11 packages loaded)
+Analyzing: 70 targets (59 packages loaded)
+Analyzing: 70 targets (64 packages loaded)
+Analyzing: 70 targets (64 packages loaded)
+INFO: Analysed 70 targets (65 packages loaded).
+INFO: Found 24 targets and 46 test targets...
+[0 / 55] Expanding template modules/control/controller/controller_interface_cpplint
+[666 / 728] Compiling external/com_google_protobuf/src/google/protobuf/wrappers.pb.cc; 0s local ... (19 actions running)
+[690 / 938] Compiling external/com_google_protobuf/src/google/protobuf/message.cc; 1s local ... (12 actions running)
+[764 / 1,059] Compiling external/com_google_protobuf/src/google/protobuf/descriptor_database.cc; 1s local ... (20 actions running)
+[867 / 1,257] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc; 2s local ... (19 actions running)
+[896 / 1,257] Compiling external/com_google_protobuf/src/google/protobuf/struct.pb.cc [for host]; 2s local ... (19 actions running)
+[955 / 1,335] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.pb.cc [for host]; 3s local ... (19 actions running)
+[999 / 1,354] Compiling external/com_google_protobuf/src/google/protobuf/descriptor.cc [for host]; 4s local ... (19 actions running)
+[1,324 / 1,765] Compiling external/com_github_gflags_gflags/src/gflags.cc; 0s local ... (20 actions running)
+[1,468 / 1,776] Compiling modules/control/common/interpolation_1d.cc; 3s local ... (20 actions running)
+[1,628 / 1,781] 5 / 46 tests; Compiling modules/planning/proto/planning_internal.pb.cc; 2s local ... (20 actions running)
+ERROR: /apollo/modules/control/controller/BUILD:14:1: C++ compilation of rule '//modules/control/controller:lat_controller' failed (Exit 1)
+modules/control/controller/lat_controller.cc: In member function 'virtual apollo::common::Status apollo::control::LatController::ComputeControlCommand(const apollo::localization::LocalizationEstimate*, const apollo::canbus::Chassis*, const apollo::planning::ADCTrajectory*, apollo::control::ControlCommand*)':
+modules/control/controller/lat_controller.cc:392:9: error: 'steer_ratio_' was not declared in this scope
+         steer_ratio_ * 180 / M_PI / steer_single_direction_max_degree_ * 100;
+         ^
+modules/control/controller/lat_controller.cc:416:61: error: 'steer_ratio_' was not declared in this scope
+       -matrix_k_(0, 0) * matrix_state_(0, 0) * 180 / M_PI * steer_ratio_ /
+                                                             ^
+modules/control/controller/lat_controller.cc: In member function 'double apollo::control::LatController::ComputeFeedForward(double) const':
+modules/control/controller/lat_controller.cc:539:20: error: 'steer_ratio_' was not declared in this scope
+       180 / M_PI * steer_ratio_ / steer_single_direction_max_degree_ * 100;
+                    ^
+INFO: Elapsed time: 31.402s, Critical Path: 12.72s
+FAILED: Build did NOT complete successfully
+//modules/control/common:control_gflags_cpplint                          PASSED in 0.2s
+//modules/control/common:hysteresis_filter_cpplint                       PASSED in 0.2s
+//modules/control/common:hysteresis_filter_test                          PASSED in 0.0s
+//modules/control/common:hysteresis_filter_test_cpplint                  PASSED in 0.2s
+//modules/control/common:interpolation_1d_cpplint                        PASSED in 0.2s
+//modules/control/common:interpolation_1d_test                           PASSED in 0.3s
+//modules/control/common:interpolation_1d_test_cpplint                   PASSED in 0.2s
+//modules/control/common:interpolation_2d_cpplint                        PASSED in 0.2s
+//modules/control/common:interpolation_2d_test                           PASSED in 0.2s
+//modules/control/common:interpolation_2d_test_cpplint                   PASSED in 0.2s
+//modules/control/common:pid_BC_controller_cpplint                       PASSED in 0.2s
+//modules/control/common:pid_BC_controller_test                          PASSED in 0.2s
+//modules/control/common:pid_BC_controller_test_cpplint                  PASSED in 0.2s
+//modules/control/common:pid_IC_controller_cpplint                       PASSED in 0.2s
+//modules/control/common:pid_IC_controller_test                          PASSED in 0.2s
+//modules/control/common:pid_IC_controller_test_cpplint                  PASSED in 0.2s
+//modules/control/common:pid_controller_cpplint                          PASSED in 0.2s
+//modules/control/common:pid_controller_test                             PASSED in 0.2s
+//modules/control/common:pid_controller_test_cpplint                     PASSED in 0.2s
+//modules/control/common:trajectory_analyzer_cpplint                     PASSED in 0.3s
+//modules/control/common:trajectory_analyzer_test                        PASSED in 0.1s
+//modules/control/common:trajectory_analyzer_test_cpplint                PASSED in 0.2s
+//modules/control:control_cpplint                                        PASSED in 0.2s
+//modules/control:control_lib_cpplint                                    PASSED in 0.4s
+//modules/control:control_test_cpplint                                   PASSED in 0.2s
+//modules/control/controller:controller_interface_cpplint                PASSED in 0.2s
+//modules/control/controller:lat_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/controller:mpc_controller_test_cpplint                 PASSED in 0.2s
+//modules/control/integration_tests:control_test_base_cpplint            PASSED in 0.3s
+//modules/control/integration_tests:mpc_controller_test_cpplint          PASSED in 0.1s
+//modules/control/integration_tests:relative_position_test_cpplint       PASSED in 0.2s
+//modules/control/integration_tests:simple_control_test_cpplint          PASSED in 0.2s
+//modules/control/tools:control_tester_cpplint                           PASSED in 0.2s
+//modules/control/tools:pad_terminal_cpplint                             PASSED in 0.2s
+//modules/control:control_test                                        NO STATUS
+//modules/control/controller:controller_agent_cpplint                 NO STATUS
+//modules/control/controller:lat_controller_cpplint                   NO STATUS
+//modules/control/controller:lat_controller_test                      NO STATUS
+//modules/control/controller:lon_controller_cpplint                   NO STATUS
+//modules/control/controller:lon_controller_test                      NO STATUS
+//modules/control/controller:lon_controller_test_cpplint              NO STATUS
+//modules/control/controller:mpc_controller_cpplint                   NO STATUS
+//modules/control/controller:mpc_controller_test                      NO STATUS
+//modules/control/integration_tests:mpc_controller_test               NO STATUS
+//modules/control/integration_tests:relative_position_test            NO STATUS
+//modules/control/integration_tests:simple_control_test               NO STATUS
+
+Executed 34 out of 46 tests: 34 tests pass and 12 were skipped.

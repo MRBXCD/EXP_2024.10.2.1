@@ -1,0 +1,2 @@
+Previous HEAD position was 4bc3b4705b planning: bug fix for PrioritizeChangeLane() for wrong condition.
+HEAD is now at f1b9738042 planning: fix integration test.

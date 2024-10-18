@@ -1,0 +1,14 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+.
+Loading:
+Loading: 0 packages loaded
+Analyzing: 109 targets (18 packages loaded)
+Analyzing: 109 targets (21 packages loaded)
+Analyzing: 109 targets (43 packages loaded)
+Analyzing: 109 targets (43 packages loaded)
+Analyzing: 109 targets (43 packages loaded)
+ERROR: /apollo/modules/prediction/evaluator/vehicle/BUILD:48:1: no such package '@eigen//': Error downloading [https://bitbucket.org/eigen/eigen/get/3.2.10.tar.gz] to /home/user/.cache/bazel/_bazel_user/540135163923dd7d5820f3ee4b306b32/external/eigen/3.2.10.tar.gz: GET returned 404 Not Found and referenced by '//modules/prediction/evaluator/vehicle:rnn_evaluator'
+ERROR: Analysis of target '//modules/prediction/evaluator/vehicle:rnn_evaluator' failed; build aborted
+INFO: Elapsed time: 5.629s
+FAILED: Build did NOT complete successfully (43 packages loaded)
+ERROR: Couldn't start the build. Unable to run tests

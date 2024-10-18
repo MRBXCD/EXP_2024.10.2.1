@@ -1,0 +1,2 @@
+Previous HEAD position was 2aa94f21fd drivers: added a readme for camera project
+HEAD is now at 3fa46e23cf planning: add default stop fallback in case of polynomial fallback failure.

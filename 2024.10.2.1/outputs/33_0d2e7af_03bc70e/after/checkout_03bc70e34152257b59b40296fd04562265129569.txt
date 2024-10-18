@@ -1,0 +1,2 @@
+Previous HEAD position was 0d2e7afb8b Perception: added proto loading test for geometry_camera_converter.
+HEAD is now at 03bc70e341 Planning: fix a bug for "reference_line_provider_". (#4081)

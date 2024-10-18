@@ -1,0 +1,2 @@
+Previous HEAD position was 0047e8adb2 update specs docs
+HEAD is now at 4336e31a8e Add turn signal functionality and fixes (#3968)

@@ -1,0 +1,2 @@
+Previous HEAD position was a1f4934d37 planning: added change lane overtake rule
+HEAD is now at 24fd7cb37b Planning: fixed a bug in speed_decider --- should only consider blocking obstacles.

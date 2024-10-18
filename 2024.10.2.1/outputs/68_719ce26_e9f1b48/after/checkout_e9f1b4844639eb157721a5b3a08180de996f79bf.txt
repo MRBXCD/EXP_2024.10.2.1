@@ -1,0 +1,2 @@
+Previous HEAD position was 719ce2666d Prediction: implement set lane feature
+HEAD is now at e9f1b48446 Prediction: fixed cut in trajectory when obstacle is close to ego vehicle

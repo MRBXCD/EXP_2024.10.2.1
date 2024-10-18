@@ -1,0 +1,2 @@
+Previous HEAD position was a5c589604c script: deprecate /apollo/meta. new info is available from /apollo/monitor/static_info.
+HEAD is now at b0a4cbe63b Planning: fixed an issue at large loop -- left turn is too close to road boundary. (1) do not expand sample lateral shift until init_adc_l; (2) use 0.2m for sample distance to boundary.

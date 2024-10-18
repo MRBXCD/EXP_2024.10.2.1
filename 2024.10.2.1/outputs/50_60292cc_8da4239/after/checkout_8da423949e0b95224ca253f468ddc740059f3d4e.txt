@@ -1,0 +1,2 @@
+Previous HEAD position was 60292cca37 Planning: fixed the routing update mechanism in reference line provider.
+HEAD is now at 8da423949e planning: fix change lane toggling problem when projecting lane is not neighbor lane in case of cross lane projection minor shift error.

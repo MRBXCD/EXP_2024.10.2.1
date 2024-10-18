@@ -1,0 +1,2 @@
+Previous HEAD position was 16e1f5ce2a Fix docker start error msg.
+HEAD is now at cdefeaf319 fix linear velocity in localization

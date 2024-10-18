@@ -1,0 +1,777 @@
+INFO: Reading 'startup' options from /apollo/tools/bazel.rc: --batch_cpu_scheduling
+____Loading package: modules/perception/traffic_light/onboard
+____Loading package: modules/perception/obstacle/lidar/object_builder/min_box
+____Loading package: @bazel_tools//tools/cpp
+____Loading package: @local_jdk//
+____Loading complete.  Analyzing...
+____Loading package:
+____Loading package: @bazel_tools//tools/test
+____Loading package: @eigen//
+____Loading package: modules/common/math/qp_solver
+____Loading package: @opengl//
+____Loading package: @bazel_tools//tools/genrule
+____Loading package: modules/common/adapters/proto
+____Loading package: modules/drivers/radar/ultrasonic_radar/proto
+____Loading package: @vtk//
+____Found 147 targets and 156 test targets...
+____Building...
+____[1 / 27] Expanding template modules/perception/common/common_cpplint
+____[38 / 261] Symlinking virtual headers for @ros//:ros_common
+____[613 / 869] Writing file external/com_google_protobuf/libprotobuf_lite.a-2.params [for host]
+____[789 / 1,459] Writing file modules/perception/traffic_light/base/libbase.so-2.params
+____[876 / 1,623] Writing file modules/perception/proto/libperception_proto_lib.so-2.params
+ERROR: /apollo/modules/perception/traffic_light/util/BUILD:5:1: C++ compilation of rule '//modules/perception/traffic_light/util:util' failed (Exit 1).
+In file included from modules/perception/traffic_light/util/color_space.cc:36:0:
+./modules/perception/traffic_light/util/color_space.h:163:25: error: '__m256i' was not declared in this scope
+ const size_t A = sizeof(__m256i);
+                         ^
+./modules/perception/traffic_light/util/color_space.h:169:7: error: '__m256i' does not name a type
+ const __m256i K_ZERO = SIMD_MM256_SET1_EPI8(0);
+       ^
+./modules/perception/traffic_light/util/color_space.h:170:7: error: '__m256i' does not name a type
+ const __m256i K_INV_ZERO = SIMD_MM256_SET1_EPI8(0xFF);
+       ^
+./modules/perception/traffic_light/util/color_space.h:172:7: error: '__m256i' does not name a type
+ const __m256i K8_01 = SIMD_MM256_SET1_EPI8(0x01);
+       ^
+./modules/perception/traffic_light/util/color_space.h:173:7: error: '__m256i' does not name a type
+ const __m256i K8_02 = SIMD_MM256_SET1_EPI8(0x02);
+       ^
+./modules/perception/traffic_light/util/color_space.h:174:7: error: '__m256i' does not name a type
+ const __m256i K8_04 = SIMD_MM256_SET1_EPI8(0x04);
+       ^
+./modules/perception/traffic_light/util/color_space.h:175:7: error: '__m256i' does not name a type
+ const __m256i K8_08 = SIMD_MM256_SET1_EPI8(0x08);
+       ^
+./modules/perception/traffic_light/util/color_space.h:176:7: error: '__m256i' does not name a type
+ const __m256i K8_10 = SIMD_MM256_SET1_EPI8(0x10);
+       ^
+./modules/perception/traffic_light/util/color_space.h:177:7: error: '__m256i' does not name a type
+ const __m256i K8_20 = SIMD_MM256_SET1_EPI8(0x20);
+       ^
+./modules/perception/traffic_light/util/color_space.h:178:7: error: '__m256i' does not name a type
+ const __m256i K8_40 = SIMD_MM256_SET1_EPI8(0x40);
+       ^
+./modules/perception/traffic_light/util/color_space.h:179:7: error: '__m256i' does not name a type
+ const __m256i K8_80 = SIMD_MM256_SET1_EPI8(0x80);
+       ^
+./modules/perception/traffic_light/util/color_space.h:181:7: error: '__m256i' does not name a type
+ const __m256i K8_01_FF = SIMD_MM256_SET2_EPI8(0x01, 0xFF);
+       ^
+./modules/perception/traffic_light/util/color_space.h:183:7: error: '__m256i' does not name a type
+ const __m256i K16_0001 = SIMD_MM256_SET1_EPI16(0x0001);
+       ^
+./modules/perception/traffic_light/util/color_space.h:184:7: error: '__m256i' does not name a type
+ const __m256i K16_0002 = SIMD_MM256_SET1_EPI16(0x0002);
+       ^
+./modules/perception/traffic_light/util/color_space.h:185:7: error: '__m256i' does not name a type
+ const __m256i K16_0003 = SIMD_MM256_SET1_EPI16(0x0003);
+       ^
+./modules/perception/traffic_light/util/color_space.h:186:7: error: '__m256i' does not name a type
+ const __m256i K16_0004 = SIMD_MM256_SET1_EPI16(0x0004);
+       ^
+./modules/perception/traffic_light/util/color_space.h:187:7: error: '__m256i' does not name a type
+ const __m256i K16_0005 = SIMD_MM256_SET1_EPI16(0x0005);
+       ^
+./modules/perception/traffic_light/util/color_space.h:188:7: error: '__m256i' does not name a type
+ const __m256i K16_0006 = SIMD_MM256_SET1_EPI16(0x0006);
+       ^
+./modules/perception/traffic_light/util/color_space.h:189:7: error: '__m256i' does not name a type
+ const __m256i K16_0008 = SIMD_MM256_SET1_EPI16(0x0008);
+       ^
+./modules/perception/traffic_light/util/color_space.h:190:7: error: '__m256i' does not name a type
+ const __m256i K16_0010 = SIMD_MM256_SET1_EPI16(0x0010);
+       ^
+./modules/perception/traffic_light/util/color_space.h:191:7: error: '__m256i' does not name a type
+ const __m256i K16_0018 = SIMD_MM256_SET1_EPI16(0x0018);
+       ^
+./modules/perception/traffic_light/util/color_space.h:192:7: error: '__m256i' does not name a type
+ const __m256i K16_0020 = SIMD_MM256_SET1_EPI16(0x0020);
+       ^
+./modules/perception/traffic_light/util/color_space.h:193:7: error: '__m256i' does not name a type
+ const __m256i K16_0080 = SIMD_MM256_SET1_EPI16(0x0080);
+       ^
+./modules/perception/traffic_light/util/color_space.h:194:7: error: '__m256i' does not name a type
+ const __m256i K16_00FF = SIMD_MM256_SET1_EPI16(0x00FF);
+       ^
+./modules/perception/traffic_light/util/color_space.h:195:7: error: '__m256i' does not name a type
+ const __m256i K16_FF00 = SIMD_MM256_SET1_EPI16(0xFF00);
+       ^
+./modules/perception/traffic_light/util/color_space.h:197:7: error: '__m256i' does not name a type
+ const __m256i K32_00000001 = SIMD_MM256_SET1_EPI32(0x00000001);
+       ^
+./modules/perception/traffic_light/util/color_space.h:198:7: error: '__m256i' does not name a type
+ const __m256i K32_00000002 = SIMD_MM256_SET1_EPI32(0x00000002);
+       ^
+./modules/perception/traffic_light/util/color_space.h:199:7: error: '__m256i' does not name a type
+ const __m256i K32_00000004 = SIMD_MM256_SET1_EPI32(0x00000004);
+       ^
+./modules/perception/traffic_light/util/color_space.h:200:7: error: '__m256i' does not name a type
+ const __m256i K32_00000008 = SIMD_MM256_SET1_EPI32(0x00000008);
+       ^
+./modules/perception/traffic_light/util/color_space.h:201:7: error: '__m256i' does not name a type
+ const __m256i K32_000000FF = SIMD_MM256_SET1_EPI32(0x000000FF);
+       ^
+./modules/perception/traffic_light/util/color_space.h:202:7: error: '__m256i' does not name a type
+ const __m256i K32_0000FFFF = SIMD_MM256_SET1_EPI32(0x0000FFFF);
+       ^
+./modules/perception/traffic_light/util/color_space.h:203:7: error: '__m256i' does not name a type
+ const __m256i K32_00010000 = SIMD_MM256_SET1_EPI32(0x00010000);
+       ^
+./modules/perception/traffic_light/util/color_space.h:204:7: error: '__m256i' does not name a type
+ const __m256i K32_01000000 = SIMD_MM256_SET1_EPI32(0x01000000);
+       ^
+./modules/perception/traffic_light/util/color_space.h:205:7: error: '__m256i' does not name a type
+ const __m256i K32_FFFFFF00 = SIMD_MM256_SET1_EPI32(0xFFFFFF00);
+       ^
+./modules/perception/traffic_light/util/color_space.h:207:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR0_TO_BLUE = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:210:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR1_TO_BLUE = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:213:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR2_TO_BLUE = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:217:7: error: '__m256i' does not name a type
+ const __m256i Y_SHUFFLE0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:220:7: error: '__m256i' does not name a type
+ const __m256i Y_SHUFFLE1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:224:7: error: '__m256i' does not name a type
+ const __m256i U_SHUFFLE0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:227:7: error: '__m256i' does not name a type
+ const __m256i U_SHUFFLE1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:230:7: error: '__m256i' does not name a type
+ const __m256i U_SHUFFLE2 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:234:7: error: '__m256i' does not name a type
+ const __m256i U_SHUFFLE3 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:237:7: error: '__m256i' does not name a type
+ const __m256i U_SHUFFLE4 =
+       ^
+./modules/perception/traffic_light/util/color_space.h:242:7: error: '__m256i' does not name a type
+ const __m256i V_SHUFFLE0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:245:7: error: '__m256i' does not name a type
+ const __m256i V_SHUFFLE1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:248:7: error: '__m256i' does not name a type
+ const __m256i V_SHUFFLE2 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:252:7: error: '__m256i' does not name a type
+ const __m256i V_SHUFFLE3 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:256:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_BLUE_TO_BGR0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:259:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_BLUE_TO_BGR1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:262:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_BLUE_TO_BGR2 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:266:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_GREEN_TO_BGR0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:269:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_GREEN_TO_BGR1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:272:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_GREEN_TO_BGR2 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:276:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_RED_TO_BGR0 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:279:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_RED_TO_BGR1 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:282:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_PERMUTED_RED_TO_BGR2 = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:286:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR0_TO_GREEN = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:289:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR1_TO_GREEN = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:292:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR2_TO_GREEN = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:296:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR0_TO_RED = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:299:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR1_TO_RED = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:302:7: error: '__m256i' does not name a type
+ const __m256i K8_SHUFFLE_BGR2_TO_RED = SIMD_MM256_SETR_EPI8(
+       ^
+./modules/perception/traffic_light/util/color_space.h:306:7: error: '__m256i' does not name a type
+ const __m256i K16_Y_ADJUST = SIMD_MM256_SET1_EPI16(0);
+       ^
+./modules/perception/traffic_light/util/color_space.h:307:7: error: '__m256i' does not name a type
+ const __m256i K16_UV_ADJUST = SIMD_MM256_SET1_EPI16(128);
+       ^
+./modules/perception/traffic_light/util/color_space.h:333:7: error: '__m256i' does not name a type
+ const __m256i K16_YRGB_RT =
+       ^
+./modules/perception/traffic_light/util/color_space.h:335:7: error: '__m256i' does not name a type
+ const __m256i K16_VR_0 = SIMD_MM256_SET2_EPI16(V_TO_RED_WEIGHT, 0);
+       ^
+./modules/perception/traffic_light/util/color_space.h:336:7: error: '__m256i' does not name a type
+ const __m256i K16_UG_VG =
+       ^
+./modules/perception/traffic_light/util/color_space.h:338:7: error: '__m256i' does not name a type
+ const __m256i K16_UB_0 = SIMD_MM256_SET2_EPI16(U_TO_BLUE_WEIGHT, 0);
+       ^
+./modules/perception/traffic_light/util/color_space.h:341:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i Load(const __m256i *p);
+             ^
+./modules/perception/traffic_light/util/color_space.h:344:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i Load<false>(const __m256i *p) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:349:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i Load<true>(const __m256i *p) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:357:65: error: '__m256' was not declared in this scope
+ SIMD_INLINE bool Aligned(const void *ptr, size_t align = sizeof(__m256)) {
+                                                                 ^
+./modules/perception/traffic_light/util/color_space.h:362:24: error: variable or field 'Store' declared void
+ SIMD_INLINE void Store(__m256i *p, __m256i a);
+                        ^
+./modules/perception/traffic_light/util/color_space.h:362:24: error: '__m256i' was not declared in this scope
+./modules/perception/traffic_light/util/color_space.h:362:33: error: 'p' was not declared in this scope
+ SIMD_INLINE void Store(__m256i *p, __m256i a);
+                                 ^
+./modules/perception/traffic_light/util/color_space.h:362:36: error: '__m256i' was not declared in this scope
+ SIMD_INLINE void Store(__m256i *p, __m256i a);
+                                    ^
+./modules/perception/traffic_light/util/color_space.h:365:23: error: expected initializer before '<' token
+ SIMD_INLINE void Store<false>(__m256i *p, __m256i a) {
+                       ^
+./modules/perception/traffic_light/util/color_space.h:370:23: error: expected initializer before '<' token
+ SIMD_INLINE void Store<true>(__m256i *p, __m256i a) {
+                       ^
+./modules/perception/traffic_light/util/color_space.h:374:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i SaturateI16ToU8(__m256i value) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:378:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustY16(__m256i y16) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:382:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustUV16(__m256i uv16) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:386:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToRed32(__m256i y16_1, __m256i v16_0) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:397:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToRed16(__m256i y16, __m256i v16) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:408:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToGreen32(__m256i y16_1, __m256i u16_v16) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:415:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToGreen16(__m256i y16, __m256i u16,
+             ^
+./modules/perception/traffic_light/util/color_space.h:424:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToBlue32(__m256i y16_1, __m256i u16_0) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:431:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i AdjustedYuvToBlue16(__m256i y16, __m256i u16) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:439:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i YuvToRed(__m256i y, __m256i v) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:450:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i YuvToGreen(__m256i y, __m256i u, __m256i v) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:462:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i YuvToBlue(__m256i y, __m256i u) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:471:1: error: '__m256i' does not name a type
+ __m256i InterleaveBgr(__m256i blue, __m256i green, __m256i red);
+ ^
+./modules/perception/traffic_light/util/color_space.h:474:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i InterleaveBgr<0>(__m256i blue, __m256i green, __m256i red) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:485:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i InterleaveBgr<1>(__m256i blue, __m256i green, __m256i red) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:496:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i InterleaveBgr<2>(__m256i blue, __m256i green, __m256i red) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:506:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i BgrToBlue(__m256i bgr[3]) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:515:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i BgrToGreen(__m256i bgr[3]) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:524:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i BgrToRed(__m256i bgr[3]) {
+             ^
+./modules/perception/traffic_light/util/color_space.h:534:13: error: '__m256i' does not name a type
+ SIMD_INLINE __m256i LoadPermuted(const __m256i *p) {
+             ^
+modules/perception/traffic_light/util/color_space.cc:49:46: error: '__m256i' has not been declared
+ SIMD_INLINE void YuvSeperateAvx2(uint8_t *y, __m256i *y0, __m256i *y1,
+                                              ^
+modules/perception/traffic_light/util/color_space.cc:49:59: error: '__m256i' has not been declared
+ SIMD_INLINE void YuvSeperateAvx2(uint8_t *y, __m256i *y0, __m256i *y1,
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:50:34: error: '__m256i' has not been declared
+                                  __m256i *u0, __m256i *v0) {
+                                  ^
+modules/perception/traffic_light/util/color_space.cc:50:47: error: '__m256i' has not been declared
+                                  __m256i *u0, __m256i *v0) {
+                                               ^
+modules/perception/traffic_light/util/color_space.cc: In function 'void apollo::perception::traffic_light::YuvSeperateAvx2(uint8_t*, int*, int*, int*, int*)':
+modules/perception/traffic_light/util/color_space.cc:56:3: error: '__m256i' was not declared in this scope
+   __m256i yuv_m256[4];
+   ^
+modules/perception/traffic_light/util/color_space.cc:56:11: error: expected ';' before 'yuv_m256'
+   __m256i yuv_m256[4];
+           ^
+modules/perception/traffic_light/util/color_space.cc:59:5: error: 'yuv_m256' was not declared in this scope
+     yuv_m256[0] = Load<true>(reinterpret_cast<__m256i *>(y));
+     ^
+modules/perception/traffic_light/util/color_space.cc:59:19: error: 'Load' was not declared in this scope
+     yuv_m256[0] = Load<true>(reinterpret_cast<__m256i *>(y));
+                   ^
+modules/perception/traffic_light/util/color_space.cc:59:47: error: expected type-specifier before '__m256i'
+     yuv_m256[0] = Load<true>(reinterpret_cast<__m256i *>(y));
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:59:47: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:59:47: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:59:56: error: expected primary-expression before '>' token
+     yuv_m256[0] = Load<true>(reinterpret_cast<__m256i *>(y));
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc:59:61: error: expected ')' before ';' token
+     yuv_m256[0] = Load<true>(reinterpret_cast<__m256i *>(y));
+                                                             ^
+modules/perception/traffic_light/util/color_space.cc:60:47: error: expected type-specifier before '__m256i'
+     yuv_m256[1] = Load<true>(reinterpret_cast<__m256i *>(y) + 1);
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:60:47: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:60:47: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:60:56: error: expected primary-expression before '>' token
+     yuv_m256[1] = Load<true>(reinterpret_cast<__m256i *>(y) + 1);
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc:60:65: error: expected ')' before ';' token
+     yuv_m256[1] = Load<true>(reinterpret_cast<__m256i *>(y) + 1);
+                                                                 ^
+modules/perception/traffic_light/util/color_space.cc:61:47: error: expected type-specifier before '__m256i'
+     yuv_m256[2] = Load<true>(reinterpret_cast<__m256i *>(y) + 2);
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:61:47: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:61:47: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:61:56: error: expected primary-expression before '>' token
+     yuv_m256[2] = Load<true>(reinterpret_cast<__m256i *>(y) + 2);
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc:61:65: error: expected ')' before ';' token
+     yuv_m256[2] = Load<true>(reinterpret_cast<__m256i *>(y) + 2);
+                                                                 ^
+modules/perception/traffic_light/util/color_space.cc:62:47: error: expected type-specifier before '__m256i'
+     yuv_m256[3] = Load<true>(reinterpret_cast<__m256i *>(y) + 3);
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:62:47: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:62:47: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:62:56: error: expected primary-expression before '>' token
+     yuv_m256[3] = Load<true>(reinterpret_cast<__m256i *>(y) + 3);
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc:62:65: error: expected ')' before ';' token
+     yuv_m256[3] = Load<true>(reinterpret_cast<__m256i *>(y) + 3);
+                                                                 ^
+modules/perception/traffic_light/util/color_space.cc:64:5: error: 'yuv_m256' was not declared in this scope
+     yuv_m256[0] = Load<false>(reinterpret_cast<__m256i *>(y));
+     ^
+modules/perception/traffic_light/util/color_space.cc:64:19: error: 'Load' was not declared in this scope
+     yuv_m256[0] = Load<false>(reinterpret_cast<__m256i *>(y));
+                   ^
+modules/perception/traffic_light/util/color_space.cc:64:48: error: expected type-specifier before '__m256i'
+     yuv_m256[0] = Load<false>(reinterpret_cast<__m256i *>(y));
+                                                ^
+modules/perception/traffic_light/util/color_space.cc:64:48: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:64:48: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:64:57: error: expected primary-expression before '>' token
+     yuv_m256[0] = Load<false>(reinterpret_cast<__m256i *>(y));
+                                                         ^
+modules/perception/traffic_light/util/color_space.cc:64:62: error: expected ')' before ';' token
+     yuv_m256[0] = Load<false>(reinterpret_cast<__m256i *>(y));
+                                                              ^
+modules/perception/traffic_light/util/color_space.cc:65:48: error: expected type-specifier before '__m256i'
+     yuv_m256[1] = Load<false>(reinterpret_cast<__m256i *>(y) + 1);
+                                                ^
+modules/perception/traffic_light/util/color_space.cc:65:48: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:65:48: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:65:57: error: expected primary-expression before '>' token
+     yuv_m256[1] = Load<false>(reinterpret_cast<__m256i *>(y) + 1);
+                                                         ^
+modules/perception/traffic_light/util/color_space.cc:65:66: error: expected ')' before ';' token
+     yuv_m256[1] = Load<false>(reinterpret_cast<__m256i *>(y) + 1);
+                                                                  ^
+modules/perception/traffic_light/util/color_space.cc:66:48: error: expected type-specifier before '__m256i'
+     yuv_m256[2] = Load<false>(reinterpret_cast<__m256i *>(y) + 2);
+                                                ^
+modules/perception/traffic_light/util/color_space.cc:66:48: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:66:48: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:66:57: error: expected primary-expression before '>' token
+     yuv_m256[2] = Load<false>(reinterpret_cast<__m256i *>(y) + 2);
+                                                         ^
+modules/perception/traffic_light/util/color_space.cc:66:66: error: expected ')' before ';' token
+     yuv_m256[2] = Load<false>(reinterpret_cast<__m256i *>(y) + 2);
+                                                                  ^
+modules/perception/traffic_light/util/color_space.cc:67:48: error: expected type-specifier before '__m256i'
+     yuv_m256[3] = Load<false>(reinterpret_cast<__m256i *>(y) + 3);
+                                                ^
+modules/perception/traffic_light/util/color_space.cc:67:48: error: expected '>' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:67:48: error: expected '(' before '__m256i'
+modules/perception/traffic_light/util/color_space.cc:67:57: error: expected primary-expression before '>' token
+     yuv_m256[3] = Load<false>(reinterpret_cast<__m256i *>(y) + 3);
+                                                         ^
+modules/perception/traffic_light/util/color_space.cc:67:66: error: expected ')' before ';' token
+     yuv_m256[3] = Load<false>(reinterpret_cast<__m256i *>(y) + 3);
+                                                                  ^
+modules/perception/traffic_light/util/color_space.cc:72:47: error: 'yuv_m256' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[0], Y_SHUFFLE0), 0xD8),
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:72:60: error: 'Y_SHUFFLE0' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[0], Y_SHUFFLE0), 0xD8),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:72:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[0], Y_SHUFFLE0), 0xD8),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:72:70: note: (if you use '-fpermissive', G++ will accept your code, but allowing the use of an undeclared name is deprecated)
+modules/perception/traffic_light/util/color_space.cc:74:60: error: 'Y_SHUFFLE1' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[1], Y_SHUFFLE1), 0xD8));
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:74:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[1], Y_SHUFFLE1), 0xD8));
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:77:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[2], Y_SHUFFLE0), 0xD8),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:79:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[3], Y_SHUFFLE1), 0xD8));
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:83:60: error: 'U_SHUFFLE0' was not declared in this scope
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[0], U_SHUFFLE0),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:83:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[0], U_SHUFFLE0),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:84:60: error: 'U_SHUFFLE1' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[1], U_SHUFFLE1)),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:84:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[1], U_SHUFFLE1)),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:85:60: error: 'U_SHUFFLE2' was not declared in this scope
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[2], U_SHUFFLE2),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:85:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[2], U_SHUFFLE2),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:86:60: error: 'U_SHUFFLE3' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[3], U_SHUFFLE3))),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:86:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[3], U_SHUFFLE3))),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:87:7: error: 'U_SHUFFLE4' was not declared in this scope
+       U_SHUFFLE4);
+       ^
+modules/perception/traffic_light/util/color_space.cc:90:60: error: 'V_SHUFFLE0' was not declared in this scope
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[0], V_SHUFFLE0),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:90:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[0], V_SHUFFLE0),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:91:60: error: 'V_SHUFFLE1' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[1], V_SHUFFLE1)),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:91:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[1], V_SHUFFLE1)),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:92:60: error: 'V_SHUFFLE2' was not declared in this scope
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[2], V_SHUFFLE2),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:92:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+           _mm256_or_si256(_mm256_shuffle_epi8(yuv_m256[2], V_SHUFFLE2),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc:93:60: error: 'V_SHUFFLE3' was not declared in this scope
+                           _mm256_shuffle_epi8(yuv_m256[3], V_SHUFFLE3))),
+                                                            ^
+modules/perception/traffic_light/util/color_space.cc:93:70: error: there are no arguments to '_mm256_shuffle_epi8' that depend on a template parameter, so a declaration of '_mm256_shuffle_epi8' must be available [-fpermissive]
+                           _mm256_shuffle_epi8(yuv_m256[3], V_SHUFFLE3))),
+                                                                      ^
+modules/perception/traffic_light/util/color_space.cc: At global scope:
+modules/perception/traffic_light/util/color_space.cc:98:18: error: variable or field 'Yuv2rgbAvx2' declared void
+ void Yuv2rgbAvx2(__m256i y0, __m256i u0, __m256i v0, uint8_t *rgb) {
+                  ^
+modules/perception/traffic_light/util/color_space.cc:98:18: error: '__m256i' was not declared in this scope
+modules/perception/traffic_light/util/color_space.cc:98:30: error: '__m256i' was not declared in this scope
+ void Yuv2rgbAvx2(__m256i y0, __m256i u0, __m256i v0, uint8_t *rgb) {
+                              ^
+modules/perception/traffic_light/util/color_space.cc:98:42: error: '__m256i' was not declared in this scope
+ void Yuv2rgbAvx2(__m256i y0, __m256i u0, __m256i v0, uint8_t *rgb) {
+                                          ^
+modules/perception/traffic_light/util/color_space.cc:98:62: error: expected primary-expression before '*' token
+ void Yuv2rgbAvx2(__m256i y0, __m256i u0, __m256i v0, uint8_t *rgb) {
+                                                              ^
+modules/perception/traffic_light/util/color_space.cc:98:63: error: 'rgb' was not declared in this scope
+ void Yuv2rgbAvx2(__m256i y0, __m256i u0, __m256i v0, uint8_t *rgb) {
+                                                               ^
+modules/perception/traffic_light/util/color_space.cc: In function 'void apollo::perception::traffic_light::Yuv2rgbAvx2(uint8_t*, uint8_t*)':
+modules/perception/traffic_light/util/color_space.cc:113:3: error: '__m256i' was not declared in this scope
+   __m256i y0, y1, u0, v0;
+   ^
+modules/perception/traffic_light/util/color_space.cc:113:11: error: expected ';' before 'y0'
+   __m256i y0, y1, u0, v0;
+           ^
+modules/perception/traffic_light/util/color_space.cc:115:32: error: 'y0' was not declared in this scope
+   YuvSeperateAvx2<align>(yuv, &y0, &y1, &u0, &v0);
+                                ^
+modules/perception/traffic_light/util/color_space.cc:115:37: error: 'y1' was not declared in this scope
+   YuvSeperateAvx2<align>(yuv, &y0, &y1, &u0, &v0);
+                                     ^
+modules/perception/traffic_light/util/color_space.cc:115:42: error: 'u0' was not declared in this scope
+   YuvSeperateAvx2<align>(yuv, &y0, &y1, &u0, &v0);
+                                          ^
+modules/perception/traffic_light/util/color_space.cc:115:47: error: 'v0' was not declared in this scope
+   YuvSeperateAvx2<align>(yuv, &y0, &y1, &u0, &v0);
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:116:11: error: expected ';' before 'u0_u0'
+   __m256i u0_u0 = _mm256_permute4x64_epi64(u0, 0xD8);
+           ^
+modules/perception/traffic_light/util/color_space.cc:117:11: error: expected ';' before 'v0_v0'
+   __m256i v0_v0 = _mm256_permute4x64_epi64(v0, 0xD8);
+           ^
+modules/perception/traffic_light/util/color_space.cc:118:47: error: 'u0_u0' was not declared in this scope
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                               ^
+modules/perception/traffic_light/util/color_space.cc:118:59: error: there are no arguments to '_mm256_unpacklo_epi8' that depend on a template parameter, so a declaration of '_mm256_unpacklo_epi8' must be available [-fpermissive]
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:119:43: error: 'v0_v0' was not declared in this scope
+                      _mm256_unpacklo_epi8(v0_v0, v0_v0), rgb);
+                                           ^
+modules/perception/traffic_light/util/color_space.cc:119:55: error: there are no arguments to '_mm256_unpacklo_epi8' that depend on a template parameter, so a declaration of '_mm256_unpacklo_epi8' must be available [-fpermissive]
+                      _mm256_unpacklo_epi8(v0_v0, v0_v0), rgb);
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc:120:59: error: there are no arguments to '_mm256_unpackhi_epi8' that depend on a template parameter, so a declaration of '_mm256_unpackhi_epi8' must be available [-fpermissive]
+   Yuv2rgbAvx2<align>(y1, _mm256_unpackhi_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:121:55: error: there are no arguments to '_mm256_unpackhi_epi8' that depend on a template parameter, so a declaration of '_mm256_unpackhi_epi8' must be available [-fpermissive]
+                      _mm256_unpackhi_epi8(v0_v0, v0_v0),
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc: In function 'void apollo::perception::traffic_light::Yuyv2rgb(unsigned char*, unsigned char*, int)':
+modules/perception/traffic_light/util/color_space.cc:130:56: error: '__m256i' was not declared in this scope
+     for (int i = 0; i < NumPixels; i = i + (2 * sizeof(__m256i)),
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc:136:56: error: '__m256i' was not declared in this scope
+     for (int i = 0; i < NumPixels; i = i + (2 * sizeof(__m256i)),
+                                                        ^
+modules/perception/traffic_light/util/color_space.cc: In instantiation of 'void apollo::perception::traffic_light::Yuv2rgbAvx2(uint8_t*, uint8_t*) [with bool align = true; uint8_t = unsigned char]':
+modules/perception/traffic_light/util/color_space.cc:133:47:   required from here
+modules/perception/traffic_light/util/color_space.cc:118:59: error: '_mm256_unpacklo_epi8' was not declared in this scope
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:119:55: error: '_mm256_unpacklo_epi8' was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+                      _mm256_unpacklo_epi8(v0_v0, v0_v0), rgb);
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc:118:59: note: '_mm256_unpacklo_epi8' declared here, later in the translation unit
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:120:59: error: '_mm256_unpackhi_epi8' was not declared in this scope
+   Yuv2rgbAvx2<align>(y1, _mm256_unpackhi_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:121:55: error: '_mm256_unpackhi_epi8' was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+                      _mm256_unpackhi_epi8(v0_v0, v0_v0),
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc:120:59: note: '_mm256_unpackhi_epi8' declared here, later in the translation unit
+   Yuv2rgbAvx2<align>(y1, _mm256_unpackhi_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc: In instantiation of 'void apollo::perception::traffic_light::Yuv2rgbAvx2(uint8_t*, uint8_t*) [with bool align = false; uint8_t = unsigned char]':
+modules/perception/traffic_light/util/color_space.cc:139:48:   required from here
+modules/perception/traffic_light/util/color_space.cc:118:59: error: '_mm256_unpacklo_epi8' was not declared in this scope
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:119:55: error: '_mm256_unpacklo_epi8' was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+                      _mm256_unpacklo_epi8(v0_v0, v0_v0), rgb);
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc:118:59: note: '_mm256_unpacklo_epi8' declared here, later in the translation unit
+   Yuv2rgbAvx2<align>(y0, _mm256_unpacklo_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:120:59: error: '_mm256_unpackhi_epi8' was not declared in this scope
+   Yuv2rgbAvx2<align>(y1, _mm256_unpackhi_epi8(u0_u0, u0_u0),
+                                                           ^
+modules/perception/traffic_light/util/color_space.cc:121:55: error: '_mm256_unpackhi_epi8' was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [-fpermissive]
+                      _mm256_unpackhi_epi8(v0_v0, v0_v0),
+                                                       ^
+modules/perception/traffic_light/util/color_space.cc:120:59: note: '_mm256_unpackhi_epi8' declared here, later in the translation unit
+   Yuv2rgbAvx2<align>(y1, _mm256_unpackhi_epi8(u0_u0, u0_u0),
+                                                           ^
+____Elapsed time: 2.222s, Critical Path: 0.24s
+//modules/perception/common:common_cpplint                            NO STATUS
+//modules/perception/common:common_test                               NO STATUS
+//modules/perception/common:common_test_cpplint                       NO STATUS
+//modules/perception/common:convex_hullxy_cpplint                     NO STATUS
+//modules/perception/common:convex_hullxy_test                        NO STATUS
+//modules/perception/common:convex_hullxy_test_cpplint                NO STATUS
+//modules/perception/common:pcl_util_cpplint                          NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_test  NO STATUS
+//modules/perception/common/sequence_type_fuser:object_sequence_test_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_cpplint NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_test NO STATUS
+//modules/perception/common/sequence_type_fuser:sequence_type_fuser_test_cpplint NO STATUS
+//modules/perception/cuda_util:cuda_util_cpplint                      NO STATUS
+//modules/perception/cuda_util:integrated_cuda_util_cpplint           NO STATUS
+//modules/perception/integration_tests:perception_test_base_cpplint   NO STATUS
+//modules/perception/integration_tests:sunnyvale_big_loop_test        NO STATUS
+//modules/perception/integration_tests:sunnyvale_big_loop_test_cpplint NO STATUS
+//modules/perception/lib/base:base_cpplint                            NO STATUS
+//modules/perception/lib/base:perception_lib_base_test                NO STATUS
+//modules/perception/lib/base:perception_lib_base_test_cpplint        NO STATUS
+//modules/perception/lib/config_manager:config_manager_cpplint        NO STATUS
+//modules/perception/obstacle/base:base_cpplint                       NO STATUS
+//modules/perception/obstacle/base:base_test                          NO STATUS
+//modules/perception/obstacle/base:base_test_cpplint                  NO STATUS
+//modules/perception/obstacle/camera/cipv:camera_cipv_cpplint         NO STATUS
+//modules/perception/obstacle/camera/common:cnn_adapter_cpplint       NO STATUS
+//modules/perception/obstacle/camera/common:common_cpplint            NO STATUS
+//modules/perception/obstacle/camera/common:projector_cpplint         NO STATUS
+//modules/perception/obstacle/camera/common:util_cpplint              NO STATUS
+//modules/perception/obstacle/camera/converter:converter_cpplint      NO STATUS
+//modules/perception/obstacle/camera/converter:geometry_camera_converter_test NO STATUS
+//modules/perception/obstacle/camera/converter:geometry_camera_converter_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/common:feature_extractor_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:util_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_cpplint NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_test NO STATUS
+//modules/perception/obstacle/camera/detector/yolo_camera_detector:yolo_camera_detector_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/dummy:dummy_cpplint              NO STATUS
+//modules/perception/obstacle/camera/filter:camera_extended_kalman_filter_cpplint NO STATUS
+//modules/perception/obstacle/camera/filter:filter_cpplint            NO STATUS
+//modules/perception/obstacle/camera/interface:interface_cpplint      NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_test NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:cc_lane_post_processor_test_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/cc_lane_post_processor:lane_frame_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:connected_component_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:projector_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:type_cpplint NO STATUS
+//modules/perception/obstacle/camera/lane_post_process/common:util_cpplint NO STATUS
+//modules/perception/obstacle/camera/motion:motion_cpplint            NO STATUS
+//modules/perception/obstacle/camera/tracker:base_affinity_cpplint    NO STATUS
+//modules/perception/obstacle/camera/tracker/cs2d:cs2d_cpplint        NO STATUS
+//modules/perception/obstacle/camera/tracker/dlf:dlf_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker/kcf:kcf_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker:tracker_cpplint          NO STATUS
+//modules/perception/obstacle/camera/tracker:util_cpplint             NO STATUS
+//modules/perception/obstacle/camera/transformer:transformer_cpplint  NO STATUS
+//modules/perception/obstacle/camera/visualizer:camera_visualizer_cpplint NO STATUS
+//modules/perception/obstacle/camera/visualizer/common:common_cpplint NO STATUS
+//modules/perception/obstacle/camera/visualizer:visualizer_cpplint    NO STATUS
+//modules/perception/obstacle/common:common_cpplint                   NO STATUS
+//modules/perception/obstacle/common:common_test                      NO STATUS
+//modules/perception/obstacle/common:common_test_cpplint              NO STATUS
+//modules/perception/obstacle/fusion/async_fusion:async_fusion_cpplint NO STATUS
+//modules/perception/obstacle/fusion/interface:interface_cpplint      NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_motion_fusion_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_motion_fusion_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_sensor_manager_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_sensor_manager_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_track_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:pbf_track_test_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_cpplint NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_test NO STATUS
+//modules/perception/obstacle/fusion/probabilistic_fusion:probabilistic_fusion_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/dummy:dummy_cpplint               NO STATUS
+//modules/perception/obstacle/lidar/interface:interface_cpplint       NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_test NO STATUS
+//modules/perception/obstacle/lidar/object_builder/min_box:min_box_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_cpplint NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_test NO STATUS
+//modules/perception/obstacle/lidar/object_filter/low_object_filter:low_object_filter_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_cpplint NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_test NO STATUS
+//modules/perception/obstacle/lidar/roi_filter/hdmap_roi_filter:hdmap_roi_filter_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnn_segmentation_test NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnn_segmentation_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_cluster2d_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_feature_generator_cpplint NO STATUS
+//modules/perception/obstacle/lidar/segmentation/cnnseg:cnnseg_util_cpplint NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_cpplint NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_test NO STATUS
+//modules/perception/obstacle/lidar/tracker/hm_tracker:hm_tracker_test_cpplint NO STATUS
+//modules/perception/obstacle/lidar/visualizer/opengl_visualizer:opengl_visualizer_cpplint NO STATUS
+//modules/perception/obstacle/onboard:camera_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:cipv_subnode_cpplint            NO STATUS
+//modules/perception/obstacle/onboard:fusion_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:hdmap_input_test                NO STATUS
+//modules/perception/obstacle/onboard:hdmap_input_test_cpplint        NO STATUS
+//modules/perception/obstacle/onboard:hdmapinput_cpplint              NO STATUS
+//modules/perception/obstacle/onboard:lane_post_processing_subnode_cpplint NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_test              NO STATUS
+//modules/perception/obstacle/onboard:lidar_process_test_cpplint      NO STATUS
+//modules/perception/obstacle/onboard:lidar_subnode_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:motion_subnode_cpplint          NO STATUS
+//modules/perception/obstacle/onboard:obstacle_perception_cpplint     NO STATUS
+//modules/perception/obstacle/onboard:perception_obstacle_shared_data_cpplint NO STATUS
+//modules/perception/obstacle/onboard:radar_subnode_cpplint           NO STATUS
+//modules/perception/obstacle/onboard:ultrasonic_obstacle_subnode_cpplint NO STATUS
+//modules/perception/obstacle/onboard:visualization_subnode_cpplint   NO STATUS
+//modules/perception/obstacle/radar/dummy:dummy_cpplint               NO STATUS
+//modules/perception/obstacle/radar/interface:interface_cpplint       NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_id_expansion_test NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_id_expansion_test_cpplint NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_util_test      NO STATUS
+//modules/perception/obstacle/radar/modest:conti_radar_util_test_cpplint NO STATUS
+//modules/perception/obstacle/radar/modest:modest_detector_cpplint    NO STATUS
+//modules/perception/obstacle/radar/modest:modest_radar_detector_test NO STATUS
+//modules/perception/obstacle/radar/modest:modest_radar_detector_test_cpplint NO STATUS
+//modules/perception/onboard:onboard_cpplint                          NO STATUS
+//modules/perception/onboard:subnode_test                             NO STATUS
+//modules/perception/onboard:subnode_test_cpplint                     NO STATUS
+//modules/perception:perception_cpplint                               NO STATUS
+//modules/perception:perception_lib_cpplint                           NO STATUS
+//modules/perception/tool/data_generator/common:data_generator_gflags_cpplint NO STATUS
+//modules/perception/tool/data_generator:data_generator_cpplint       NO STATUS
+//modules/perception/tool/data_generator:data_generator_lib_cpplint   NO STATUS
+//modules/perception/tool/export_sensor_data:export_sensor_data_cpplint NO STATUS
+//modules/perception/tool/export_sensor_data:export_sensor_data_lib_cpplint NO STATUS
+//modules/perception/tool/offline_visualizer_tool:offline_lidar_visualizer_tool_cpplint NO STATUS
+//modules/perception/tool/offline_visualizer_tool:offline_sequential_obstacle_perception_test_cpplint NO STATUS
+//modules/perception/traffic_light/base:base_cpplint                  NO STATUS
+//modules/perception/traffic_light/base:base_test                     NO STATUS
+//modules/perception/traffic_light/base:base_test_cpplint             NO STATUS
+//modules/perception/traffic_light/interface:interface_cpplint        NO STATUS
+//modules/perception/traffic_light/onboard:onboard_cpplint            NO STATUS
+//modules/perception/traffic_light/preprocessor:perception_traffic_light_preprocessor_cpplint NO STATUS
+//modules/perception/traffic_light/preprocessor:tl_preprocessor_test  NO STATUS
+//modules/perception/traffic_light/preprocessor:tl_preprocessor_test_cpplint NO STATUS
+//modules/perception/traffic_light/projection:multi_camera_projection_test NO STATUS
+//modules/perception/traffic_light/projection:multi_camera_projection_test_cpplint NO STATUS
+//modules/perception/traffic_light/projection:perception_traffic_light_projection_cpplint NO STATUS
+//modules/perception/traffic_light/recognizer:perception_traffic_light_recognizer_cpplint NO STATUS
+//modules/perception/traffic_light/recognizer:unity_recognize_test    NO STATUS
+//modules/perception/traffic_light/recognizer:unity_recognize_test_cpplint NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_cpplint NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_test NO STATUS
+//modules/perception/traffic_light/rectify:perception_traffic_light_rectify_test_cpplint NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_cpplint NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_test NO STATUS
+//modules/perception/traffic_light/reviser:perception_traffic_light_reviser_test_cpplint NO STATUS
+//modules/perception/traffic_light/util:util_cpplint                  NO STATUS
+//modules/perception/traffic_light/visualizer:perception_traffic_light_visualizer_cpplint NO STATUS
+
+Executed 0 out of 156 tests: 156 were skipped.

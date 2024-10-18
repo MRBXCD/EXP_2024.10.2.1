@@ -1,0 +1,298 @@
+[[34m[1mINFO[0m] Start pulling docker image apolloauto/apollo:dev-x86_64-20180806_1111 ...
+dev-x86_64-20180806_1111: Pulling from apolloauto/apollo
+286b175c283f: Pulling fs layer
+01ff24a32906: Pulling fs layer
+a1a601a05071: Pulling fs layer
+baa11bb80080: Pulling fs layer
+481b7b6a0535: Pulling fs layer
+39bb3ff41a5b: Pulling fs layer
+133c02592fd3: Pulling fs layer
+d0dd998b15f8: Pulling fs layer
+812877fefe39: Pulling fs layer
+b4d443b5ade3: Pulling fs layer
+cd27e0317998: Pulling fs layer
+87f0ec12eef9: Pulling fs layer
+fe5a872a7f1b: Pulling fs layer
+922a475dfe27: Pulling fs layer
+8057ed981ae1: Pulling fs layer
+133cdb28630d: Pulling fs layer
+02b265bf90b4: Pulling fs layer
+940f1805e4f0: Pulling fs layer
+9d46c6ce503b: Pulling fs layer
+ee63b043510d: Pulling fs layer
+b75f1cff3401: Pulling fs layer
+420883ba84f2: Pulling fs layer
+8afecd8a5b64: Pulling fs layer
+39bb3ff41a5b: Waiting
+f6581db08701: Pulling fs layer
+133c02592fd3: Waiting
+151610eb1e1f: Pulling fs layer
+2cd3bb011f3d: Pulling fs layer
+d0dd998b15f8: Waiting
+812877fefe39: Waiting
+bf5c8ac23d3d: Pulling fs layer
+d14f758b1e97: Pulling fs layer
+82e68e5a0f55: Pulling fs layer
+21759bbf577b: Pulling fs layer
+7fab12d9471e: Pulling fs layer
+b1a72f26c56a: Pulling fs layer
+8d03371a8ecc: Pulling fs layer
+ac1e2b360f10: Pulling fs layer
+3bd498af354b: Pulling fs layer
+864311fb9c50: Pulling fs layer
+ab0ee1921042: Pulling fs layer
+87f0ec12eef9: Waiting
+28a5e7535a2b: Pulling fs layer
+1a10fa6d4ef3: Pulling fs layer
+b0bfe53e52cf: Pulling fs layer
+e1431f7430ad: Pulling fs layer
+af9bf420d52a: Pulling fs layer
+f63af21a3306: Pulling fs layer
+baa11bb80080: Waiting
+bfa87fcdbeb7: Pulling fs layer
+481b7b6a0535: Waiting
+315b5c3dbfe1: Pulling fs layer
+9dbde3c8fb68: Pulling fs layer
+73d0dd5b7988: Pulling fs layer
+c3be3d4527db: Pulling fs layer
+155cf2787fa4: Pulling fs layer
+4c8ba0c630dd: Pulling fs layer
+29a8d88b5eac: Pulling fs layer
+bd2ac5f3c1c1: Pulling fs layer
+c5eedc100c6d: Pulling fs layer
+4a6b1d37a593: Pulling fs layer
+cd27e0317998: Waiting
+6e12ee492b89: Pulling fs layer
+02b265bf90b4: Waiting
+8057ed981ae1: Waiting
+420883ba84f2: Waiting
+133cdb28630d: Waiting
+9d46c6ce503b: Waiting
+8afecd8a5b64: Waiting
+b0bfe53e52cf: Waiting
+e1431f7430ad: Waiting
+b1a72f26c56a: Waiting
+f6581db08701: Waiting
+fe5a872a7f1b: Waiting
+b4d443b5ade3: Waiting
+af9bf420d52a: Waiting
+922a475dfe27: Waiting
+8d03371a8ecc: Waiting
+ee63b043510d: Waiting
+940f1805e4f0: Waiting
+b75f1cff3401: Waiting
+f63af21a3306: Waiting
+1a10fa6d4ef3: Waiting
+bf5c8ac23d3d: Waiting
+d14f758b1e97: Waiting
+bfa87fcdbeb7: Waiting
+82e68e5a0f55: Waiting
+2cd3bb011f3d: Waiting
+21759bbf577b: Waiting
+7fab12d9471e: Waiting
+29a8d88b5eac: Waiting
+28a5e7535a2b: Waiting
+ab0ee1921042: Waiting
+bd2ac5f3c1c1: Waiting
+c3be3d4527db: Waiting
+155cf2787fa4: Waiting
+9dbde3c8fb68: Waiting
+4c8ba0c630dd: Waiting
+6e12ee492b89: Waiting
+c5eedc100c6d: Waiting
+4a6b1d37a593: Waiting
+315b5c3dbfe1: Waiting
+73d0dd5b7988: Waiting
+01ff24a32906: Verifying Checksum
+01ff24a32906: Download complete
+baa11bb80080: Verifying Checksum
+baa11bb80080: Download complete
+a1a601a05071: Verifying Checksum
+a1a601a05071: Download complete
+481b7b6a0535: Verifying Checksum
+481b7b6a0535: Download complete
+133c02592fd3: Verifying Checksum
+133c02592fd3: Download complete
+39bb3ff41a5b: Verifying Checksum
+39bb3ff41a5b: Download complete
+d0dd998b15f8: Verifying Checksum
+d0dd998b15f8: Download complete
+812877fefe39: Verifying Checksum
+812877fefe39: Download complete
+b4d443b5ade3: Verifying Checksum
+b4d443b5ade3: Download complete
+cd27e0317998: Verifying Checksum
+cd27e0317998: Download complete
+87f0ec12eef9: Verifying Checksum
+87f0ec12eef9: Download complete
+fe5a872a7f1b: Verifying Checksum
+fe5a872a7f1b: Download complete
+922a475dfe27: Verifying Checksum
+922a475dfe27: Download complete
+8057ed981ae1: Verifying Checksum
+8057ed981ae1: Download complete
+133cdb28630d: Verifying Checksum
+133cdb28630d: Download complete
+940f1805e4f0: Verifying Checksum
+940f1805e4f0: Download complete
+02b265bf90b4: Verifying Checksum
+02b265bf90b4: Download complete
+ee63b043510d: Verifying Checksum
+ee63b043510d: Download complete
+9d46c6ce503b: Verifying Checksum
+9d46c6ce503b: Download complete
+420883ba84f2: Verifying Checksum
+420883ba84f2: Download complete
+b75f1cff3401: Verifying Checksum
+b75f1cff3401: Download complete
+8afecd8a5b64: Verifying Checksum
+8afecd8a5b64: Download complete
+151610eb1e1f: Download complete
+2cd3bb011f3d: Verifying Checksum
+2cd3bb011f3d: Download complete
+f6581db08701: Verifying Checksum
+f6581db08701: Download complete
+bf5c8ac23d3d: Verifying Checksum
+d14f758b1e97: Verifying Checksum
+d14f758b1e97: Download complete
+82e68e5a0f55: Verifying Checksum
+82e68e5a0f55: Download complete
+7fab12d9471e: Verifying Checksum
+7fab12d9471e: Download complete
+21759bbf577b: Verifying Checksum
+21759bbf577b: Download complete
+b1a72f26c56a: Verifying Checksum
+b1a72f26c56a: Download complete
+ac1e2b360f10: Download complete
+3bd498af354b: Verifying Checksum
+3bd498af354b: Download complete
+8d03371a8ecc: Verifying Checksum
+8d03371a8ecc: Download complete
+864311fb9c50: Verifying Checksum
+864311fb9c50: Download complete
+ab0ee1921042: Verifying Checksum
+ab0ee1921042: Download complete
+28a5e7535a2b: Verifying Checksum
+28a5e7535a2b: Download complete
+1a10fa6d4ef3: Verifying Checksum
+1a10fa6d4ef3: Download complete
+e1431f7430ad: Verifying Checksum
+e1431f7430ad: Download complete
+af9bf420d52a: Verifying Checksum
+af9bf420d52a: Download complete
+b0bfe53e52cf: Verifying Checksum
+b0bfe53e52cf: Download complete
+bfa87fcdbeb7: Verifying Checksum
+bfa87fcdbeb7: Download complete
+f63af21a3306: Verifying Checksum
+f63af21a3306: Download complete
+315b5c3dbfe1: Verifying Checksum
+315b5c3dbfe1: Download complete
+73d0dd5b7988: Verifying Checksum
+73d0dd5b7988: Download complete
+9dbde3c8fb68: Verifying Checksum
+9dbde3c8fb68: Download complete
+c3be3d4527db: Download complete
+4c8ba0c630dd: Verifying Checksum
+4c8ba0c630dd: Download complete
+155cf2787fa4: Verifying Checksum
+155cf2787fa4: Download complete
+29a8d88b5eac: Download complete
+c5eedc100c6d: Verifying Checksum
+c5eedc100c6d: Download complete
+4a6b1d37a593: Verifying Checksum
+4a6b1d37a593: Download complete
+6e12ee492b89: Verifying Checksum
+6e12ee492b89: Download complete
+bd2ac5f3c1c1: Verifying Checksum
+bd2ac5f3c1c1: Download complete
+286b175c283f: Verifying Checksum
+286b175c283f: Download complete
+286b175c283f: Pull complete
+01ff24a32906: Pull complete
+a1a601a05071: Pull complete
+baa11bb80080: Pull complete
+481b7b6a0535: Pull complete
+39bb3ff41a5b: Pull complete
+133c02592fd3: Pull complete
+d0dd998b15f8: Pull complete
+812877fefe39: Pull complete
+b4d443b5ade3: Pull complete
+cd27e0317998: Pull complete
+87f0ec12eef9: Pull complete
+fe5a872a7f1b: Pull complete
+922a475dfe27: Pull complete
+8057ed981ae1: Pull complete
+133cdb28630d: Pull complete
+02b265bf90b4: Pull complete
+940f1805e4f0: Pull complete
+9d46c6ce503b: Pull complete
+ee63b043510d: Pull complete
+b75f1cff3401: Pull complete
+420883ba84f2: Pull complete
+8afecd8a5b64: Pull complete
+f6581db08701: Pull complete
+151610eb1e1f: Pull complete
+2cd3bb011f3d: Pull complete
+bf5c8ac23d3d: Pull complete
+d14f758b1e97: Pull complete
+82e68e5a0f55: Pull complete
+21759bbf577b: Pull complete
+7fab12d9471e: Pull complete
+b1a72f26c56a: Pull complete
+8d03371a8ecc: Pull complete
+ac1e2b360f10: Pull complete
+3bd498af354b: Pull complete
+864311fb9c50: Pull complete
+ab0ee1921042: Pull complete
+28a5e7535a2b: Pull complete
+1a10fa6d4ef3: Pull complete
+b0bfe53e52cf: Pull complete
+e1431f7430ad: Pull complete
+af9bf420d52a: Pull complete
+f63af21a3306: Pull complete
+bfa87fcdbeb7: Pull complete
+315b5c3dbfe1: Pull complete
+9dbde3c8fb68: Pull complete
+73d0dd5b7988: Pull complete
+c3be3d4527db: Pull complete
+155cf2787fa4: Pull complete
+4c8ba0c630dd: Pull complete
+29a8d88b5eac: Pull complete
+bd2ac5f3c1c1: Pull complete
+c5eedc100c6d: Pull complete
+4a6b1d37a593: Pull complete
+6e12ee492b89: Pull complete
+Digest: sha256:dc7daeb9bf1b18097dd39ce72840e18eb382c35a25109adea0da2c425e09be9e
+Status: Downloaded newer image for apolloauto/apollo:dev-x86_64-20180806_1111
+docker.io/apolloauto/apollo:dev-x86_64-20180806_1111
+map_volume-sunnyvale_big_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:0a27ea953198d397fd7bf3b0e670951f6a9d645d362a8bdc707589a26cde8861
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_big_loop-latest
+7659acc4e88e8d880ea1f831a6accdf8c1ae7e11e616502b4463cf0b81808dac
+map_volume-sunnyvale_loop-latest: Pulling from apolloauto/apollo
+Digest: sha256:1337ca5d357f33318e38368b6218d343f6138c63a9bb491175ca7cdd39c1a789
+Status: Image is up to date for apolloauto/apollo:map_volume-sunnyvale_loop-latest
+docker.io/apolloauto/apollo:map_volume-sunnyvale_loop-latest
+7ed1f1bbd1a31a08e9ab62ca5c773f0b9b2d29f4e5c3cbd62712997a078bd739
+localization_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:d8be22d8221c784e8a29af14a23be7fc5f2164137ec24228701e6fdcb689b088
+Status: Image is up to date for apolloauto/apollo:localization_volume-x86_64-latest
+docker.io/apolloauto/apollo:localization_volume-x86_64-latest
+4f24b893fa34ed839d4828b80df401da1dc079000d21f1e74b13808eed452acc
+yolo3d_volume-x86_64-latest: Pulling from apolloauto/apollo
+Digest: sha256:33add717a675be26c86f817d2207c1ab1ec25694f0decb63e55f0fc3d14b1397
+Status: Image is up to date for apolloauto/apollo:yolo3d_volume-x86_64-latest
+docker.io/apolloauto/apollo:yolo3d_volume-x86_64-latest
+b71cd88b48721f8dc5ab10a386538278a8fb4a31c663d0601912737bab2bad4b
+[[34m[1mINFO[0m] Starting docker container "apollo_dev" ...
+5610301ba6d2a90e74a4465d2381c2e8824aedf9d304cf5af5ce0d2cbed8ab82
+Adding group `user' (GID 1000) ...
+Done.
+Adding user `user' ...
+Adding new user `user' (1000) with group `user' ...
+The home directory `/home/user' already exists.  Not copying from `/etc/skel'.
+[[32m[1m OK [0m] Finished setting up Apollo docker environment. Now you can enter with:
+bash docker/scripts/dev_into.sh
+[[32m[1m OK [0m] Enjoy!
